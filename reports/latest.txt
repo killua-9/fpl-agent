@@ -1,0 +1,35 @@
+Generated 2026-10-18T01:16:55.620Z | Hold My Tzoli | overall rank 2803880 | 413 pts
+GW8 deadline 2026-10-23T17:30:00Z | FT 4 (reconstructed; pending transfers already made: 0) bank 0.5 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW8-13
+SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
+FWD Haaland MCI 15.7/15.6 a | 6.6 | 31.8 | 256% | AVLa BHAH NFOa FULH
+MID Groß BHA 6.1/5.8 a | 4.5 | 20.8 | 96% | LIVa MCIa BREH HULa
+MID B.Fernandes MUN 11.8/11.8 a | 3.8 | 19.7 | 2% | BOUH CHEa AVLH LIVa
+DEF Calafiori ARS 6.0/5.7 a | 4.3 | 19.5 | 96% | EVEH LIVa HULH NEWa
+FWD João Pedro CHE 7.8/7.6 a100 | 4.2 | 18.8 | 96% | TOTH MUNH SUNa LEEH
+DEF Thomas COV 4.0/4.0 a | 3.9 | 17.8 | 2% | FULH SUNH EVEa CRYH
+MID Cherki MCI 8.0/7.8 a | 3.9 | 17.3 | 24% | AVLa BHAH NFOa FULH
+DEF Muharemović LEE 5.0/5.0 a | 3.0 | 16.0 | 4% | SUNa BOUa TOTH CHEa
+DEF Diop IPS 3.9/3.9 a | 3.1 | 15.5 | 0% | NFOH HULa BOUH TOTa
+GK Verbruggen BHA 4.6/4.5 a | 3.4 | 15.0 | 32% | LIVa MCIa BREH HULa
+FWD Calvert-Lewin LEE 6.0/6.0 a | 2.8 | 14.3 | 20% | SUNa BOUa TOTH CHEa
+GK Kinsky TOT 4.5/4.5 a | 2.5 | 12.9 | 8% | CHEa CRYH LEEa IPSH
+DEF Maguire MUN 4.8/4.8 a | 2.4 | 11.3 | 0% | BOUH CHEa AVLH LIVa
+MID M.Sangaré BRE 5.5/5.5 a | 1.9 | 10.0 | 0% | HULa NFOH BHAa EVEH
+MID Szoboszlai LIV 6.8/6.8 i0 | 0.0 | 6.3 | 0% | BHAH ARSH CRYa MUNH
+PLANS by net value (squad 6GW wtd value, less hits, plus value of banked FT):
+5T net 266.0 (val 270.0) bank 0.0: Maguire(4.8)->O'Shea(4.0 eEO0%), Muharemović(5.0)->Tarkowski(6.2 eEO4%), Szoboszlai(6.8)->Dewsbury-Hall(6.6 eEO8%), Cherki(7.8)->Rogers(7.9 eEO86%), Kinsky(4.5)->Tzolakis(4.7 eEO0%)
+4T net 265.8 (val 265.8) bank 0.2: Szoboszlai(6.8)->Iwobi(5.4 eEO2%), Maguire(4.8)->Tarkowski(6.2 eEO4%), Cherki(7.8)->Rogers(7.9 eEO86%), Kinsky(4.5)->Tzolakis(4.7 eEO0%)
+6T net 264.8 (val 272.8) bank 0.1: Maguire(4.8)->O'Shea(4.0 eEO0%), Muharemović(5.0)->Tarkowski(6.2 eEO4%), Szoboszlai(6.8)->Dewsbury-Hall(6.6 eEO8%), Cherki(7.8)->Rogers(7.9 eEO86%), Kinsky(4.5)->Tzolakis(4.7 eEO0%), M.Sangaré(5.5)->Iwobi(5.4 eEO2%)
+3T net 263.0 (val 261.5) bank 0.4: Szoboszlai(6.8)->Iwobi(5.4 eEO2%), Maguire(4.8)->Tarkowski(6.2 eEO4%), Cherki(7.8)->Rogers(7.9 eEO86%)
+2T net 259.5 (val 257.0) bank 0.5: Szoboszlai(6.8)->Iwobi(5.4 eEO2%), Maguire(4.8)->Tarkowski(6.2 eEO4%)
+BEST PLAN XI GW8: Tzolakis 4.1, Tarkowski 4.6, Calafiori 4.3, O'Shea 4.0, Rogers 4.7, Groß 4.5, Haaland 6.6, Dewsbury-Hall 4.3, João Pedro 4.2, Thomas 3.9, B.Fernandes 3.8
+C Haaland 6.6 | VC Rogers 4.7 | bench Verbruggen 3.4, Diop 3.1, Calvert-Lewin 2.8, M.Sangaré 1.9
+Current squad GW8 XI proj 50.1 vs best plan 55.6
+Captain options: Haaland 6.6 eEO256%, Rogers 4.7 eEO86%, Tarkowski 4.6 eEO4%, Groß 4.5 eEO96%
+CHIPS: TC gain GW8 ~6.6; BB gain GW8 ~11.1; WC 6GW gain vs best plan 9.2; FH GW8 gain 3.5
+Best TC GW in horizon: GW9 7.5; best BB GW: GW12 12.6; DGW/BGW: GW8 dbl0/blank0 GW9 dbl0/blank0 GW10 dbl0/blank0 GW11 dbl0/blank0 GW12 dbl0/blank0 GW13 dbl0/blank0
+LEAGUE The Mane 💰 League™ (54818): rank 29/37, 413 pts; leader Pending Moderation 483 (gap 70)
+ threats not owned: De Cuyper EO59% proj4.2, Konsa EO43% proj2.8, Palmer EO43% proj4.4, Raya EO41% proj3.4, Cherki EO41% proj3.9 | my differentials: Tzolakis EO5%, Tarkowski EO11%, O'Shea EO0%, Dewsbury-Hall EO8%, M.Sangaré EO3%, Diop EO0%, Thomas EO11% | rival captains: Haaland 33, Groß 2, De Cuyper 1
+LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 26/31, 413 pts; leader Pending Moderation 483 (gap 70)
+ threats not owned: De Cuyper EO68% proj4.2, Palmer EO45% proj4.4, Raya EO42% proj3.4, Konsa EO42% proj2.8, Cherki EO39% proj3.9 | my differentials: Tzolakis EO6%, Tarkowski EO10%, O'Shea EO0%, Dewsbury-Hall EO6%, M.Sangaré EO3%, Diop EO0%, Thomas EO13% | rival captains: Haaland 28, Groß 2, De Cuyper 1
+Elite sample: top 50 overall. Model runtime 3s.
