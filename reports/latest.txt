@@ -1,35 +1,35 @@
-Generated 2026-10-19T10:50:58.698Z | Hold My Tzoli | overall rank 2726018 | 443 pts
+Generated 2026-10-19T19:22:12.006Z | Hold My Tzoli | overall rank 2684327 | 444 pts
 GW8 deadline 2026-10-23T17:30:00Z | FT 4 (reconstructed; pending transfers already made: 0) bank 0.5 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW8-13
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
-FWD Haaland MCI 15.7/15.6 a | 6.6 | 31.4 | 248% | AVLa BHAH NFOa FULH
-DEF Calafiori ARS 6.0/5.7 a | 5.4 | 23.7 | 96% | EVEH LIVa HULH NEWa
-MID Groß BHA 6.1/5.8 a | 5.2 | 23.1 | 90% | LIVa MCIa BREH HULa
+FWD Haaland MCI 15.7/15.6 d75 | 5.0 | 29.5 | 248% | AVLa BHAH NFOa FULH
+DEF Calafiori ARS 6.0/5.7 a | 5.8 | 24.2 | 96% | EVEH LIVa HULH NEWa
+MID Groß BHA 6.1/5.8 a | 4.6 | 22.6 | 90% | LIVa MCIa BREH HULa
 MID B.Fernandes MUN 11.8/11.8 a | 4.0 | 21.7 | 0% | BOUH CHEa AVLH LIVa
 FWD João Pedro CHE 7.9/7.7 a100 | 4.6 | 19.5 | 98% | TOTH MUNH SUNa LEEH
 FWD Calvert-Lewin LEE 6.0/6.0 a | 4.4 | 19.5 | 42% | SUNa BOUa TOTH CHEa
-DEF Muharemović LEE 5.0/5.0 a | 4.1 | 19.4 | 8% | SUNa BOUa TOTH CHEa
-GK Verbruggen BHA 4.6/4.5 a | 4.3 | 18.2 | 26% | LIVa MCIa BREH HULa
-DEF Thomas COV 4.0/4.0 a | 3.9 | 18.1 | 2% | FULH SUNH EVEa CRYH
+DEF Muharemović LEE 5.0/5.0 a | 4.1 | 19.3 | 8% | SUNa BOUa TOTH CHEa
+DEF Thomas COV 4.0/4.0 a | 3.8 | 19.2 | 2% | FULH SUNH EVEa CRYH
+GK Verbruggen BHA 4.6/4.5 a | 4.4 | 18.3 | 26% | LIVa MCIa BREH HULa
 MID Cherki MCI 8.0/7.8 a | 3.9 | 17.2 | 10% | AVLa BHAH NFOa FULH
-DEF Diop IPS 3.9/3.9 a | 3.1 | 15.3 | 0% | NFOH HULa BOUH TOTa
+DEF Diop IPS 3.9/3.9 a | 3.0 | 15.2 | 0% | NFOH HULa BOUH TOTa
+GK Kinsky TOT 4.5/4.5 a | 2.8 | 14.3 | 2% | CHEa CRYH LEEa IPSH
 DEF Maguire MUN 4.8/4.8 a | 2.9 | 14.2 | 2% | BOUH CHEa AVLH LIVa
-GK Kinsky TOT 4.5/4.5 a | 2.5 | 13.0 | 2% | CHEa CRYH LEEa IPSH
 MID M.Sangaré BRE 5.5/5.5 a | 2.0 | 10.0 | 0% | HULa NFOH BHAa EVEH
 MID Szoboszlai LIV 6.8/6.8 i0 | 0.0 | 6.4 | 2% | BHAH ARSH CRYa MUNH
 PLANS by net value (squad 6GW wtd value, less hits, plus value of banked FT):
-5T net 289.6 (val 293.6) bank 0.7: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%), Maguire(4.8)->Vuskovic(5.1 eEO14%), B.Fernandes(11.8)->Saka(9.6 eEO12%), Diop(3.9)->Tarkowski(6.2 eEO6%)
-6T net 289.3 (val 297.3) bank 0.1: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%), Maguire(4.8)->Vuskovic(5.1 eEO14%), B.Fernandes(11.8)->Saka(9.6 eEO12%), Verbruggen(4.5)->Raya(6.1 eEO72%), Diop(3.9)->De Cuyper(5.2 eEO94%)
-4T net 288.6 (val 288.6) bank 3.0: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%), Maguire(4.8)->Vuskovic(5.1 eEO14%), B.Fernandes(11.8)->Saka(9.6 eEO12%)
-3T net 286.8 (val 285.3) bank 0.8: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%), Maguire(4.8)->Vuskovic(5.1 eEO14%)
-2T net 281.4 (val 278.9) bank 1.1: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%)
-BEST PLAN XI GW8: Verbruggen 4.3, Vuskovic 5.5, Calafiori 5.4, Tarkowski 4.6, Mbeumo 5.3, Groß 5.2, Haaland 6.6, Saka 5.0, João Pedro 4.6, Tavernier 4.6, Calvert-Lewin 4.4
-C Haaland 6.6 | VC Vuskovic 5.5 | bench Kinsky 2.5, Muharemović 4.1, Thomas 3.9, M.Sangaré 2.0
-Current squad GW8 XI proj 56.3 vs best plan 62.2
-Captain options: Haaland 6.6 eEO248%, Vuskovic 5.5 eEO14%, Calafiori 5.4 eEO96%, Mbeumo 5.3 eEO26%
-CHIPS: TC gain GW8 ~6.6; BB gain GW8 ~12.5; WC 6GW gain vs best plan 7.1; FH GW8 gain 2.6
-Best TC GW in horizon: GW11 7.4; best BB GW: GW11 13.2; DGW/BGW: GW8 dbl0/blank0 GW9 dbl0/blank0 GW10 dbl0/blank0 GW11 dbl0/blank0 GW12 dbl0/blank0 GW13 dbl0/blank0
-LEAGUE The Mane 💰 League™ (54818): rank 28/37, 443 pts; leader Pending Moderation 524 (gap 81)
- threats not owned: De Cuyper EO59% proj5.3, Rogers EO57% proj5.0, Konsa EO43% proj4.3, Palmer EO43% proj4.6, Raya EO41% proj4.9 | my differentials: Muharemović EO8%, Vuskovic EO5%, Tavernier EO5%, M.Sangaré EO3%, Tarkowski EO11%, Thomas EO11% | rival captains: Haaland 33, Groß 2, De Cuyper 1
-LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 25/31, 443 pts; leader Pending Moderation 524 (gap 81)
- threats not owned: De Cuyper EO68% proj5.3, Rogers EO55% proj5.0, Palmer EO45% proj4.6, Raya EO42% proj4.9, Konsa EO42% proj4.3 | my differentials: Muharemović EO10%, Vuskovic EO3%, Tavernier EO6%, M.Sangaré EO3%, Tarkowski EO10%, Thomas EO13% | rival captains: Haaland 28, Groß 2, De Cuyper 1
-Elite sample: top 50 overall. Model runtime 3s.
+6T net 287.8 (val 295.8) bank 0.1: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%), Maguire(4.8)->Vuskovic(5.1 eEO14%), B.Fernandes(11.8)->Saka(9.6 eEO12%), Verbruggen(4.5)->Raya(6.1 eEO72%), Diop(3.9)->De Cuyper(5.2 eEO94%)
+5T net 287.5 (val 291.5) bank 1.4: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%), Maguire(4.8)->Vuskovic(5.1 eEO14%), B.Fernandes(11.8)->Saka(9.6 eEO12%), Kinsky(4.5)->Raya(6.1 eEO72%)
+4T net 286.6 (val 286.6) bank 3.0: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%), Maguire(4.8)->Vuskovic(5.1 eEO14%), B.Fernandes(11.8)->Saka(9.6 eEO12%)
+3T net 284.8 (val 283.3) bank 0.8: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%), Maguire(4.8)->Vuskovic(5.1 eEO14%)
+2T net 279.5 (val 277.0) bank 1.1: Szoboszlai(6.8)->Tavernier(6.2 eEO12%), Cherki(7.8)->Mbeumo(7.8 eEO26%)
+BEST PLAN XI GW8: Raya 5.2, Calafiori 5.8, De Cuyper 5.6, Vuskovic 5.6, Mbeumo 5.3, Saka 5.1, Haaland 5.0, João Pedro 4.6, Groß 4.6, Tavernier 4.6, Calvert-Lewin 4.4
+C Calafiori 5.8 | VC De Cuyper 5.6 | bench Kinsky 2.8, Muharemović 4.1, Thomas 3.8, M.Sangaré 2.0
+Current squad GW8 XI proj 53.7 vs best plan 61.7
+Captain options: Calafiori 5.8 eEO96%, De Cuyper 5.6 eEO94%, Vuskovic 5.6 eEO14%, Mbeumo 5.3 eEO26%
+CHIPS: TC gain GW8 ~5.8; BB gain GW8 ~12.7; WC 6GW gain vs best plan 3.3; FH GW8 gain 1.8
+Best TC GW in horizon: GW11 7.4; best BB GW: GW11 13.5; DGW/BGW: GW8 dbl0/blank0 GW9 dbl0/blank0 GW10 dbl0/blank0 GW11 dbl0/blank0 GW12 dbl0/blank0 GW13 dbl0/blank0
+LEAGUE The Mane 💰 League™ (54818): rank 28/37, 444 pts; leader Pending Moderation 524 (gap 80)
+ threats not owned: Rogers EO57% proj5.0, Konsa EO43% proj4.7, Palmer EO43% proj4.6, Cherki EO41% proj3.9, B.Fernandes EO24% proj4.0 | my differentials: Muharemović EO8%, Vuskovic EO5%, Tavernier EO5%, M.Sangaré EO3%, Thomas EO11% | rival captains: Haaland 33, Groß 2, De Cuyper 1
+LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 25/31, 444 pts; leader Pending Moderation 524 (gap 80)
+ threats not owned: Rogers EO55% proj5.0, Palmer EO45% proj4.6, Konsa EO42% proj4.7, Cherki EO39% proj3.9, B.Fernandes EO23% proj4.0 | my differentials: Muharemović EO10%, Vuskovic EO3%, Tavernier EO6%, M.Sangaré EO3%, Thomas EO13% | rival captains: Haaland 28, Groß 2, De Cuyper 1
+Elite sample: top 50 overall. Model runtime 4s.
