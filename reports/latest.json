@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T11:50:41.407Z",
+ "generated": "2026-10-20T18:01:26.088Z",
  "entry": 531300,
  "gws": [
   8,
@@ -81,7 +81,7 @@
    "name": "Maguire",
    "sell": 4.8,
    "proj": [
-    2.92,
+    2.98,
     2.92,
     3.42,
     2.75,
@@ -102,7 +102,7 @@
    "name": "Muharemović",
    "sell": 5,
    "proj": [
-    4.08,
+    3.92,
     3.67,
     4.79,
     4.03,
@@ -123,7 +123,7 @@
    "name": "B.Fernandes",
    "sell": 11.8,
    "proj": [
-    4.23,
+    4.17,
     4.99,
     5.15,
     4.5,
@@ -228,7 +228,7 @@
    "name": "Haaland",
    "sell": 15.6,
    "proj": [
-    5.1,
+    5.28,
     7.15,
     6.24,
     7.56,
@@ -249,7 +249,7 @@
    "name": "Calvert-Lewin",
    "sell": 6,
    "proj": [
-    4.56,
+    4.8,
     3.78,
     4.35,
     4.18,
@@ -291,7 +291,7 @@
    "name": "Cherki",
    "sell": 7.8,
    "proj": [
-    3.97,
+    3.77,
     3.92,
     3.37,
     4,
@@ -352,7 +352,7 @@
  ],
  "best_plan": {
   "n_transfers": 5,
-  "net": 293.69,
+  "net": 294.91,
   "out": [
    "Szoboszlai",
    "Cherki",
@@ -370,6 +370,6 @@
   "bank": 1.4,
   "captain": "Haaland",
   "vice": "Calafiori",
-  "armband_value": 6.56
+  "armband_value": 6.74
  }
 }
