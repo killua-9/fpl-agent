@@ -1,4 +1,4 @@
-// FPL agent model v1.3 (Node 20+). v1.3: armband value with vice cover, autosub bench order, league threats for current squad and plan, projection backtest. Runs on GitHub Actions from public FPL data; no login needed.
+// FPL agent model v1.4 (Node 20+). v1.4: top-1000 elite sample, set-piece takers, price tracking. v1.3: armband value with vice cover, autosub bench order, league threats for current squad and plan, projection backtest. Runs on GitHub Actions from public FPL data; no login needed.
 // Usage: node fpl.mjs  -> writes reports/latest.txt and reports/latest.json
 import { writeFileSync, mkdirSync, readFileSync, readdirSync } from 'node:fs';
 const ENTRY = +(process.env.FPL_ENTRY || 531300);
@@ -93,6 +93,21 @@ const FPLA = (() => {
       [[f.team_h, f.team_a, 1], [f.team_a, f.team_h, 0]].forEach(([t, op, h]) => { (fxBy[t + '_' + f.event] = fxBy[t + '_' + f.event] || []).push({ o: op, h }); });
     });
 
+    // Set pieces. FPL publishes the taker order per team but not penalties taken, so observed xG already contains
+    // whatever penalties a player has taken. The extra value is added only to the prior part of the blend (weight 1 - w),
+    // so it matters for players with few minutes and fades as their own xG data grows.
+    // If a team's first-choice taker is out (status i/s/u or chance under 50%), the next available taker inherits the role.
+    const SP_PEN_XG90 = 0.10;   // about 0.13 penalties per team per match x about 0.78 xG per penalty
+    const SP_DFK_XG90 = 0.02, SP_CNR_XA90 = 0.04;
+    const avail = e => !['i', 's', 'u', 'n'].includes(e.status) && (e.chance_of_playing_next_round == null || e.chance_of_playing_next_round >= 50);
+    const firstTaker = {};
+    for (const [key, field] of [['pen', 'penalties_order'], ['dfk', 'direct_freekicks_order'], ['cnr', 'corners_and_indirect_freekicks_order']]) {
+      bs.teams.forEach(t => {
+        const c = el.filter(e => e.team === t.id && e[field] != null).sort((a, b) => a[field] - b[field]);
+        const f = c.find(avail); if (f) firstTaker[key + '_' + t.id] = f.id;
+      });
+    }
+    const takes = (e, key) => firstTaker[key + '_' + e.team] === e.id;
     const prior = { 1: [0, .02], 2: [.04, .05], 3: [.12, .12], 4: [.32, .10] }, thr = { 2: 10, 3: 12, 4: 12 };
     // lastPA: probability the player gets any minutes in this gameweek (set by proj, read by compute).
     let lastPA = 0;
@@ -112,8 +127,12 @@ const FPLA = (() => {
       const papp = xMin > 0 ? clamp(share * 1.05 + 0.05, 0, 1) : 0;
       lastPA = c != null ? Math.min(papp, av) : papp; // FPL's chance-of-playing is the probability of any minutes
       const w = mins / (mins + 400), cst = e.now_cost / 10, pr = { 1: [0, .02], 2: [Math.max(.02, .01 * cst - .01), Math.max(.03, .015 * cst - .03)], 3: [Math.max(.05, .04 * cst - .12), Math.max(.06, .03 * cst - .05)], 4: [Math.max(.15, .06 * cst - .1), .012 * cst] }[t];
-      const xg90 = w * +e.expected_goals_per_90 + (1 - w) * pr[0];
-      const xa90 = w * +e.expected_assists_per_90 + (1 - w) * pr[1];
+      // A player who has only inherited the penalty role (listed below first) has no penalties in his own xG, so he gets
+      // the full penalty value rather than the prior share.
+      const penInh = takes(e, 'pen') && e.penalties_order !== 1;
+      const spG = (takes(e, 'pen') && !penInh ? SP_PEN_XG90 : 0) + (takes(e, 'dfk') ? SP_DFK_XG90 : 0), spA = takes(e, 'cnr') ? SP_CNR_XA90 : 0;
+      const xg90 = w * +e.expected_goals_per_90 + (1 - w) * (pr[0] + spG) + (penInh ? SP_PEN_XG90 : 0);
+      const xa90 = w * +e.expected_assists_per_90 + (1 - w) * (pr[1] + spA);
       const b90 = w * (mins ? e.bonus / mins * 90 : 0) + (1 - w) * 0.12;
       const y90 = mins ? e.yellow_cards / mins * 90 : 0.08;
       const sv90 = w * +e.saves_per_90 + (1 - w) * 2.6;
@@ -225,7 +244,10 @@ const FPLA = (() => {
         L.push({ id, name: s.meta.name, n: s.r.length, me, leader: s.r[0], eo: eo(pk), capt });
       } catch (x) { L.push({ id, err: String(x) }); }
     }
-    let EE = {}; try { const s = await standings(314, Math.ceil(eliteN / 50)); EE = eo(await picksOf(s.r.slice(0, eliteN).map(x => x.entry))); } catch (x) { }
+    // Elite effective ownership from the top eliteN managers overall (league 314). Failed fetches are skipped, and the
+    // report states how many managers were actually sampled.
+    let EE = {}, EEn = 0, EEerr = '';
+    try { const s = await standings(314, Math.ceil(eliteN / 50)); const pk = await picksOf(s.r.slice(0, eliteN).map(x => x.entry)); EEn = Object.keys(pk).length; EE = eo(pk); } catch (x) { EEerr = String(x); }
 
     // Report
     const nm = id => P[id].web_name, tm = id => T[P[id].team].short_name;
@@ -263,15 +285,22 @@ const FPLA = (() => {
       lines.push(` threats not owned (after best plan): ${threatsVs(bp.ids).join(', ') || 'none'} | plan sells: ${sells.join(', ') || 'nothing'} | plan buys: ${buys.join(', ') || 'nothing'}`);
       lines.push(` differentials after best plan (league EO under 15%): ${diffs.join(', ') || 'none'} | rival captains: ${cap.join(', ')}`);
     }
-    lines.push(`Elite sample: top ${eliteN} overall. Model runtime ${Math.round((Date.now() - t0) / 1000)}s.`);
+    const eliteThreats = Object.entries(EE).filter(([id]) => !bp.ids.includes(+id) && P[id]).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([id, v]) => `${nm(id)} ${tm(id)} eEO${Math.round(v * 100)}% proj${f1(EP[id][0])}`);
+    lines.push(`ELITE threats not owned after best plan (overall-rank risk): ${eliteThreats.join(', ') || 'none'}`);
+    const spList = id => ['pen', 'dfk', 'cnr'].filter(k => takes(P[id], k)).map(k => k === 'pen' ? (P[id].penalties_order === 1 ? 'pens' : 'pens (inherited)') : k === 'dfk' ? 'direct FKs' : 'corners').join('+');
+    const spSquad = [...new Set([...squad, ...bp.ids])].filter(id => spList(id)).map(id => `${nm(id)} ${spList(id)}`);
+    lines.push(`SET PIECES (first available taker per FPL order) in squad or plan: ${spSquad.join(', ') || 'none'}`);
+    const inh = bs.teams.map(t => firstTaker['pen_' + t.id]).filter(id => id && P[id].penalties_order !== 1).map(id => `${nm(id)} ${tm(id)}`);
+    if (inh.length) lines.push(`Penalty role inherited because the listed taker is unavailable: ${inh.join(', ')}`);
+    lines.push(`Elite sample: top ${eliteN} overall requested, ${EEn} sampled${EEerr ? ' (error: ' + EEerr + ')' : ''}. Model runtime ${Math.round((Date.now() - t0) / 1000)}s.`);
     OUT = lines.join('\n');
-    globalThis.__FPLA_STATE = { ent, mt, EP, PA, P, GWs, bestPlan, plans, wcBest, fhBest, L, EE, bs, n, deadline: nx.deadline_time, r0, now, squad };
+    globalThis.__FPLA_STATE = { ent, mt, EP, PA, P, GWs, bestPlan, plans, wcBest, fhBest, L, EE, bs, n, deadline: nx.deadline_time, r0, now, squad, EEn };
     return `done ${OUT.length} chars, ${Math.ceil(OUT.length / 900)} chunks`;
   }
   return { run, J, out: i => OUT.slice(i * 900, (i + 1) * 900), all: () => OUT, append: s => { OUT += '\n' + s; } };
 })();
 
-const res = await FPLA.run({ entry: ENTRY, leagues: LEAGUES, elite: 50 });
+const res = await FPLA.run({ entry: ENTRY, leagues: LEAGUES, elite: +(process.env.FPL_ELITE || 1000) });
 const st = globalThis.__FPLA_STATE, P = st.P, nm = id => P[id].web_name;
 const bp = st.bestPlan;
 const r2 = x => +x.toFixed(2);
@@ -328,6 +357,50 @@ else {
     const sum = f => r.reduce((a, x) => a + x[f], 0);
     lines.push(` ${k} XI incl. armband: proj ${sum('proj').toFixed(1)} vs actual ${sum('actual')} over ${r.length} GW; armband proj ${sum('armband_proj').toFixed(1)} vs actual ${sum('armband_actual')}`); }
 }
+// Price changes. FPL's price algorithm is not public, so this is measurement, not a prediction model.
+// Each run stores every player's price and cumulative transfers. A player's "pressure" is net transfers since his last
+// observed price change, as a share of his current owners. When a price change is observed between two runs, the
+// pressure at the earlier run is logged as a calibration sample, so the thresholds are learnt from this season's data.
+try {
+  const PF = 'reports/prices.json';
+  let ps = { players: {}, samples: [] }; try { ps = JSON.parse(readFileSync(PF, 'utf8')); } catch (x) { }
+  const bs = st.bs, total = bs.total_players || 1, now = new Date().toISOString();
+  const owners = e => Math.max(1, +e.selected_by_percent / 100 * total);
+  const cumNet = e => e.transfers_in - e.transfers_out;
+  const prevRun = ps.run || null, seen = [];
+  const pr = {};
+  for (const e of bs.elements) {
+    const o = ps.players[e.id];
+    // [cost, cumulative net transfers, anchor = cumulative net at last observed change, pressure at this run]
+    let anchor;
+    if (!o) anchor = cumNet(e) - (e.transfers_in_event - e.transfers_out_event); // first sight: start from this gameweek
+    else if (o[0] !== e.now_cost) {
+      const dir = e.now_cost > o[0] ? 'rise' : 'fall';
+      seen.push({ id: e.id, dir, from: o[0], to: e.now_cost });
+      ps.samples.push({ t: now, prev: prevRun, id: e.id, dir, pressure: o[3], owners: Math.round(owners(e)) });
+      anchor = cumNet(e);
+    } else anchor = o[2];
+    const p = (cumNet(e) - anchor) / owners(e);
+    ps.players[e.id] = [e.now_cost, cumNet(e), anchor, +p.toFixed(5)];
+    pr[e.id] = p;
+  }
+  ps.samples = ps.samples.slice(-2000); ps.run = now;
+  writeFileSync(PF, JSON.stringify(ps));
+  const pc = x => (x * 100).toFixed(1) + '%';
+  const nmT = id => `${nm(id)}`;
+  const out = [];
+  out.push(`PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)`);
+  if (prevRun) out.push(` changes since previous run (${prevRun.slice(0, 16)}Z): ${seen.length ? seen.length + ' players; ' : 'none'}${seen.filter(s => st.squad.includes(s.id) || bp.st.ins.includes(s.id)).map(s => `${nmT(s.id)} ${s.dir} ${(s.from / 10).toFixed(1)}->${(s.to / 10).toFixed(1)}`).join(', ')}`);
+  else out.push(' first run of price tracking; changes are detected from the next run onwards');
+  const watch = [...new Set([...st.squad, ...bp.st.ins])];
+  out.push(` squad and plan: ${watch.sort((a, b) => Math.abs(pr[b]) - Math.abs(pr[a])).map(id => `${nmT(id)}${st.squad.includes(id) ? '' : '*'} ${pr[id] >= 0 ? '+' : ''}${pc(pr[id])}`).join(', ')} (* = plan buy)`);
+  const live = bs.elements.filter(e => e.status !== 'u' && +e.selected_by_percent >= 0.5);
+  out.push(` strongest rise pressure (owned 0.5%+): ${[...live].sort((a, b) => pr[b.id] - pr[a.id]).slice(0, 6).map(e => `${e.web_name} +${pc(pr[e.id])}`).join(', ')}`);
+  out.push(` strongest fall pressure (owned 0.5%+): ${[...live].sort((a, b) => pr[a.id] - pr[b.id]).slice(0, 6).map(e => `${e.web_name} ${pc(pr[e.id])}`).join(', ')}`);
+  const cal = d => { const v = ps.samples.filter(s => s.dir === d && s.pressure != null).map(s => Math.abs(s.pressure)).sort((a, b) => a - b); return v.length ? `${d}s n${v.length}, pressure at previous run: 25th pct ${pc(v[Math.floor(v.length * .25)])}, median ${pc(v[Math.floor(v.length * .5)])}` : `${d}s n0`; };
+  out.push(` calibration from observed changes (pressure measured at the run before the change): ${cal('rise')} | ${cal('fall')}${ps.samples.length < 20 ? ' (too few samples to rely on yet)' : ''}`);
+  FPLA.append(out.join('\n'));
+} catch (x) { FPLA.append(`PRICES error: ${x}`); }
 FPLA.append(lines.join('\n'));
 writeFileSync('reports/backtest.json', JSON.stringify(bt.gws.length ? { gws: bt.gws, xi: bt.xi, n_players: bt.players.length } : { gws: [], note: lines[0] }, null, 1));
 writeFileSync('reports/latest.txt', FPLA.all() + '\n');
