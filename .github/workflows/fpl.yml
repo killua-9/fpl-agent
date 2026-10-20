@@ -3,6 +3,8 @@ name: FPL model
 on:
   schedule:
     # 05:17 UTC = 07:17 Windhoek, before the 08:57 brief. Second run at 13:17 UTC for late news on deadline days.
+    # 23:47 UTC run sits before FPL's overnight price update (about 01:30 UK time), allowing for GitHub schedule delays.
+    - cron: '47 23 * * *'
     - cron: '17 5 * * *'
     - cron: '17 13 * * *'
   workflow_dispatch:
@@ -27,6 +29,7 @@ jobs:
         env:
           FPL_ENTRY: '531300'
           FPL_LEAGUES: '54818,392003'
+          FPL_ELITE: '1000'
         run: node fpl.mjs
       - name: Commit report
         run: |
