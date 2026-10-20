@@ -1,6 +1,6 @@
-// FPL agent model v1.2 (Node 20+). Runs on GitHub Actions from public FPL data; no login needed.
+// FPL agent model v1.3 (Node 20+). v1.3: armband value with vice cover, autosub bench order, league threats for current squad and plan, projection backtest. Runs on GitHub Actions from public FPL data; no login needed.
 // Usage: node fpl.mjs  -> writes reports/latest.txt and reports/latest.json
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, readdirSync } from 'node:fs';
 const ENTRY = +(process.env.FPL_ENTRY || 531300);
 const LEAGUES = (process.env.FPL_LEAGUES || '54818,392003').split(',').map(Number).filter(Boolean);
 const FPLA = (() => {
@@ -94,7 +94,10 @@ const FPLA = (() => {
     });
 
     const prior = { 1: [0, .02], 2: [.04, .05], 3: [.12, .12], 4: [.32, .10] }, thr = { 2: 10, 3: 12, 4: 12 };
+    // lastPA: probability the player gets any minutes in this gameweek (set by proj, read by compute).
+    let lastPA = 0;
     function proj(e, gw, idx) {
+      lastPA = 0;
       const fs = fxBy[e.team + '_' + gw] || []; if (!fs.length || e.removed || e.status === 'u') return 0;
       const t = e.element_type, pk = PK[t], g = Math.max(gp[e.team], 1), mins = e.minutes;
       const mps = e.starts ? clamp(mins / e.starts, 0, 90) : clamp(mins / g, 0, 90);
@@ -107,6 +110,7 @@ const FPLA = (() => {
       const share = clamp(xMin / Math.max(mps, 30), 0, 1);
       const p60 = share * clamp((mps - 30) / 45, 0, 1);
       const papp = xMin > 0 ? clamp(share * 1.05 + 0.05, 0, 1) : 0;
+      lastPA = c != null ? Math.min(papp, av) : papp; // FPL's chance-of-playing is the probability of any minutes
       const w = mins / (mins + 400), cst = e.now_cost / 10, pr = { 1: [0, .02], 2: [Math.max(.02, .01 * cst - .01), Math.max(.03, .015 * cst - .03)], 3: [Math.max(.05, .04 * cst - .12), Math.max(.06, .03 * cst - .05)], 4: [Math.max(.15, .06 * cst - .1), .012 * cst] }[t];
       const xg90 = w * +e.expected_goals_per_90 + (1 - w) * pr[0];
       const xa90 = w * +e.expected_assists_per_90 + (1 - w) * pr[1];
@@ -131,8 +135,8 @@ const FPLA = (() => {
       if (idx === 0) pts = 0.8 * pts + 0.2 * (+e.ep_next || 0);
       return pts;
     }
-    let EP = {};
-    const compute = () => { EP = {}; el.forEach(e => EP[e.id] = GWs.map((g, i) => proj(e, g, i))); };
+    let EP = {}, PA = {};
+    const compute = () => { EP = {}; PA = {}; el.forEach(e => { EP[e.id] = []; PA[e.id] = []; GWs.forEach((g, i) => { EP[e.id].push(proj(e, g, i)); PA[e.id].push(lastPA); }); }); };
     const HV = id => EP[id].reduce((s, v, i) => s + W[i] * v, 0);
     compute();
 
@@ -158,14 +162,18 @@ const FPLA = (() => {
 
     function xi(ids, k) {
       const by = { 1: [], 2: [], 3: [], 4: [] };
-      ids.forEach(id => by[P[id].element_type].push({ id, t: P[id].element_type, v: EP[id][k] }));
+      ids.forEach(id => { const pa = PA[id][k]; by[P[id].element_type].push({ id, t: P[id].element_type, v: EP[id][k], pa, cond: pa > 0.05 ? EP[id][k] / pa : 0 }); });
       Object.values(by).forEach(a => a.sort((x, y) => y.v - x.v));
       const sel = [by[1][0], ...by[2].slice(0, 3), ...by[3].slice(0, 2), by[4][0]].filter(Boolean);
       const cnt = { 2: 3, 3: 2, 4: 1 }, mx = { 2: 5, 3: 5, 4: 3 };
       for (const p of [...by[2].slice(3), ...by[3].slice(2), ...by[4].slice(1)].sort((x, y) => y.v - x.v)) { if (sel.length >= 11) break; if (cnt[p.t] < mx[p.t]) { sel.push(p); cnt[p.t]++; } }
-      const capt = [...sel].sort((a, b) => b.v - a.v);
-      const bench = [by[1][1], ...[...by[2], ...by[3], ...by[4]].filter(p => !sel.includes(p)).sort((a, b) => b.v - a.v)].filter(Boolean);
-      return { sel, c: capt[0], vc: capt[1], score: sel.reduce((s, p) => s + p.v, 0) + capt[0].v, bench, benchSum: bench.reduce((s, p) => s + p.v, 0) };
+      // Armband value: if the captain gets no minutes, the vice-captain's points are doubled instead.
+      // Expected armband points = EP(c) + (1 - P(c plays)) * EP(vc), with EP already weighted by availability.
+      const capOpts = sel.map(c => { const vc = sel.filter(p => p !== c).sort((a, b) => b.v - a.v)[0]; return { c, vc, val: c.v + (1 - c.pa) * (vc ? vc.v : 0) }; }).sort((a, b) => b.val - a.val);
+      const top = capOpts[0];
+      // Autosubs only use a bench player who actually plays, so order the outfield bench by points if he plays.
+      const bench = [by[1][1], ...[...by[2], ...by[3], ...by[4]].filter(p => !sel.includes(p)).sort((a, b) => b.cond - a.cond || b.v - a.v)].filter(Boolean);
+      return { sel, c: top.c, vc: top.vc, capVal: top.val, capOpts, score: sel.reduce((s, p) => s + p.v, 0) + top.val, bench, benchSum: bench.reduce((s, p) => s + p.v, 0) };
     }
     const sqVal = (ids, wts = W) => GWs.reduce((s, g, k) => { if (!wts[k]) return s; const r = xi(ids, k); return s + wts[k] * (r.score + 0.1 * r.benchSum); }, 0);
     const teamCount = ids => { const c = {}; ids.forEach(id => c[P[id].team] = (c[P[id].team] || 0) + 1); return c; };
@@ -233,37 +241,95 @@ const FPLA = (() => {
     scored.slice(0, 5).forEach(s => lines.push(`${s.d}T net ${f1(s.net)} (val ${f1(s.st.v)}) bank ${m(s.st.bank)}: ${desc(s.st)}`));
     const bp = bestPlan.st, r0 = xi(bp.ids, 0);
     lines.push(`BEST PLAN XI GW${n}: ` + r0.sel.map(p => `${nm(p.id)} ${f1(p.v)}`).join(', '));
-    lines.push(`C ${nm(r0.c.id)} ${f1(r0.c.v)} | VC ${nm(r0.vc.id)} ${f1(r0.vc.v)} | bench ${r0.bench.map(p => nm(p.id) + ' ' + f1(p.v)).join(', ')}`);
-    lines.push(`Current squad GW${n} XI proj ${f1(now.score)} vs best plan ${f1(r0.score)}`);
-    const capOpts = [...r0.sel].sort((a, b) => b.v - a.v).slice(0, 4).map(p => `${nm(p.id)} ${f1(p.v)} eEO${Math.round((EE[p.id] || 0) * 100)}%`);
-    lines.push('Captain options: ' + capOpts.join(', '));
-    lines.push(`CHIPS: TC gain GW${n} ~${f1(r0.c.v)}; BB gain GW${n} ~${f1(r0.benchSum)}; WC 6GW gain vs best plan ${f1(wcBest.v - bp.v)}; FH GW${n} gain ${f1(fhBest.v - sqVal(bp.ids, fhW))}`);
-    const tcBest = GWs.map((g, k) => ({ g, v: xi(bp.ids, k).c.v })).sort((a, b) => b.v - a.v)[0], bbBest = GWs.map((g, k) => ({ g, v: xi(bp.ids, k).benchSum })).sort((a, b) => b.v - a.v)[0];
+    const pct = x => Math.round(x * 100) + '%';
+    lines.push(`C ${nm(r0.c.id)} armband ${f1(r0.capVal)} | VC ${nm(r0.vc.id)} ${f1(r0.vc.v)} | bench (autosub order) ${r0.bench.map(p => nm(p.id) + ' ' + f1(p.v) + ' (if plays ' + f1(p.cond) + ')').join(', ')}`);
+    lines.push(`Current squad GW${n} XI proj ${f1(now.score)} (C ${nm(now.c.id)}, VC ${nm(now.vc.id)}) vs best plan ${f1(r0.score)}`);
+    const capOpts = r0.capOpts.slice(0, 4).map(o => `${nm(o.c.id)} ${f1(o.val)} (proj ${f1(o.c.v)}, plays ${pct(o.c.pa)}, vice ${nm(o.vc.id)}) eEO${pct(EE[o.c.id] || 0)}`);
+    lines.push('Captain options by armband value (projection plus vice cover if he does not play): ' + capOpts.join(', '));
+    lines.push('Current-squad captain options (if no transfers): ' + now.capOpts.slice(0, 3).map(o => `${nm(o.c.id)} ${f1(o.val)} (proj ${f1(o.c.v)}, plays ${pct(o.c.pa)}, vice ${nm(o.vc.id)})`).join(', '));
+    lines.push(`CHIPS: TC gain GW${n} ~${f1(r0.capVal)}; BB gain GW${n} ~${f1(r0.benchSum)}; WC 6GW gain vs best plan ${f1(wcBest.v - bp.v)}; FH GW${n} gain ${f1(fhBest.v - sqVal(bp.ids, fhW))}`);
+    const tcBest = GWs.map((g, k) => ({ g, v: xi(bp.ids, k).capVal })).sort((a, b) => b.v - a.v)[0], bbBest = GWs.map((g, k) => ({ g, v: xi(bp.ids, k).benchSum })).sort((a, b) => b.v - a.v)[0];
     lines.push(`Best TC GW in horizon: GW${tcBest.g} ${f1(tcBest.v)}; best BB GW: GW${bbBest.g} ${f1(bbBest.v)}; DGW/BGW: ${GWs.map(g => { const c = bs.teams.map(t => (fxBy[t.id + '_' + g] || []).length); return `GW${g} dbl${c.filter(x => x > 1).length}/blank${c.filter(x => x === 0).length}`; }).join(' ')}`);
     for (const l of L) {
       if (l.err) { lines.push(`LEAGUE ${l.id} error ${l.err}`); continue; }
       lines.push(`LEAGUE ${l.name} (${l.id}): rank ${l.me?.rank}/${l.n}, ${l.me?.total} pts; leader ${l.leader.entry_name} ${l.leader.total} (gap ${l.leader.total - (l.me?.total || 0)})`);
-      const mine = new Set(bp.ids);
-      const threats = Object.entries(l.eo).filter(([id]) => !mine.has(+id)).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([id, v]) => `${nm(id)} EO${Math.round(v * 100)}% proj${f1(EP[id][0])}`);
+      // l.eo is league effective ownership (includes captaincy), so can exceed 100%.
+      const threatsVs = ids => { const s = new Set(ids); return Object.entries(l.eo).filter(([id]) => !s.has(+id) && P[id]).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([id, v]) => `${nm(id)} EO${Math.round(v * 100)}% proj${f1(EP[id][0])}`); };
+      const sells = bp.outs.map(id => `${nm(id)} EO${Math.round((l.eo[id] || 0) * 100)}%`);
+      const buys = bp.ins.map(id => `${nm(id)} EO${Math.round((l.eo[id] || 0) * 100)}%`);
       const diffs = bp.ids.filter(id => (l.eo[id] || 0) < 0.15).map(id => `${nm(id)} EO${Math.round((l.eo[id] || 0) * 100)}%`);
       const cap = Object.entries(l.capt).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([id, c]) => `${nm(id)} ${c}`);
-      lines.push(` threats not owned: ${threats.join(', ')} | my differentials: ${diffs.join(', ')} | rival captains: ${cap.join(', ')}`);
+      lines.push(` threats not owned (current squad): ${threatsVs(squad).join(', ') || 'none'}`);
+      lines.push(` threats not owned (after best plan): ${threatsVs(bp.ids).join(', ') || 'none'} | plan sells: ${sells.join(', ') || 'nothing'} | plan buys: ${buys.join(', ') || 'nothing'}`);
+      lines.push(` differentials after best plan (league EO under 15%): ${diffs.join(', ') || 'none'} | rival captains: ${cap.join(', ')}`);
     }
     lines.push(`Elite sample: top ${eliteN} overall. Model runtime ${Math.round((Date.now() - t0) / 1000)}s.`);
     OUT = lines.join('\n');
-    globalThis.__FPLA_STATE = { ent, mt, EP, P, GWs, bestPlan, plans, wcBest, fhBest, L, EE };
+    globalThis.__FPLA_STATE = { ent, mt, EP, PA, P, GWs, bestPlan, plans, wcBest, fhBest, L, EE, bs, n, deadline: nx.deadline_time, r0, now, squad };
     return `done ${OUT.length} chars, ${Math.ceil(OUT.length / 900)} chunks`;
   }
-  return { run, out: i => OUT.slice(i * 900, (i + 1) * 900), all: () => OUT };
+  return { run, J, out: i => OUT.slice(i * 900, (i + 1) * 900), all: () => OUT, append: s => { OUT += '\n' + s; } };
 })();
 
 const res = await FPLA.run({ entry: ENTRY, leagues: LEAGUES, elite: 50 });
 const st = globalThis.__FPLA_STATE, P = st.P, nm = id => P[id].web_name;
 const bp = st.bestPlan;
+const r2 = x => +x.toFixed(2);
 const json = { generated: new Date().toISOString(), entry: ENTRY, gws: st.GWs, transfers: st.mt.transfers, chips: st.mt.chips,
-  squad: st.mt.picks.map(p => ({ id: p.element, name: nm(p.element), sell: p.selling_price / 10, proj: st.EP[p.element].map(x => +x.toFixed(2)) })),
-  best_plan: { n_transfers: bp.d, net: +bp.net.toFixed(2), out: bp.st.outs.map(nm), in: bp.st.ins.map(nm), bank: bp.st.bank / 10 } };
-mkdirSync('reports', { recursive: true });
+  squad: st.mt.picks.map(p => ({ id: p.element, name: nm(p.element), sell: p.selling_price / 10, proj: st.EP[p.element].map(r2), p_play: st.PA[p.element].map(r2) })),
+  best_plan: { n_transfers: bp.d, net: r2(bp.net), out: bp.st.outs.map(nm), in: bp.st.ins.map(nm), bank: bp.st.bank / 10,
+    captain: nm(st.r0.c.id), vice: nm(st.r0.vc.id), armband_value: r2(st.r0.capVal) } };
+mkdirSync('reports/history', { recursive: true });
+
+// Backtest step 1: snapshot this gameweek's projections. Each run overwrites the file until the deadline passes,
+// so the file left behind is the last projection made before the deadline.
+const HIST = 'reports/history';
+const snap = { gw: st.n, deadline: st.deadline, generated: json.generated, proj: {},
+  recommended: { xi: st.r0.sel.map(p => p.id), captain: st.r0.c.id, vice: st.r0.vc.id, armband_value: r2(st.r0.capVal), xi_proj: r2(st.r0.score), n_transfers: bp.d, in: bp.st.ins, out: bp.st.outs },
+  current: { xi: st.now.sel.map(p => p.id), captain: st.now.c.id, vice: st.now.vc.id, armband_value: r2(st.now.capVal), xi_proj: r2(st.now.score) } };
+for (const id in st.EP) if (st.EP[id][0] > 0) snap.proj[id] = [r2(st.EP[id][0]), r2(st.PA[id][0])];
+writeFileSync(`${HIST}/gw${String(st.n).padStart(2, '0')}.json`, JSON.stringify(snap));
+
+// Backtest step 2: for every finished, data-checked gameweek with a snapshot, compare projections with actual points.
+const bt = { gws: [], players: [], xi: [] };
+try {
+  const evs = Object.fromEntries(st.bs.events.map(e => [e.id, e]));
+  for (const f of readdirSync(HIST).filter(f => /^gw\d+\.json$/.test(f)).sort()) {
+    const s = JSON.parse(readFileSync(`${HIST}/${f}`, 'utf8'));
+    const e = evs[s.gw]; if (!e || !e.finished || !e.data_checked) continue;
+    if (!s.actual) {
+      const live = await FPLA.J(`/api/event/${s.gw}/live/`);
+      s.actual = {}; for (const x of live.elements) s.actual[x.id] = [x.stats.total_points, x.stats.minutes];
+      writeFileSync(`${HIST}/${f}`, JSON.stringify(s));
+    }
+    bt.gws.push(s.gw);
+    for (const id in s.proj) bt.players.push([s.proj[id][0], (s.actual[id] || [0])[0]]);
+    const act = id => (s.actual[id] || [0, 0]);
+    for (const k of ['recommended', 'current']) {
+      const r = s[k], cap = act(r.captain)[1] > 0 ? r.captain : r.vice;
+      bt.xi.push({ gw: s.gw, kind: k, proj: r.xi_proj, actual: r.xi.reduce((a, id) => a + act(id)[0], 0) + act(cap)[0], armband_proj: r.armband_value, armband_actual: act(cap)[0] });
+    }
+  }
+} catch (x) { bt.error = String(x); }
+const lines = [];
+if (bt.error) lines.push(`BACKTEST error: ${bt.error}`);
+else if (!bt.gws.length) lines.push(`BACKTEST: no finished gameweek with a stored projection yet (first snapshot: GW${st.n}; results once it is finished and data-checked).`);
+else {
+  const sel = bt.players.filter(([p]) => p >= 0.5), N = sel.length;
+  const mp = sel.reduce((a, [p]) => a + p, 0) / N, ma = sel.reduce((a, [, y]) => a + y, 0) / N;
+  const mae = sel.reduce((a, [p, y]) => a + Math.abs(p - y), 0) / N;
+  const sxx = sel.reduce((a, [p]) => a + (p - mp) ** 2, 0), sxy = sel.reduce((a, [p, y]) => a + (p - mp) * (y - ma), 0);
+  const slope = sxx > 0 ? sxy / sxx : NaN;
+  const bins = [[0.5, 2], [2, 4], [4, 6], [6, 99]].map(([lo, hi]) => { const b = sel.filter(([p]) => p >= lo && p < hi); const n = b.length;
+    return `${lo}-${hi === 99 ? '+' : hi}: n${n} proj ${n ? (b.reduce((a, [p]) => a + p, 0) / n).toFixed(2) : '-'} actual ${n ? (b.reduce((a, [, y]) => a + y, 0) / n).toFixed(2) : '-'}`; });
+  lines.push(`BACKTEST GW${bt.gws.join(',')} | players projected 0.5+: n${N}, mean proj ${mp.toFixed(2)} vs actual ${ma.toFixed(2)}, MAE ${mae.toFixed(2)}, slope ${slope.toFixed(2)} (above 1 means projections too compressed, below 1 too spread)`);
+  lines.push(` calibration by projection band: ${bins.join(' | ')}`);
+  for (const k of ['recommended', 'current']) { const r = bt.xi.filter(x => x.kind === k); if (!r.length) continue;
+    const sum = f => r.reduce((a, x) => a + x[f], 0);
+    lines.push(` ${k} XI incl. armband: proj ${sum('proj').toFixed(1)} vs actual ${sum('actual')} over ${r.length} GW; armband proj ${sum('armband_proj').toFixed(1)} vs actual ${sum('armband_actual')}`); }
+}
+FPLA.append(lines.join('\n'));
+writeFileSync('reports/backtest.json', JSON.stringify(bt.gws.length ? { gws: bt.gws, xi: bt.xi, n_players: bt.players.length } : { gws: [], note: lines[0] }, null, 1));
 writeFileSync('reports/latest.txt', FPLA.all() + '\n');
 writeFileSync('reports/latest.json', JSON.stringify(json, null, 1));
 console.log(res + '\n' + FPLA.all());
