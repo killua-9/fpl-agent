@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T18:01:26.088Z",
+ "generated": "2026-10-21T02:03:21.477Z",
  "entry": 531300,
  "gws": [
   8,
@@ -228,16 +228,16 @@
    "name": "Haaland",
    "sell": 15.6,
    "proj": [
-    5.28,
-    7.15,
+    6.98,
+    7.48,
     6.24,
     7.56,
     5.53,
     7.35
    ],
    "p_play": [
-    0.75,
-    0.95,
+    1,
+    1,
     1,
     1,
     1,
@@ -352,7 +352,7 @@
  ],
  "best_plan": {
   "n_transfers": 5,
-  "net": 294.91,
+  "net": 297.22,
   "out": [
    "Szoboszlai",
    "Cherki",
@@ -370,6 +370,6 @@
   "bank": 1.4,
   "captain": "Haaland",
   "vice": "Calafiori",
-  "armband_value": 6.74
+  "armband_value": 6.98
  }
 }
