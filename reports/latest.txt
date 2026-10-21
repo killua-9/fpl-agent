@@ -1,4 +1,4 @@
-Generated 2026-10-21T10:15:30.879Z | Hold My Tzoli | overall rank 2725311 | 446 pts
+Generated 2026-10-21T18:06:47.965Z | Hold My Tzoli | overall rank 2725308 | 446 pts
 GW8 deadline 2026-10-23T17:30:00Z | FT 4 (reconstructed; pending transfers already made: 0) bank 0.5 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW8-13
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.7/15.6 a100 | 7.0 | 32.2 | 246% | AVLa BHAH NFOa FULH
@@ -37,14 +37,14 @@ LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 25/31, 446 pts; leader P
  threats not owned (current squad): De Cuyper EO68% proj5.6, Rogers EO55% proj4.9, Palmer EO45% proj4.7, Raya EO42% proj5.2, Konsa EO42% proj4.7
  threats not owned (after best plan): De Cuyper EO68% proj5.6, Rogers EO55% proj4.9, Palmer EO45% proj4.7, Konsa EO42% proj4.7, B.Fernandes EO23% proj4.2 | plan sells: Szoboszlai EO6%, Cherki EO0%, Maguire EO10%, B.Fernandes EO23%, Kinsky EO23% | plan buys: Tavernier EO6%, Mbeumo EO16%, Vuskovic EO3%, Saka EO26%, Raya EO42%
  differentials after best plan (league EO under 15%): Vuskovic EO3%, Muharemović EO10%, Tavernier EO6%, Diop EO0% | rival captains: Haaland 28, Groß 2, De Cuyper 1
-ELITE threats not owned after best plan (overall-rank risk): De Cuyper BHA eEO93% proj5.6, Rogers CHE eEO83% proj4.9, Palmer CHE eEO65% proj4.7, Konsa ARS eEO65% proj4.7, Gvardiol MCI eEO24% proj2.9, Hall NEW eEO19% proj3.9, Barry EVE eEO13% proj3.6, Barnes NEW eEO12% proj3.8
+ELITE threats not owned after best plan (overall-rank risk): De Cuyper BHA eEO93% proj5.6, Rogers CHE eEO83% proj4.9, Palmer CHE eEO65% proj4.7, Konsa ARS eEO65% proj4.7, Gvardiol MCI eEO24% proj2.9, Hall NEW eEO19% proj3.9, Barry EVE eEO12% proj3.6, Barnes NEW eEO12% proj3.8
 SET PIECES (first available taker per FPL order) in squad or plan: B.Fernandes pens+direct FKs+corners, Groß pens+direct FKs+corners, Haaland pens, Calvert-Lewin pens, Cherki direct FKs+corners, Saka pens, Tavernier direct FKs+corners
-Penalty role inherited because the listed taker is unavailable: Kluivert BOU, Isak LIV
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 12s.
+Penalty role inherited because the listed taker is unavailable: Isak LIV
+Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 16s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-10-21T02:03Z): none
- squad and plan: Tavernier* +15.8%, Szoboszlai -13.7%, Vuskovic* +10.5%, B.Fernandes -6.1%, Mbeumo* +4.6%, M.Sangaré -3.9%, Muharemović +3.8%, Groß +3.3%, Calvert-Lewin +2.6%, Cherki +2.6%, Maguire -2.1%, Saka* -1.4%, Thomas +1.3%, Calafiori +1.2%, Kinsky -1.2%, Raya* +1.0%, João Pedro +0.9%, Verbruggen +0.9%, Haaland +0.7%, Diop -0.5% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Neto +38.0%, Manzambi +25.8%, Doku +25.2%, Iwobi +23.0%, Ayari +22.7%, Henderson +22.0%
- strongest fall pressure (owned 0.5%+): Semenyo -19.5%, Sávio -17.0%, Janelt -14.5%, Szoboszlai -13.7%, Scott -11.7%, Wissa -10.9%
+ changes since previous run (2026-10-21T10:15Z): none
+ squad and plan: Tavernier* +16.8%, Szoboszlai -14.5%, Vuskovic* +11.2%, B.Fernandes -6.4%, Mbeumo* +4.8%, Muharemović +4.2%, M.Sangaré -4.1%, Groß +3.4%, Calvert-Lewin +2.9%, Cherki +2.8%, Maguire -2.3%, Saka* -1.5%, Thomas +1.5%, Calafiori +1.3%, Kinsky -1.3%, Raya* +1.1%, João Pedro +0.9%, Verbruggen +0.9%, Haaland +0.7%, Diop -0.6% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Neto +38.4%, Doku +26.7%, Manzambi +26.3%, Ayari +24.1%, Iwobi +24.1%, Henderson +21.1%
+ strongest fall pressure (owned 0.5%+): Semenyo -21.2%, Sávio -18.2%, Janelt -15.3%, Szoboszlai -14.5%, Scott -12.1%, Wissa -11.5%
  calibration from observed changes (pressure measured at the run before the change): rises n1, pressure at previous run: 25th pct 4.0%, median 4.0% | falls n7, pressure at previous run: 25th pct 0.7%, median 2.7% (too few samples to rely on yet)
 BACKTEST: no finished gameweek with a stored projection yet (first snapshot: GW8; results once it is finished and data-checked).
