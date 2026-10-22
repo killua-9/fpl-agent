@@ -1,4 +1,4 @@
-Generated 2026-10-22T01:52:51.291Z | Hold My Tzoli | overall rank 2725308 | 446 pts
+Generated 2026-10-22T10:16:22.656Z | Hold My Tzoli | overall rank 2725306 | 446 pts
 GW8 deadline 2026-10-23T17:30:00Z | FT 4 (reconstructed; pending transfers already made: 0) bank 0.5 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW8-13
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.7/15.6 a100 | 7.0 | 32.2 | 246% | AVLa BHAH NFOa FULH
@@ -37,14 +37,14 @@ LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 25/31, 446 pts; leader P
  threats not owned (current squad): De Cuyper EO68% proj5.6, Rogers EO55% proj4.9, Palmer EO45% proj4.7, Raya EO42% proj5.2, Konsa EO42% proj4.7
  threats not owned (after best plan): De Cuyper EO68% proj5.6, Rogers EO55% proj4.9, Palmer EO45% proj4.7, Raya EO42% proj5.2, Konsa EO42% proj4.7 | plan sells: Szoboszlai EO6%, Cherki EO0%, Maguire EO10%, M.Sangaré EO16% | plan buys: Tavernier EO6%, Mbeumo EO16%, Vuskovic EO3%, Stach EO0%
  differentials after best plan (league EO under 15%): Vuskovic EO3%, Muharemović EO10%, Stach EO0%, Tavernier EO6%, Diop EO0% | rival captains: Haaland 28, Groß 2, De Cuyper 1
-ELITE threats not owned after best plan (overall-rank risk): De Cuyper BHA eEO93% proj5.6, Rogers CHE eEO83% proj4.9, Palmer CHE eEO65% proj4.7, Konsa ARS eEO65% proj4.7, Raya ARS eEO60% proj5.2, Gvardiol MCI eEO25% proj2.9, Hall NEW eEO19% proj3.9, Saka ARS eEO15% proj2.7
+ELITE threats not owned after best plan (overall-rank risk): De Cuyper BHA eEO93% proj5.6, Rogers CHE eEO83% proj4.9, Palmer CHE eEO65% proj4.7, Konsa ARS eEO64% proj4.7, Raya ARS eEO60% proj5.2, Gvardiol MCI eEO24% proj2.9, Hall NEW eEO18% proj3.9, Saka ARS eEO15% proj2.7
 SET PIECES (first available taker per FPL order) in squad or plan: B.Fernandes pens+direct FKs+corners, Groß pens+direct FKs+corners, Haaland pens, Calvert-Lewin pens, Cherki direct FKs+corners, Stach direct FKs+corners, Tavernier direct FKs+corners
 Penalty role inherited because the listed taker is unavailable: Isak LIV
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 24s.
+Elite sample: top 1000 overall requested, 995 sampled. Model runtime 12s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-10-21T18:06Z): 2 players; Calvert-Lewin rise 6.0->6.1
- squad and plan: Tavernier* +18.0%, Szoboszlai -15.1%, Vuskovic* +11.6%, B.Fernandes -6.9%, Mbeumo* +5.0%, Muharemović +4.6%, M.Sangaré -4.3%, Groß +3.5%, Cherki +3.0%, Maguire -2.5%, Thomas +1.7%, Kinsky -1.4%, Calafiori +1.4%, João Pedro +1.0%, Verbruggen +0.9%, Haaland +0.8%, Stach* -0.7%, Diop -0.6%, Calvert-Lewin +0.0% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Neto +40.2%, Doku +27.4%, Manzambi +26.7%, Iwobi +25.1%, Henderson +21.9%, Ayari +21.2%
- strongest fall pressure (owned 0.5%+): Semenyo -22.8%, Sávio -21.5%, Janelt -15.9%, Szoboszlai -15.1%, Scott -12.9%, Yarmoliuk -11.9%
+ changes since previous run (2026-10-22T01:52Z): none
+ squad and plan: Tavernier* +19.0%, Szoboszlai -15.8%, Vuskovic* +12.0%, B.Fernandes -7.4%, Mbeumo* +5.3%, Muharemović +4.8%, M.Sangaré -4.5%, Groß +3.6%, Cherki +3.2%, Maguire -2.7%, Thomas +1.8%, Kinsky -1.5%, Calafiori +1.4%, João Pedro +1.0%, Verbruggen +0.9%, Haaland +0.8%, Stach* -0.8%, Diop -0.6%, Calvert-Lewin +0.2% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Neto +40.3%, Doku +29.1%, Manzambi +27.1%, Iwobi +26.2%, Henderson +22.6%, Ayari +22.3%
+ strongest fall pressure (owned 0.5%+): Semenyo -24.1%, Sávio -22.5%, Janelt -17.2%, Szoboszlai -15.8%, Scott -13.2%, Yarmoliuk -12.4%
  calibration from observed changes (pressure measured at the run before the change): rises n2, pressure at previous run: 25th pct 2.9%, median 4.0% | falls n8, pressure at previous run: 25th pct 1.9%, median 2.7% (too few samples to rely on yet)
 BACKTEST: no finished gameweek with a stored projection yet (first snapshot: GW8; results once it is finished and data-checked).
