@@ -1,0 +1,147 @@
+name: FPL executor
+
+# Runs when a decision file is pushed to decisions/, on demand, and once a day to confirm the
+# FPL sign-in still works (that daily run also stops GitHub dropping the token cache after 7 idle days).
+on:
+  push:
+    branches: [main]
+    paths: ['decisions/**']
+  workflow_dispatch:
+    inputs:
+      decision:
+        description: 'Decision file (blank = newest in decisions/)'
+        required: false
+        default: ''
+      apply:
+        description: 'Make the changes (the file must also say "apply": true)'
+        type: boolean
+        default: false
+  schedule:
+    - cron: '41 5 * * *' # 07:41 Windhoek
+
+permissions:
+  contents: write
+  issues: write
+
+# One run at a time: every run rotates the FPL token, so two at once would break the chain.
+concurrency:
+  group: fpl-token
+  cancel-in-progress: false
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      FPL_ENTRY: '531300'
+      FPL_TOKEN_FILE: ${{ runner.temp }}/fpl-token.json
+      ENC: ${{ runner.temp }}/fpl-token.enc
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # FPL hands out a new refresh token on every use and a workflow cannot rewrite its own
+      # secrets, so the latest token travels between runs in the Actions cache, encrypted with
+      # the FPL_REFRESH_TOKEN secret. A new secret gives a new cache key, so a fresh login wins.
+      - name: Token cache key
+        id: key
+        env:
+          FPL_REFRESH_TOKEN: ${{ secrets.FPL_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$FPL_REFRESH_TOKEN" ]; then echo "::error::Secret FPL_REFRESH_TOKEN is not set. Run fpl-login.mjs."; exit 1; fi
+          echo "key=fpl-token-$(printf %s "$FPL_REFRESH_TOKEN" | tr -d '[:space:]' | sha256sum | cut -c1-16)" >> "$GITHUB_OUTPUT"
+      - name: Restore latest token
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ env.ENC }}
+          key: ${{ steps.key.outputs.key }}-latest
+          restore-keys: ${{ steps.key.outputs.key }}-
+      - name: Open token
+        env:
+          FPL_REFRESH_TOKEN: ${{ secrets.FPL_REFRESH_TOKEN }}
+        run: |
+          umask 077
+          if [ -f "$ENC" ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -salt -pass env:FPL_REFRESH_TOKEN -in "$ENC" -out "$FPL_TOKEN_FILE.tmp"
+            mv "$FPL_TOKEN_FILE.tmp" "$FPL_TOKEN_FILE"
+            echo "Using the token carried over from the previous run."
+          else
+            echo "No carried-over token for this secret: starting from the secret."
+          fi
+          sha256sum < "$FPL_TOKEN_FILE" > "$RUNNER_TEMP/token.start" 2>/dev/null || echo none > "$RUNNER_TEMP/token.start"
+
+      - name: Unit tests
+        run: node test-execute.mjs
+
+      - name: Run executor
+        id: run
+        env:
+          FPL_REFRESH_TOKEN: ${{ secrets.FPL_REFRESH_TOKEN }}
+          DECISION: ${{ github.event.inputs.decision }}
+          APPLY_INPUT: ${{ github.event.inputs.apply }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT" = "schedule" ]; then
+            node execute.mjs --check
+          elif [ "$EVENT" = "push" ]; then
+            # Newest decision file touched by this push; it applies only if the file says "apply": true.
+            f=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- decisions/ | grep -E 'decisions/gw[0-9]+\.json$' | sort | tail -1 || true)
+            [ -n "$f" ] || { echo "No decision file in this push."; exit 0; }
+            node execute.mjs "$f" --apply
+          else
+            if [ "$APPLY_INPUT" = "true" ]; then node execute.mjs $DECISION --apply; else node execute.mjs $DECISION; fi
+          fi
+
+      # Always keep the newest token, even when the run failed after signing in.
+      - name: Seal token
+        id: seal
+        if: always()
+        env:
+          FPL_REFRESH_TOKEN: ${{ secrets.FPL_REFRESH_TOKEN }}
+        run: |
+          umask 077
+          if [ -f "$FPL_TOKEN_FILE" ] && ! sha256sum < "$FPL_TOKEN_FILE" | cmp -s - "$RUNNER_TEMP/token.start"; then
+            openssl enc -aes-256-cbc -pbkdf2 -salt -pass env:FPL_REFRESH_TOKEN -in "$FPL_TOKEN_FILE" -out "$ENC"
+            echo "sealed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Save token
+        if: always() && steps.seal.outputs.sealed == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ env.ENC }}
+          key: ${{ steps.key.outputs.key }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Confirm token saved
+        if: always() && steps.seal.outputs.sealed == 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ env.ENC }}
+          key: ${{ steps.key.outputs.key }}-${{ github.run_id }}-${{ github.run_attempt }}
+          lookup-only: true
+          fail-on-cache-miss: true
+
+      - name: Commit execution record
+        if: success() && github.event_name != 'schedule'
+        run: |
+          git config user.name "fpl-agent-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/executions/ 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Execution record $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase --autostash
+          git push
+
+      - name: Alert on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue create -R "${{ github.repository }}" \
+            --title "FPL executor failed ($(date -u +%Y-%m-%d) ${{ github.event_name }})" \
+            --body "The FPL executor run failed. Details: $RUN_URL
+
+          If the log says the sign-in was refused, run fpl-login.mjs again and replace the FPL_REFRESH_TOKEN secret before the deadline. Your team has not been changed by this run unless the log shows 'Transfers confirmed by FPL'." || true

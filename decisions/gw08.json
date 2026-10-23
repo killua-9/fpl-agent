@@ -1,0 +1,24 @@
+{
+  "gw": 8,
+  "entry": 531300,
+  "apply": false,
+  "created": "2026-10-23T08:30:00Z",
+  "source": "Model report 2026-10-23T01:59Z, best plan (4 transfers, net 295.9 vs 295.1 for 3; within 1.0, so lower elite ownership wins). Team news checked 23 Oct: no incoming player or starter flagged.",
+  "max_hits": 0,
+  "chip": null,
+  "transfers": [
+    { "out": "Szoboszlai", "in": "Tavernier|BOU" },
+    { "out": "Cherki", "in": "Mbeumo|MUN" },
+    { "out": "Maguire", "in": "Vuskovic|BHA" },
+    { "out": "M.Sangaré", "in": "Stach|LEE" }
+  ],
+  "starting_xi": [
+    "Verbruggen",
+    "Calafiori", "Vuskovic|BHA", "Thomas",
+    "Mbeumo|MUN", "Tavernier|BOU", "Groß", "Stach|LEE",
+    "Haaland", "Calvert-Lewin", "João Pedro"
+  ],
+  "bench": ["Kinsky", "B.Fernandes", "Muharemović", "Diop"],
+  "captain": "Haaland",
+  "vice": "Calafiori"
+}
