@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T18:02:28.076Z",
+ "generated": "2026-10-23T01:59:33.924Z",
  "entry": 531300,
  "gws": [
   8,
@@ -79,7 +79,7 @@
   {
    "id": 418,
    "name": "Maguire",
-   "sell": 4.8,
+   "sell": 4.7,
    "proj": [
     2.98,
     2.92,
@@ -352,7 +352,7 @@
  ],
  "best_plan": {
   "n_transfers": 4,
-  "net": 295.84,
+  "net": 295.88,
   "out": [
    "Szoboszlai",
    "Cherki",
@@ -365,7 +365,7 @@
    "Vuskovic",
    "Stach"
   ],
-  "bank": 0.3,
+  "bank": 0.1,
   "captain": "Haaland",
   "vice": "Calafiori",
   "armband_value": 6.98
