@@ -1,24 +1,44 @@
 {
   "gw": 8,
   "entry": 531300,
-  "apply": false,
-  "created": "2026-10-23T08:33:52Z",
-  "source": "Model report 2026-10-23T01:59Z, best plan (4 transfers, net 295.9 vs 295.1 for 3; within 1.0, so lower elite ownership wins). Team news checked 23 Oct: no incoming player or starter flagged.",
+  "apply": true,
+  "created": "2026-10-23T13:42:39Z",
+  "source": "Model report 2026-10-23T10:09Z. Farke (Fri presser): Stach and Calvert-Lewin major doubts (foot), 'if the game was today... wouldn't be available'. Stach dropped, so the 3-transfer plan (net 295.1) replaces the 4-transfer one; Sangaré kept, one FT rolled. Calvert-Lewin benched first so he autosubs in if fit; B.Fernandes and Muharemović start.",
   "max_hits": 0,
   "chip": null,
   "transfers": [
-    { "out": "Szoboszlai", "in": "Tavernier|BOU" },
-    { "out": "Cherki", "in": "Mbeumo|MUN" },
-    { "out": "Maguire", "in": "Vuskovic|BHA" },
-    { "out": "M.Sangaré", "in": "Stach|LEE" }
+    {
+      "out": "Szoboszlai",
+      "in": "Tavernier|BOU"
+    },
+    {
+      "out": "Cherki",
+      "in": "Mbeumo|MUN"
+    },
+    {
+      "out": "Maguire",
+      "in": "Vuskovic|BHA"
+    }
   ],
   "starting_xi": [
     "Verbruggen",
-    "Calafiori", "Vuskovic|BHA", "Thomas",
-    "Mbeumo|MUN", "Tavernier|BOU", "Groß", "Stach|LEE",
-    "Haaland", "Calvert-Lewin", "João Pedro"
+    "Calafiori",
+    "Vuskovic|BHA",
+    "Thomas",
+    "Muharemović",
+    "Mbeumo|MUN",
+    "Tavernier|BOU",
+    "Groß",
+    "B.Fernandes",
+    "Haaland",
+    "João Pedro"
   ],
-  "bench": ["Kinsky", "B.Fernandes", "Muharemović", "Diop"],
+  "bench": [
+    "Kinsky",
+    "Calvert-Lewin",
+    "Diop",
+    "M.Sangaré"
+  ],
   "captain": "Haaland",
   "vice": "Calafiori"
 }
