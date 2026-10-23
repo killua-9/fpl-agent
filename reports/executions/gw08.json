@@ -1,17 +1,17 @@
 {
   "gw": 8,
   "decision": "decisions/gw08.json",
-  "applied": false,
-  "at": "2026-10-23T08:34:05.052Z",
+  "applied": true,
+  "at": "2026-10-23T13:42:58.850Z",
   "log": [
-    "DRY RUN decisions/gw08.json: GW8, deadline 2026-10-23T17:30:00Z (536 min left)",
-    "Free transfers left 4, hits 0, bank after £0.1m",
+    "APPLY decisions/gw08.json: GW8, deadline 2026-10-23T17:30:00Z (227 min left)",
+    "Free transfers left 4, hits 0, bank after £0.6m",
     "  OUT Szoboszlai £6.8m  ->  IN Tavernier £6.2m",
     "  OUT Cherki £7.8m  ->  IN Mbeumo £7.9m",
     "  OUT Maguire £4.7m  ->  IN Vuskovic £5.1m",
-    "  OUT M.Sangaré £5.5m  ->  IN Stach £6.0m",
-    "XI: Verbruggen, Calafiori (V), Vuskovic, Thomas, Mbeumo, Tavernier, Groß, Stach, Haaland (C), Calvert-Lewin, João Pedro",
-    "Bench: Kinsky, B.Fernandes, Muharemović, Diop",
-    "Dry run only (decision has \"apply\": false)."
+    "XI: Verbruggen, Calafiori (V), Vuskovic, Thomas, Muharemović, Mbeumo, Tavernier, Groß, B.Fernandes, Haaland (C), João Pedro",
+    "Bench: Kinsky, Calvert-Lewin, Diop, M.Sangaré",
+    "Transfers confirmed by FPL.",
+    "Verified on FPL: squad, XI, bench order and armband match. Bank £0.6m."
   ]
 }
