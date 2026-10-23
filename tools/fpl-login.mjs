@@ -46,7 +46,10 @@ const rl = createInterface({ input: process.stdin, output: process.stdout });
 const pasted = (await rl.question('4. Paste the address here and press Enter: ')).trim();
 rl.close();
 
-const params = new URL(pasted).searchParams;
+// Accept the address with or without "https://" (Chrome often drops it when copying),
+// or just the part from "?code=" onwards.
+const query = pasted.includes('?') ? pasted.slice(pasted.indexOf('?')) : pasted;
+const params = new URLSearchParams(query);
 if (params.get('state') !== state) throw new Error('State mismatch: run the script again and use the new link.');
 const code = params.get('code');
 if (!code) throw new Error(`No code in the address (error: ${params.get('error') ?? 'unknown'}).`);
