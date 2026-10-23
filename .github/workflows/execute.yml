@@ -34,9 +34,11 @@ jobs:
     timeout-minutes: 20
     env:
       FPL_ENTRY: '531300'
-      FPL_TOKEN_FILE: ${{ runner.temp }}/fpl-token.json
-      ENC: ${{ runner.temp }}/fpl-token.enc
     steps:
+      - name: Paths
+        run: |
+          echo "FPL_TOKEN_FILE=$RUNNER_TEMP/fpl-token.json" >> "$GITHUB_ENV"
+          echo "ENC=$RUNNER_TEMP/fpl-token.enc" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
