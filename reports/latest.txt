@@ -1,4 +1,4 @@
-Generated 2026-10-24T02:00:39.278Z | Hold My Tzoli | overall rank 2786478 | 446 pts
+Generated 2026-10-24T09:35:52.017Z | Hold My Tzoli | overall rank 2786478 | 446 pts
 GW9 deadline 2026-10-31T11:00:00Z | FT 2 (reconstructed; pending transfers already made: 0) bank 0.6 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW9-14
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.7/15.6 a100 | 6.1 | 26.0 | 163% | BHAH NFOa FULH ARSa
@@ -40,11 +40,11 @@ LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 27/29, 446 pts; leader P
 ELITE threats not owned after best plan (overall-rank risk): Rogers CHE eEO88% proj3.9, Palmer CHE eEO78% proj3.7, Konsa ARS eEO70% proj3.2, Raya ARS eEO67% proj3.8, De Cuyper BHA eEO53% proj4.0, Cherki MCI eEO28% proj2.9, Gibbs-White NFO eEO28% proj3.3, Schade BRE eEO22% proj2.2
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, B.Fernandes pens+direct FKs+corners, Haaland pens, Calvert-Lewin pens, Rudoni pens+direct FKs
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS, Isak LIV
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 42s.
+Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 6s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-10-23T10:09Z): 23 players; Tavernier rise 6.2->6.3, B.Fernandes fall 11.8->11.7, Kinsky fall 4.5->4.4
- squad and plan: Rudoni* +60.7%, Vuskovic +18.2%, Muharemović +14.5%, Bogle* +12.0%, M.Sangaré -9.7%, Thomas +6.0%, Groß +5.4%, Mbeumo +4.5%, Calafiori +2.9%, Calvert-Lewin -2.8%, João Pedro +2.3%, Diop -1.7%, Haaland +1.5%, Verbruggen +1.0%, Tavernier +0.0%, B.Fernandes +0.0%, Kinsky +0.0% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Rudoni +60.7%, Doku +45.0%, Foden +42.5%, Iwobi +39.2%, Ayari +33.4%, Henderson +31.4%
- strongest fall pressure (owned 0.5%+): Sávio -72.2%, Janelt -34.3%, Szoboszlai -34.1%, Yarmoliuk -27.6%, Wissa -23.6%, Martinez -21.6%
+ changes since previous run (2026-10-24T02:00Z): none
+ squad and plan: Rudoni* +60.9%, Vuskovic +18.4%, Muharemović +14.5%, Bogle* +12.1%, M.Sangaré -9.8%, Thomas +6.0%, Groß +5.4%, Mbeumo +4.5%, Calvert-Lewin -3.0%, Calafiori +2.9%, João Pedro +2.3%, Diop -1.7%, Haaland +1.5%, Verbruggen +1.0%, Tavernier +0.5%, B.Fernandes -0.1%, Kinsky -0.0% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Rudoni +60.9%, Doku +45.4%, Foden +42.8%, Iwobi +39.4%, Ayari +33.7%, Henderson +31.7%
+ strongest fall pressure (owned 0.5%+): Sávio -72.6%, Janelt -34.6%, Szoboszlai -34.3%, Yarmoliuk -27.8%, Wissa -23.7%, Martinez -21.9%
  calibration from observed changes (pressure measured at the run before the change): rises n9, pressure at previous run: 25th pct 2.9%, median 5.7% | falls n28, pressure at previous run: 25th pct 2.7%, median 4.6%
 BACKTEST: no finished gameweek with a stored projection yet (first snapshot: GW9; results once it is finished and data-checked).
