@@ -1,4 +1,24 @@
 {
- "gws": [],
- "note": "BACKTEST: no finished gameweek with a stored projection yet (first snapshot: GW9; results once it is finished and data-checked)."
+ "gws": [
+  8
+ ],
+ "xi": [
+  {
+   "gw": 8,
+   "kind": "recommended",
+   "proj": 62.93,
+   "actual": 36,
+   "armband_proj": 6.98,
+   "armband_actual": 8
+  },
+  {
+   "gw": 8,
+   "kind": "current",
+   "proj": 57.49,
+   "actual": 32,
+   "armband_proj": 6.98,
+   "armband_actual": 8
+  }
+ ],
+ "n_players": 404
 }

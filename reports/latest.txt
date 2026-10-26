@@ -1,4 +1,4 @@
-Generated 2026-10-26T11:12:15.885Z | Hold My Tzoli | overall rank 2814721 | 491 pts
+Generated 2026-10-26T19:23:07.906Z | Hold My Tzoli | overall rank 2814716 | 491 pts
 GW9 deadline 2026-10-31T11:00:00Z | FT 2 (reconstructed; pending transfers already made: 0) bank 0.6 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW9-14
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.7/15.6 a100 | 7.6 | 31.3 | 188% | BHAH NFOa FULH ARSa
@@ -37,14 +37,17 @@ LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 25/29, 491 pts; leader P
  threats not owned (current squad): Rogers EO69% proj4.4, Konsa EO52% proj5.2, De Cuyper EO52% proj4.5, Palmer EO52% proj4.1, Raya EO45% proj5.0
  threats not owned (after best plan): Calafiori EO76% proj3.0, Rogers EO69% proj4.4, Palmer EO52% proj4.1, Cherki EO38% proj3.6, Schade EO31% proj2.7 | plan sells: João Pedro EO10%, Verbruggen EO24%, Calafiori EO76%, Diop EO3% | plan buys: Evanilson EO3%, Raya EO45%, Konsa EO52%, De Cuyper EO52%
  differentials after best plan (league EO under 15%): Vuskovic EO3%, Tavernier EO14%, Kinsky EO7%, B.Fernandes EO0%, Evanilson EO3%, M.Sangaré EO10% | rival captains: Haaland 21, João Pedro 3, Palmer 2
-ELITE threats not owned after best plan (overall-rank risk): Calafiori ARS eEO92% proj3.0, Rogers CHE eEO86% proj4.4, Palmer CHE eEO69% proj4.1, Hall NEW eEO32% proj4.3, Gibbs-White NFO eEO23% proj3.3, Barnes NEW eEO21% proj4.1, Schade BRE eEO21% proj2.7, Cherki MCI eEO21% proj3.6
+ELITE threats not owned after best plan (overall-rank risk): Calafiori ARS eEO92% proj3.0, Rogers CHE eEO86% proj4.4, Palmer CHE eEO69% proj4.1, Hall NEW eEO32% proj4.3, Gibbs-White NFO eEO23% proj3.3, Schade BRE eEO21% proj2.7, Barnes NEW eEO21% proj4.1, Cherki MCI eEO21% proj3.6
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, Calvert-Lewin pens, Haaland pens, B.Fernandes pens+direct FKs+corners
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS, Isak LIV
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 30s.
+Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 15s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-10-26T01:44Z): none
- squad and plan: Vuskovic +21.4%, Tavernier +18.0%, Evanilson* +12.2%, M.Sangaré -11.5%, Calvert-Lewin -7.9%, De Cuyper* +6.9%, Groß +6.0%, B.Fernandes -4.5%, Thomas +4.4%, Mbeumo +4.3%, Diop -2.5%, Haaland +2.0%, Kinsky +0.9%, Verbruggen +0.9%, Raya* +0.6%, Konsa* +0.5%, Calafiori +0.4%, Muharemović +0.3%, João Pedro -0.3% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Rudoni +65.4%, Doku +48.8%, Foden +43.9%, Manzambi +43.4%, Kudus +40.7%, Iwobi +40.2%
- strongest fall pressure (owned 0.5%+): Sávio -95.7%, Janelt -40.9%, Yarmoliuk -32.4%, Wissa -31.2%, Martinez -27.1%, Tzolis -26.1%
+ changes since previous run (2026-10-26T11:12Z): none
+ squad and plan: Vuskovic +21.9%, Tavernier +20.8%, Evanilson* +14.5%, M.Sangaré -11.8%, Calvert-Lewin -8.3%, De Cuyper* +7.0%, Groß +6.0%, B.Fernandes -5.3%, Thomas +4.1%, Mbeumo +4.0%, Diop -2.7%, Haaland +2.1%, Konsa* +1.2%, Kinsky +1.1%, Verbruggen +0.9%, João Pedro -0.8%, Muharemović +0.7%, Raya* +0.7%, Calafiori -0.2% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Rudoni +66.2%, Doku +48.6%, Kudus +45.6%, Manzambi +45.3%, Foden +44.0%, Iwobi +40.1%
+ strongest fall pressure (owned 0.5%+): Sávio -97.2%, Janelt -41.3%, Yarmoliuk -33.2%, Wissa -32.5%, Martinez -27.7%, Scott -27.0%
  calibration from observed changes (pressure measured at the run before the change): rises n14, pressure at previous run: 25th pct 4.0%, median 10.3% | falls n40, pressure at previous run: 25th pct 3.1%, median 5.6%
-BACKTEST: no finished gameweek with a stored projection yet (first snapshot: GW9; results once it is finished and data-checked).
+BACKTEST GW8 | players projected 0.5+: n309, mean proj 2.46 vs actual 2.77, MAE 2.17, slope 0.63 (above 1 means projections too compressed, below 1 too spread)
+ calibration by projection band: 0.5-2: n128 proj 1.19 actual 1.88 | 2-4: n148 proj 3.05 actual 3.39 | 4-6: n32 proj 4.71 actual 3.31 | 6-+: n1 proj 6.98 actual 8.00
+ recommended XI incl. armband: proj 62.9 vs actual 36 over 1 GW; armband proj 7.0 vs actual 8
+ current XI incl. armband: proj 57.5 vs actual 32 over 1 GW; armband proj 7.0 vs actual 8
