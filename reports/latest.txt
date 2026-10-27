@@ -1,4 +1,4 @@
-Generated 2026-10-27T02:26:30.722Z | Hold My Tzoli | overall rank 2814713 | 491 pts
+Generated 2026-10-27T10:39:24.173Z | Hold My Tzoli | overall rank 2814713 | 491 pts
 GW9 deadline 2026-10-31T11:00:00Z | FT 2 (reconstructed; pending transfers already made: 0) bank 0.6 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW9-14
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.7/15.6 a100 | 7.6 | 31.3 | 188% | BHAH NFOa FULH ARSa
@@ -37,15 +37,15 @@ LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 25/29, 491 pts; leader P
  threats not owned (current squad): Rogers EO69% proj4.4, Konsa EO52% proj5.2, De Cuyper EO52% proj4.5, Palmer EO52% proj4.1, Raya EO45% proj5.0
  threats not owned (after best plan): Calafiori EO76% proj3.0, Rogers EO69% proj4.4, Palmer EO52% proj4.1, Cherki EO38% proj3.6, Schade EO31% proj2.7 | plan sells: João Pedro EO10%, Verbruggen EO24%, Calafiori EO76%, Diop EO3% | plan buys: Evanilson EO3%, Raya EO45%, Konsa EO52%, De Cuyper EO52%
  differentials after best plan (league EO under 15%): Vuskovic EO3%, Tavernier EO14%, Kinsky EO7%, B.Fernandes EO0%, Evanilson EO3%, M.Sangaré EO10% | rival captains: Haaland 21, João Pedro 3, Palmer 2
-ELITE threats not owned after best plan (overall-rank risk): Calafiori ARS eEO92% proj3.0, Rogers CHE eEO86% proj4.4, Palmer CHE eEO69% proj4.1, Hall NEW eEO32% proj4.3, Gibbs-White NFO eEO23% proj3.3, Barnes NEW eEO21% proj4.1, Schade BRE eEO21% proj2.7, Cherki MCI eEO21% proj3.6
+ELITE threats not owned after best plan (overall-rank risk): Calafiori ARS eEO92% proj3.0, Rogers CHE eEO86% proj4.4, Palmer CHE eEO69% proj4.1, Hall NEW eEO32% proj4.3, Gibbs-White NFO eEO23% proj3.3, Schade BRE eEO21% proj2.7, Barnes NEW eEO21% proj4.1, Cherki MCI eEO21% proj3.6
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, Calvert-Lewin pens, Haaland pens, B.Fernandes pens+direct FKs+corners
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS, Isak LIV
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 11s.
+Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 10s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-10-26T19:23Z): 10 players; Tavernier rise 6.3->6.4
- squad and plan: Vuskovic +22.1%, Evanilson* +15.3%, M.Sangaré -12.0%, Calvert-Lewin -8.5%, De Cuyper* +7.0%, Groß +6.0%, B.Fernandes -5.7%, Mbeumo +3.9%, Thomas +3.9%, Diop -2.7%, Haaland +2.2%, Konsa* +1.5%, Kinsky +1.2%, João Pedro -1.0%, Muharemović +0.9%, Verbruggen +0.9%, Raya* +0.7%, Calafiori -0.4%, Tavernier +0.0% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Rudoni +66.6%, Doku +49.0%, Manzambi +45.5%, Foden +44.0%, Kudus +41.6%, Iwobi +40.1%
- strongest fall pressure (owned 0.5%+): Sávio -97.9%, Janelt -41.4%, Yarmoliuk -33.5%, Martinez -28.0%, Tzolis -26.9%, Igor Jesus -26.3%
+ changes since previous run (2026-10-27T02:26Z): none
+ squad and plan: Vuskovic +22.0%, Evanilson* +15.9%, M.Sangaré -12.1%, Calvert-Lewin -8.6%, De Cuyper* +7.1%, Groß +6.0%, B.Fernandes -5.9%, Mbeumo +3.8%, Thomas +3.8%, Diop -2.8%, Haaland +2.2%, Konsa* +1.7%, Kinsky +1.3%, João Pedro -1.2%, Tavernier +1.1%, Muharemović +1.1%, Verbruggen +0.9%, Raya* +0.7%, Calafiori -0.6% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Rudoni +66.9%, Doku +49.3%, Manzambi +45.5%, Foden +44.0%, Kudus +43.1%, Iwobi +40.0%
+ strongest fall pressure (owned 0.5%+): Sávio -98.3%, Janelt -41.5%, Yarmoliuk -33.9%, Martinez -28.2%, Tzolis -27.1%, Igor Jesus -26.6%
  calibration from observed changes (pressure measured at the run before the change): rises n16, pressure at previous run: 25th pct 5.7%, median 13.9% | falls n48, pressure at previous run: 25th pct 3.1%, median 6.2%
 BACKTEST GW8 | players projected 0.5+: n309, mean proj 2.46 vs actual 2.77, MAE 2.17, slope 0.63 (above 1 means projections too compressed, below 1 too spread)
  calibration by projection band: 0.5-2: n128 proj 1.19 actual 1.88 | 2-4: n148 proj 3.05 actual 3.39 | 4-6: n32 proj 4.71 actual 3.31 | 6-+: n1 proj 6.98 actual 8.00
