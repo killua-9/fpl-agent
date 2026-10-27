@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T10:39:24.175Z",
+ "generated": "2026-10-27T18:44:13.200Z",
  "entry": 531300,
  "gws": [
   9,
@@ -312,20 +312,20 @@
    "name": "João Pedro",
    "sell": 7.7,
    "proj": [
-    3.01,
-    3.62,
-    3.66,
+    0,
+    1.17,
+    2.75,
+    2.37,
     3.15,
-    4.19,
-    3.54
+    2.67
    ],
    "p_play": [
+    0,
+    0.26,
     0.58,
-    0.73,
-    0.76,
-    0.76,
-    0.76,
-    0.76
+    0.58,
+    0.58,
+    0.58
    ]
   },
   {
@@ -351,23 +351,19 @@
   }
  ],
  "best_plan": {
-  "n_transfers": 4,
-  "net": 289.03,
+  "n_transfers": 2,
+  "net": 291.7,
   "out": [
    "João Pedro",
-   "Verbruggen",
-   "Calafiori",
-   "Diop"
+   "Calafiori"
   ],
   "in": [
-   "Evanilson",
-   "Raya",
-   "Konsa",
-   "De Cuyper"
+   "Barry",
+   "Gabriel"
   ],
-  "bank": 0,
+  "bank": 0.5,
   "captain": "Haaland",
-  "vice": "Tavernier",
+  "vice": "Gabriel",
   "armband_value": 7.65
  }
 }
