@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T18:44:13.200Z",
+ "generated": "2026-10-28T02:35:31.657Z",
  "entry": 531300,
  "gws": [
   9,
@@ -84,7 +84,7 @@
     4.51,
     4.85,
     5.11,
-    5.58,
+    5.59,
     4.17,
     4.21
    ],
@@ -249,11 +249,11 @@
    "name": "Haaland",
    "sell": 15.6,
    "proj": [
-    7.65,
+    7.66,
     5.97,
-    7.19,
+    7.2,
     5.37,
-    7.09,
+    7.1,
     6.67
    ],
    "p_play": [
@@ -310,14 +310,14 @@
   {
    "id": 165,
    "name": "João Pedro",
-   "sell": 7.7,
+   "sell": 7.6,
    "proj": [
     0,
     1.17,
     2.75,
     2.37,
     3.15,
-    2.67
+    2.66
    ],
    "p_play": [
     0,
@@ -352,7 +352,7 @@
  ],
  "best_plan": {
   "n_transfers": 2,
-  "net": 291.7,
+  "net": 291.77,
   "out": [
    "João Pedro",
    "Calafiori"
@@ -361,9 +361,9 @@
    "Barry",
    "Gabriel"
   ],
-  "bank": 0.5,
+  "bank": 0.4,
   "captain": "Haaland",
   "vice": "Gabriel",
-  "armband_value": 7.65
+  "armband_value": 7.66
  }
 }
