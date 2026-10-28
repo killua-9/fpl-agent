@@ -1,4 +1,4 @@
-Generated 2026-10-28T11:24:18.036Z | Hold My Tzoli | overall rank 2814697 | 491 pts
+Generated 2026-10-28T18:53:59.432Z | Hold My Tzoli | overall rank 2814694 | 491 pts
 GW9 deadline 2026-10-31T11:00:00Z | FT 2 (reconstructed; pending transfers already made: 0) bank 0.6 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW9-14
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.8/15.6 a100 | 7.7 | 31.4 | 188% | BHAH NFOa FULH ARSa
@@ -11,11 +11,11 @@ FWD Calvert-Lewin LEE 6.1/6.0 a100 | 3.7 | 19.4 | 34% | BOUa TOTH CHEa COVH
 DEF Thomas COV 4.0/4.0 d75 | 3.2 | 18.8 | 9% | SUNH EVEa CRYH LEEa
 DEF Calafiori ARS 6.0/5.7 d75 | 3.0 | 18.0 | 92% | LIVa HULH NEWa MCIH
 GK Kinsky TOT 4.4/4.4 a | 4.1 | 18.0 | 3% | CRYH LEEa IPSH SUNa
-GK Verbruggen BHA 4.6/4.5 a | 3.8 | 17.9 | 15% | MCIa BREH HULa NEWH
+GK Verbruggen BHA 4.6/4.5 a | 3.8 | 17.9 | 14% | MCIa BREH HULa NEWH
 MID B.Fernandes MUN 11.7/11.7 a | 3.2 | 17.9 | 0% | CHEa AVLH LIVa BREH
 MID M.Sangaré BRE 5.5/5.5 a | 2.7 | 13.6 | 3% | NFOH BHAa EVEH MUNa
 DEF Diop IPS 3.9/3.9 a | 2.5 | 12.2 | 1% | HULa BOUH TOTa AVLH
-FWD João Pedro CHE 7.8/7.6 i0 | 0.0 | 8.6 | 3% | MUNH SUNa LEEH NFOa
+FWD João Pedro CHE 7.8/7.6 i0 | 0.0 | 8.6 | 2% | MUNH SUNa LEEH NFOa
 PLANS by net value (squad 6GW wtd value, less hits, plus value of banked FT):
 2T net 291.8 (val 291.8) bank 0.4: João Pedro(7.6)->Barry(5.6 eEO3%), Calafiori(5.7)->Gabriel(7.9 eEO14%)
 4T net 290.9 (val 298.9) bank 2.4: João Pedro(7.6)->Barry(5.6 eEO3%), Calafiori(5.7)->Gabriel(7.9 eEO14%), B.Fernandes(11.7)->Rogers(8.0 eEO86%), Verbruggen(4.5)->Raya(6.2 eEO71%)
@@ -40,12 +40,12 @@ LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 25/29, 491 pts; leader P
 ELITE threats not owned after best plan (overall-rank risk): Calafiori ARS eEO92% proj3.0, Rogers CHE eEO86% proj4.4, Konsa ARS eEO84% proj5.2, Raya ARS eEO71% proj5.0, Palmer CHE eEO69% proj4.1, De Cuyper BHA eEO59% proj4.5, Hall NEW eEO32% proj4.3, Gibbs-White NFO eEO23% proj3.3
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, Calvert-Lewin pens, Haaland pens, B.Fernandes pens+direct FKs+corners, Barry pens
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS, Isak LIV
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 17s.
+Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 7s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-10-28T02:35Z): none
- squad and plan: M.Sangaré -13.1%, Calvert-Lewin -8.8%, B.Fernandes -7.4%, Tavernier +6.5%, Groß +6.1%, Gabriel* +5.5%, Mbeumo +3.4%, Diop -3.2%, Thomas +2.9%, Muharemović +2.1%, Calafiori -1.7%, Kinsky +1.7%, Barry* -1.6%, João Pedro -1.4%, Verbruggen +0.7%, Vuskovic +0.2%, Haaland +0.0% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Rudoni +59.2%, Doku +49.8%, Manzambi +47.9%, Kudus +46.8%, Foden +44.0%, Ayari +40.4%
- strongest fall pressure (owned 0.5%+): Sávio -101.1%, Janelt -44.6%, Yarmoliuk -35.4%, Martinez -30.0%, Tzolis -28.7%, Igor Jesus -27.6%
+ changes since previous run (2026-10-28T11:24Z): none
+ squad and plan: M.Sangaré -13.3%, Calvert-Lewin -8.8%, Tavernier +7.8%, B.Fernandes -7.7%, Groß +6.1%, Gabriel* +5.8%, Mbeumo +3.4%, Diop -3.4%, João Pedro -2.9%, Thomas +2.7%, Muharemović +2.4%, Calafiori -2.1%, Kinsky +1.8%, Barry* -1.7%, Verbruggen +0.7%, Vuskovic +0.3%, Haaland +0.1% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Rudoni +59.8%, Doku +50.2%, Kudus +49.2%, Manzambi +48.7%, Foden +44.1%, Ayari +40.6%
+ strongest fall pressure (owned 0.5%+): Sávio -101.8%, Janelt -44.8%, Yarmoliuk -35.9%, Martinez -30.3%, Tzolis -29.0%, Igor Jesus -27.9%
  calibration from observed changes (pressure measured at the run before the change): rises n20, pressure at previous run: 25th pct 5.7%, median 15.2% | falls n52, pressure at previous run: 25th pct 3.1%, median 6.2%
 BACKTEST GW8 | players projected 0.5+: n309, mean proj 2.46 vs actual 2.77, MAE 2.17, slope 0.63 (above 1 means projections too compressed, below 1 too spread)
  calibration by projection band: 0.5-2: n128 proj 1.19 actual 1.88 | 2-4: n148 proj 3.05 actual 3.39 | 4-6: n32 proj 4.71 actual 3.31 | 6-+: n1 proj 6.98 actual 8.00
