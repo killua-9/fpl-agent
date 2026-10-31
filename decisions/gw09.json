@@ -1,0 +1,22 @@
+{
+  "gw": 9,
+  "entry": 531300,
+  "apply": true,
+  "created": "2026-10-31T08:50:00Z",
+  "source": "FINAL brief 2026-10-31 (model report 02:43Z, news checked ~09:00 Windhoek). 2-transfer plan net 291.3 vs best hit plan 290.4; no hit. Gabriel knock reported, no flag, predicted to start.",
+  "max_hits": 0,
+  "chip": null,
+  "transfers": [
+    { "out": "João Pedro", "in": "Barry|EVE" },
+    { "out": "Calafiori", "in": "Gabriel|ARS" }
+  ],
+  "starting_xi": [
+    "Kinsky",
+    "Gabriel|ARS", "Vuskovic|BHA", "Muharemović",
+    "Tavernier|BOU", "Mbeumo|MUN", "Groß", "B.Fernandes",
+    "Haaland", "Barry|EVE", "Calvert-Lewin"
+  ],
+  "bench": ["Verbruggen", "Thomas", "M.Sangaré", "Diop"],
+  "captain": "Haaland",
+  "vice": "Gabriel|ARS"
+}
