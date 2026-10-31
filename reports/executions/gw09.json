@@ -1,0 +1,16 @@
+{
+  "gw": 9,
+  "decision": "decisions/gw09.json",
+  "applied": true,
+  "at": "2026-10-31T08:42:12.789Z",
+  "log": [
+    "APPLY decisions/gw09.json: GW9, deadline 2026-10-31T11:00:00Z (138 min left)",
+    "Free transfers left 2, hits 0, bank after £0.3m",
+    "  OUT João Pedro £7.6m  ->  IN Barry £5.6m",
+    "  OUT Calafiori £5.7m  ->  IN Gabriel £8.0m",
+    "XI: Kinsky, Gabriel (V), Vuskovic, Muharemović, Tavernier, Mbeumo, Groß, B.Fernandes, Haaland (C), Barry, Calvert-Lewin",
+    "Bench: Verbruggen, Thomas, M.Sangaré, Diop",
+    "Transfers confirmed by FPL.",
+    "Verified on FPL: squad, XI, bench order and armband match. Bank £0.3m."
+  ]
+}
