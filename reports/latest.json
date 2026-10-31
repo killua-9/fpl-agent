@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T18:39:04.764Z",
+ "generated": "2026-10-31T02:43:43.140Z",
  "entry": 531300,
  "gws": [
   9,
@@ -186,12 +186,12 @@
    "name": "Tavernier",
    "sell": 6.3,
    "proj": [
-    5.86,
-    6.4,
+    5.87,
+    6.41,
     5.22,
-    5.11,
-    5.65,
-    5.92
+    5.12,
+    5.66,
+    5.93
    ],
    "p_play": [
     1,
@@ -352,7 +352,7 @@
  ],
  "best_plan": {
   "n_transfers": 2,
-  "net": 291.22,
+  "net": 291.27,
   "out": [
    "João Pedro",
    "Calafiori"
@@ -361,7 +361,7 @@
    "Barry",
    "Gabriel"
   ],
-  "bank": 0.4,
+  "bank": 0.3,
   "captain": "Haaland",
   "vice": "Gabriel",
   "armband_value": 7.66
