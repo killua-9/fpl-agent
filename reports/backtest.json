@@ -1,6 +1,7 @@
 {
  "gws": [
-  8
+  8,
+  9
  ],
  "xi": [
   {
@@ -18,7 +19,23 @@
    "actual": 32,
    "armband_proj": 6.98,
    "armband_actual": 8
+  },
+  {
+   "gw": 9,
+   "kind": "recommended",
+   "proj": 60.75,
+   "actual": 44,
+   "armband_proj": 7.66,
+   "armband_actual": 2
+  },
+  {
+   "gw": 9,
+   "kind": "current",
+   "proj": 56.28,
+   "actual": 38,
+   "armband_proj": 7.66,
+   "armband_actual": 2
   }
  ],
- "n_players": 404
+ "n_players": 810
 }

@@ -6,8 +6,9 @@ Read before every deadline decision.
 
 Regenerated after every review from reports/reviews/.
 
-- Season to date over 1 reviewed gameweek(s): lineup regret 11, captain regret 2, bench points unused 13, transfers net +13.0, minutes-miss cost 0.0.
+- Season to date over 2 reviewed gameweek(s): lineup regret 18, captain regret 9, bench points unused 29, transfers net +22.0, minutes-miss cost 0.0.
 - Departures from the model: 1, net +3.0 points. A persistent negative total means judgement overrides are costing points and the bar for overriding should rise; a positive total means the news layer is adding value.
+- 10+ points left on the bench in 2 of the last 2 gameweeks. Bench spend may be too high, or the XI selection is not trusting bench players who are starting.
 - Calibration in force: none (identity); minutes mapping none; ep_next blend 0.2. Learning starts once 3 gameweeks are reviewed.
 
 ## Reflections
