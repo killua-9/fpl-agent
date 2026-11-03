@@ -1,6 +1,8 @@
-// FPL agent model v1.4 (Node 20+). v1.4: top-1000 elite sample, set-piece takers, price tracking. v1.3: armband value with vice cover, autosub bench order, league threats for current squad and plan, projection backtest. Runs on GitHub Actions from public FPL data; no login needed.
+// FPL agent model v1.5 (Node 20+). v1.5: reads learnt calibration from model/params.json (written by review.mjs after each gameweek). v1.4: top-1000 elite sample, set-piece takers, price tracking. v1.3: armband value with vice cover, autosub bench order, league threats for current squad and plan, projection backtest. Runs on GitHub Actions from public FPL data; no login needed.
 // Usage: node fpl.mjs  -> writes reports/latest.txt and reports/latest.json
 import { writeFileSync, mkdirSync, readFileSync, readdirSync } from 'node:fs';
+import { applyPoints, applyMinutes } from './lib/introspect.mjs';
+const PARAMS = (() => { try { return JSON.parse(readFileSync('model/params.json', 'utf8')); } catch (x) { return {}; } })();
 const ENTRY = +(process.env.FPL_ENTRY || 531300);
 const LEAGUES = (process.env.FPL_LEAGUES || '54818,392003').split(',').map(Number).filter(Boolean);
 const FPLA = (() => {
@@ -56,7 +58,7 @@ const FPLA = (() => {
 
   async function run(o = {}) {
     const t0 = Date.now();
-    const entry = o.entry || 531300, H = o.H || 6, leagues = o.leagues || [], eliteN = o.elite ?? 50;
+    const entry = o.entry || 531300, H = o.H || 6, prm = o.params || {}, ALPHA = prm.ep_blend ?? 0.2, leagues = o.leagues || [], eliteN = o.elite ?? 50;
     const [bs, fx, hist, ent] = await Promise.all([J('/api/bootstrap-static/'), J('/api/fixtures/'), J(`/api/entry/${entry}/history/`), J(`/api/entry/${entry}/`)]);
     const mt = await publicTeam(entry, bs, hist);
     const sc = bs.game_config.scoring, ev = bs.events;
@@ -110,9 +112,9 @@ const FPLA = (() => {
     const takes = (e, key) => firstTaker[key + '_' + e.team] === e.id;
     const prior = { 1: [0, .02], 2: [.04, .05], 3: [.12, .12], 4: [.32, .10] }, thr = { 2: 10, 3: 12, 4: 12 };
     // lastPA: probability the player gets any minutes in this gameweek (set by proj, read by compute).
-    let lastPA = 0;
+    let lastPA = 0, lastRaw = 0;
     function proj(e, gw, idx) {
-      lastPA = 0;
+      lastPA = 0; lastRaw = 0;
       const fs = fxBy[e.team + '_' + gw] || []; if (!fs.length || e.removed || e.status === 'u') return 0;
       const t = e.element_type, pk = PK[t], g = Math.max(gp[e.team], 1), mins = e.minutes;
       const mps = e.starts ? clamp(mins / e.starts, 0, 90) : clamp(mins / g, 0, 90);
@@ -151,11 +153,16 @@ const FPLA = (() => {
         fp += b90 * xMin / 90 * (0.7 + 0.3 * fac) - y90 * xMin / 90;
         pts += (1 - wp) * fp + wp * ppg * share * (t > 2 ? fac : 0.5 + 0.5 * Math.exp(-lamA) / Math.exp(-D));
       }
-      if (idx === 0) pts = 0.8 * pts + 0.2 * (+e.ep_next || 0);
+      lastRaw = pts;
+      if (idx === 0) pts = (1 - ALPHA) * pts + ALPHA * (+e.ep_next || 0);
       return pts;
     }
-    let EP = {}, PA = {};
-    const compute = () => { EP = {}; PA = {}; el.forEach(e => { EP[e.id] = []; PA[e.id] = []; GWs.forEach((g, i) => { EP[e.id].push(proj(e, g, i)); PA[e.id].push(lastPA); }); }); };
+    // EP/PA are calibrated (what decisions use); U/UPA/RAW are the uncalibrated values the snapshot keeps so that
+    // review.mjs always refits calibration on raw model output and corrections never compound.
+    let EP = {}, PA = {}, U = {}, UPA = {}, RAW = {};
+    const compute = () => { EP = {}; PA = {}; U = {}; UPA = {}; RAW = {}; el.forEach(e => { EP[e.id] = []; PA[e.id] = []; U[e.id] = []; UPA[e.id] = [];
+      GWs.forEach((g, i) => { const v = proj(e, g, i); if (i === 0) RAW[e.id] = lastRaw; U[e.id].push(v); UPA[e.id].push(lastPA);
+        EP[e.id].push(applyPoints(prm.calib, e.element_type, v)); PA[e.id].push(v > 0 ? applyMinutes(prm.minutes, lastPA) : lastPA); }); }); };
     const HV = id => EP[id].reduce((s, v, i) => s + W[i] * v, 0);
     compute();
 
@@ -292,15 +299,16 @@ const FPLA = (() => {
     lines.push(`SET PIECES (first available taker per FPL order) in squad or plan: ${spSquad.join(', ') || 'none'}`);
     const inh = bs.teams.map(t => firstTaker['pen_' + t.id]).filter(id => id && P[id].penalties_order !== 1).map(id => `${nm(id)} ${tm(id)}`);
     if (inh.length) lines.push(`Penalty role inherited because the listed taker is unavailable: ${inh.join(', ')}`);
+    lines.push(`Learnt params v${prm.version ?? 0}: points calibration ${prm.calib ? Object.entries(prm.calib).map(([t, c]) => `${POS[t]} ${c.a}+${c.b}x`).join(' ') : 'none'}, minutes mapping ${prm.minutes ? 'on' : 'off'}, ep_next blend ${ALPHA}. Lessons: model/lessons.md`);
     lines.push(`Elite sample: top ${eliteN} overall requested, ${EEn} sampled${EEerr ? ' (error: ' + EEerr + ')' : ''}. Model runtime ${Math.round((Date.now() - t0) / 1000)}s.`);
     OUT = lines.join('\n');
-    globalThis.__FPLA_STATE = { ent, mt, EP, PA, P, GWs, bestPlan, plans, wcBest, fhBest, L, EE, bs, n, deadline: nx.deadline_time, r0, now, squad, EEn };
+    globalThis.__FPLA_STATE = { ent, mt, EP, PA, U, UPA, RAW, P, GWs, bestPlan, plans, wcBest, fhBest, L, EE, bs, n, deadline: nx.deadline_time, r0, now, squad, EEn };
     return `done ${OUT.length} chars, ${Math.ceil(OUT.length / 900)} chunks`;
   }
   return { run, J, out: i => OUT.slice(i * 900, (i + 1) * 900), all: () => OUT, append: s => { OUT += '\n' + s; } };
 })();
 
-const res = await FPLA.run({ entry: ENTRY, leagues: LEAGUES, elite: +(process.env.FPL_ELITE || 1000) });
+const res = await FPLA.run({ entry: ENTRY, leagues: LEAGUES, elite: +(process.env.FPL_ELITE || 1000), params: PARAMS });
 const st = globalThis.__FPLA_STATE, P = st.P, nm = id => P[id].web_name;
 const bp = st.bestPlan;
 const r2 = x => +x.toFixed(2);
@@ -316,7 +324,9 @@ const HIST = 'reports/history';
 const snap = { gw: st.n, deadline: st.deadline, generated: json.generated, proj: {},
   recommended: { xi: st.r0.sel.map(p => p.id), captain: st.r0.c.id, vice: st.r0.vc.id, armband_value: r2(st.r0.capVal), xi_proj: r2(st.r0.score), n_transfers: bp.d, in: bp.st.ins, out: bp.st.outs },
   current: { xi: st.now.sel.map(p => p.id), captain: st.now.c.id, vice: st.now.vc.id, armband_value: r2(st.now.capVal), xi_proj: r2(st.now.score) } };
-for (const id in st.EP) if (st.EP[id][0] > 0) snap.proj[id] = [r2(st.EP[id][0]), r2(st.PA[id][0])];
+// proj[id] = [uncalibrated, P(play), raw before ep_next blend, ep_next, calibrated, calibrated P(play)]
+for (const id in st.U) if (st.U[id][0] > 0) snap.proj[id] = [r2(st.U[id][0]), r2(st.UPA[id][0]), r2(st.RAW[id]), r2(+st.P[id].ep_next || 0), r2(st.EP[id][0]), r2(st.PA[id][0])];
+snap.params_version = PARAMS.version ?? 0;
 writeFileSync(`${HIST}/gw${String(st.n).padStart(2, '0')}.json`, JSON.stringify(snap));
 
 // Backtest step 2: for every finished, data-checked gameweek with a snapshot, compare projections with actual points.
