@@ -8,9 +8,6 @@ on:
     - cron: '17 5 * * *'
     - cron: '17 13 * * *'
   workflow_dispatch:
-  push:  # TEMP-TEST
-    branches: [introspect]  # TEMP-TEST
-    paths: ['review.mjs', 'fpl.mjs', 'lib/**']  # TEMP-TEST
 
 permissions:
   contents: write
