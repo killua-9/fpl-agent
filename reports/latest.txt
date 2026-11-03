@@ -1,10 +1,10 @@
-Generated 2026-11-03T04:02:42.655Z | Hold My Tzoli | overall rank 3061249 | 535 pts
+Generated 2026-11-03T09:31:41.093Z | Hold My Tzoli | overall rank 3061247 | 535 pts
 GW10 deadline 2026-11-06T18:30:00Z | FT 1 (reconstructed; pending transfers already made: 0) bank 0.3 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW10-15
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.8/15.6 a100 | 6.0 | 30.6 | 186% | NFOa FULH ARSa LEEH
 DEF Gabriel ARS 8.0/8.0 a | 6.8 | 27.2 | 17% | HULH NEWa MCIH BREa
 MID Tavernier BOU 6.6/6.4 a | 6.0 | 25.2 | 69% | IPSa NFOH FULa BHAH
-MID Mbeumo MUN 7.9/7.9 a | 5.0 | 22.9 | 14% | AVLH LIVa BREH NEWa
+MID Mbeumo MUN 7.9/7.9 a | 5.0 | 22.9 | 13% | AVLH LIVa BREH NEWa
 DEF Vuskovic BHA 5.2/5.1 a | 5.2 | 22.9 | 1% | BREH HULa NEWH BOUa
 FWD Barry EVE 5.6/5.6 a | 5.0 | 22.0 | 21% | COVH BREa LIVH AVLa
 MID Groß BHA 6.2/5.8 a | 4.6 | 21.6 | 34% | BREH HULa NEWH BOUa
@@ -36,15 +36,16 @@ LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 28/29, 535 pts; leader B
  threats not owned (current squad): Rogers EO76% proj4.8, Palmer EO55% proj4.5, N.Jackson EO52% proj5.0, Raya EO34% proj5.5, De Cuyper EO34% proj5.5
  threats not owned (after best plan): Palmer EO55% proj4.5, N.Jackson EO52% proj5.0, Raya EO34% proj5.5, De Cuyper EO34% proj5.5, Cherki EO31% proj2.8 | plan sells: B.Fernandes EO10%, Thomas EO10%, Diop EO7% | plan buys: Rogers EO76%, Van Hecke EO17%, Konsa EO31%
  differentials after best plan (league EO under 15%): Vuskovic EO3%, Barry EO10%, Verbruggen EO7%, M.Sangaré EO7% | rival captains: Haaland 23, Rogers 2, Palmer 2
-ELITE threats not owned after best plan (overall-rank risk): N.Jackson AVL eEO89% proj5.0, Palmer CHE eEO84% proj4.5, Raya ARS eEO50% proj5.5, Manzambi AVL eEO39% proj3.3, Silva BOU eEO29% proj4.9, Calafiori ARS eEO28% proj4.9, Evanilson BOU eEO25% proj5.7, Hall NEW eEO20% proj3.5
+ELITE threats not owned after best plan (overall-rank risk): N.Jackson AVL eEO89% proj5.0, Palmer CHE eEO84% proj4.5, Raya ARS eEO50% proj5.5, Manzambi AVL eEO38% proj3.3, Silva BOU eEO29% proj4.9, Calafiori ARS eEO28% proj4.9, Evanilson BOU eEO25% proj5.7, Hall NEW eEO20% proj3.5
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, B.Fernandes pens+direct FKs+corners, Haaland pens, Barry pens, Calvert-Lewin pens
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 31s.
+Learnt params v1: points calibration none, minutes mapping off, ep_next blend 0.2. Lessons: model/lessons.md
+Elite sample: top 1000 overall requested, 994 sampled. Model runtime 29s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-11-02T22:21Z): 3 players; 
- squad and plan: B.Fernandes -20.2%, Konsa* +12.8%, Calvert-Lewin -11.6%, Thomas -10.7%, Van Hecke* +9.5%, Muharemović +8.4%, Vuskovic +8.2%, Diop -7.7%, Groß +6.6%, M.Sangaré -6.2%, Kinsky +5.0%, Tavernier +4.3%, Gabriel +3.5%, Rogers* +3.0%, Verbruggen +1.9%, Mbeumo -1.3%, Haaland +1.1%, Barry -0.2% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Kudus +77.8%, Silva +70.7%, Tel +70.5%, Kroupi.Jr +68.9%, Rudoni +67.5%, Hill +62.8%
- strongest fall pressure (owned 0.5%+): Saka -61.2%, Janelt -49.9%, Semenyo -40.3%, Strand Larsen -39.5%, George -30.8%, Shaw -30.3%
+ changes since previous run (2026-11-03T04:02Z): none
+ squad and plan: B.Fernandes -20.4%, Konsa* +13.1%, Calvert-Lewin -11.7%, Thomas -11.0%, Van Hecke* +10.2%, Vuskovic +8.5%, Muharemović +8.3%, Diop -7.8%, Groß +6.7%, M.Sangaré -6.3%, Kinsky +5.0%, Tavernier +4.6%, Gabriel +3.7%, Rogers* +3.1%, Verbruggen +2.0%, Mbeumo -1.5%, Haaland +1.1%, Barry +0.3% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Kudus +78.6%, Silva +72.2%, Tel +70.7%, Kroupi.Jr +70.2%, Rudoni +68.1%, Hill +63.2%
+ strongest fall pressure (owned 0.5%+): Saka -62.5%, Janelt -49.9%, Semenyo -40.6%, Strand Larsen -39.8%, George -30.7%, Shaw -30.6%
  calibration from observed changes (pressure measured at the run before the change): rises n33, pressure at previous run: 25th pct 8.4%, median 17.3% | falls n78, pressure at previous run: 25th pct 4.4%, median 9.1%
 BACKTEST GW8 | players projected 0.5+: n309, mean proj 2.46 vs actual 2.77, MAE 2.17, slope 0.63 (above 1 means projections too compressed, below 1 too spread)
  calibration by projection band: 0.5-2: n128 proj 1.19 actual 1.88 | 2-4: n148 proj 3.05 actual 3.39 | 4-6: n32 proj 4.71 actual 3.31 | 6-+: n1 proj 6.98 actual 8.00
