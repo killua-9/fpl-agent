@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T20:09:01.085Z",
+ "generated": "2026-11-04T03:19:29.676Z",
  "entry": 531300,
  "gws": [
   10,
@@ -352,7 +352,7 @@
  ],
  "best_plan": {
   "n_transfers": 3,
-  "net": 296.78,
+  "net": 296.82,
   "out": [
    "B.Fernandes",
    "Thomas",
@@ -363,7 +363,7 @@
    "Van Hecke",
    "Konsa"
   ],
-  "bank": 2.1,
+  "bank": 1.9,
   "captain": "Gabriel",
   "vice": "Konsa",
   "armband_value": 6.84
