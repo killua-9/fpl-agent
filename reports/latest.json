@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T13:16:17.991Z",
+ "generated": "2026-11-05T20:42:08.456Z",
  "entry": 531300,
  "gws": [
   10,
@@ -249,16 +249,16 @@
    "name": "Calvert-Lewin",
    "sell": 6,
    "proj": [
+    2.93,
     3.82,
-    3.96,
     4.3,
     3.69,
     4.95,
     3.57
    ],
    "p_play": [
-    1,
-    1,
+    0.75,
+    0.95,
     1,
     1,
     1,
@@ -352,20 +352,20 @@
  ],
  "best_plan": {
   "n_transfers": 3,
-  "net": 296.82,
+  "net": 296.52,
   "out": [
    "B.Fernandes",
    "Thomas",
-   "Diop"
+   "Calvert-Lewin"
   ],
   "in": [
-   "Rogers",
+   "Rudoni",
    "Van Hecke",
-   "Konsa"
+   "Isak"
   ],
-  "bank": 1.9,
+  "bank": 2.9,
   "captain": "Gabriel",
-  "vice": "Konsa",
+  "vice": "Haaland",
   "armband_value": 6.84
  }
 }
