@@ -1,0 +1,16 @@
+{
+  "gw": 10,
+  "decision": "decisions/gw10.json",
+  "applied": true,
+  "at": "2026-11-05T10:56:10.657Z",
+  "log": [
+    "APPLY decisions/gw10.json: GW10, deadline 2026-11-06T18:30:00Z (1894 min left)",
+    "Free transfers left 1, hits 1, bank after £2.8m",
+    "  OUT B.Fernandes £11.7m  ->  IN Rogers £8.2m",
+    "  OUT Thomas £4.0m  ->  IN Van Hecke £5.0m",
+    "XI: Verbruggen, Gabriel (C), Van Hecke, Vuskovic, Muharemović, Tavernier, Mbeumo, Rogers, Groß, Haaland (V), Barry",
+    "Bench: Kinsky, Calvert-Lewin, M.Sangaré, Diop",
+    "Transfers confirmed by FPL.",
+    "Verified on FPL: squad, XI, bench order and armband match. Bank £2.8m."
+  ]
+}
