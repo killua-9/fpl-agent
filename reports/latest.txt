@@ -1,4 +1,4 @@
-Generated 2026-11-04T20:27:10.821Z | Hold My Tzoli | overall rank 3185405 | 535 pts
+Generated 2026-11-05T03:44:43.829Z | Hold My Tzoli | overall rank 3185397 | 535 pts
 GW10 deadline 2026-11-06T18:30:00Z | FT 1 (reconstructed; pending transfers already made: 0) bank 0.3 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW10-15
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.8/15.6 a100 | 6.0 | 30.6 | 186% | NFOa FULH ARSa LEEH
@@ -7,7 +7,7 @@ MID Tavernier BOU 6.6/6.4 a | 6.0 | 25.2 | 68% | IPSa NFOH FULa BHAH
 MID Mbeumo MUN 7.9/7.9 a | 5.0 | 22.9 | 14% | AVLH LIVa BREH NEWa
 DEF Vuskovic BHA 5.2/5.1 a | 5.2 | 22.9 | 2% | BREH HULa NEWH BOUa
 FWD Barry EVE 5.6/5.6 a | 5.0 | 22.0 | 21% | COVH BREa LIVH AVLa
-MID Groß BHA 6.2/5.8 a | 4.6 | 21.6 | 36% | BREH HULa NEWH BOUa
+MID Groß BHA 6.2/5.8 a | 4.6 | 21.6 | 35% | BREH HULa NEWH BOUa
 DEF Muharemović LEE 5.1/5.0 a | 4.8 | 21.3 | 28% | TOTH CHEa COVH MCIa
 GK Verbruggen BHA 4.6/4.5 a | 4.8 | 20.5 | 10% | BREH HULa NEWH BOUa
 FWD Calvert-Lewin LEE 6.1/6.0 a100 | 3.8 | 18.9 | 18% | TOTH CHEa COVH MCIa
@@ -17,14 +17,14 @@ MID M.Sangaré BRE 5.4/5.4 a | 2.9 | 14.6 | 1% | BHAa EVEH MUNa ARSH
 DEF Diop IPS 3.9/3.9 a | 2.4 | 12.7 | 0% | BOUH TOTa AVLH COVa
 DEF Thomas COV 4.0/4.0 d50 | 1.4 | 12.5 | 0% | EVEa CRYH LEEa IPSH
 PLANS by net value (squad 6GW wtd value, less hits, plus value of banked FT):
-3T net 296.8 (val 304.8) bank 1.9: B.Fernandes(11.7)->Rogers(8.2 eEO93%), Thomas(4.0)->Van Hecke(5.0 eEO58%), Diop(3.9)->Konsa(4.8 eEO60%)
+3T net 296.8 (val 304.8) bank 1.9: B.Fernandes(11.7)->Rogers(8.2 eEO93%), Thomas(4.0)->Van Hecke(5.0 eEO58%), Diop(3.9)->Konsa(4.8 eEO59%)
 2T net 295.8 (val 299.8) bank 2.8: B.Fernandes(11.7)->Rogers(8.2 eEO93%), Thomas(4.0)->Van Hecke(5.0 eEO58%)
 1T net 292.6 (val 292.6) bank 0.8: M.Sangaré(5.4)->Rudoni(4.9 eEO3%)
 0T net 290.0 (val 288.5) bank 0.3: roll
 BEST PLAN XI GW10: Verbruggen 4.8, Gabriel 6.8, Konsa 6.3, Van Hecke 5.5, Tavernier 6.0, Mbeumo 5.0, Haaland 6.0, Vuskovic 5.2, Barry 5.0, Rogers 4.8, Muharemović 4.8
 C Gabriel armband 6.8 | VC Konsa 6.3 | bench (autosub order) Kinsky 4.1 (if plays 4.1), Groß 4.6 (if plays 4.6), Calvert-Lewin 3.8 (if plays 3.8), M.Sangaré 2.9 (if plays 3.7)
 Current squad GW10 XI proj 62.4 (C Gabriel, VC Haaland) vs best plan 67.2
-Captain options by armband value (projection plus vice cover if he does not play): Gabriel 6.8 (proj 6.8, plays 100%, vice Konsa) eEO17%, Konsa 6.3 (proj 6.3, plays 100%, vice Gabriel) eEO60%, Haaland 6.0 (proj 6.0, plays 100%, vice Gabriel) eEO186%, Tavernier 6.0 (proj 6.0, plays 100%, vice Gabriel) eEO68%
+Captain options by armband value (projection plus vice cover if he does not play): Gabriel 6.8 (proj 6.8, plays 100%, vice Konsa) eEO17%, Konsa 6.3 (proj 6.3, plays 100%, vice Gabriel) eEO59%, Haaland 6.0 (proj 6.0, plays 100%, vice Gabriel) eEO186%, Tavernier 6.0 (proj 6.0, plays 100%, vice Gabriel) eEO68%
 Current-squad captain options (if no transfers): Gabriel 6.8 (proj 6.8, plays 100%, vice Haaland), Haaland 6.0 (proj 6.0, plays 100%, vice Gabriel), Tavernier 6.0 (proj 6.0, plays 100%, vice Gabriel)
 CHIPS: TC gain GW10 ~6.8; BB gain GW10 ~15.4; WC 6GW gain vs best plan 5.8; FH GW10 gain 2.6
 Best TC GW in horizon: GW15 7.6; best BB GW: GW11 15.6; DGW/BGW: GW10 dbl0/blank0 GW11 dbl0/blank0 GW12 dbl0/blank0 GW13 dbl0/blank0 GW14 dbl0/blank0 GW15 dbl0/blank0
@@ -36,17 +36,17 @@ LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 28/29, 535 pts; leader B
  threats not owned (current squad): Rogers EO76% proj4.8, Palmer EO55% proj4.5, N.Jackson EO52% proj5.0, De Cuyper EO38% proj5.5, Raya EO34% proj5.5
  threats not owned (after best plan): Palmer EO55% proj4.5, N.Jackson EO52% proj5.0, De Cuyper EO38% proj5.5, Raya EO34% proj5.5, Cherki EO31% proj2.8 | plan sells: B.Fernandes EO10%, Thomas EO3%, Diop EO10% | plan buys: Rogers EO76%, Van Hecke EO17%, Konsa EO34%
  differentials after best plan (league EO under 15%): Vuskovic EO3%, Barry EO10%, Verbruggen EO7%, M.Sangaré EO7% | rival captains: Haaland 23, Rogers 2, Palmer 2
-ELITE threats not owned after best plan (overall-rank risk): N.Jackson AVL eEO88% proj5.0, Palmer CHE eEO84% proj4.5, Raya ARS eEO50% proj5.5, Manzambi AVL eEO38% proj3.3, Calafiori ARS eEO29% proj4.9, Silva BOU eEO27% proj4.9, Evanilson BOU eEO24% proj5.7, De Cuyper BHA eEO23% proj5.5
+ELITE threats not owned after best plan (overall-rank risk): N.Jackson AVL eEO88% proj5.0, Palmer CHE eEO85% proj4.5, Raya ARS eEO50% proj5.5, Manzambi AVL eEO38% proj3.3, Calafiori ARS eEO29% proj4.9, Silva BOU eEO27% proj4.9, Evanilson BOU eEO23% proj5.7, De Cuyper BHA eEO22% proj5.5
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, B.Fernandes pens+direct FKs+corners, Haaland pens, Barry pens, Calvert-Lewin pens
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS
 Learnt params v2: points calibration none, minutes mapping off, ep_next blend 0.2. Lessons: model/lessons.md
-Elite sample: top 1000 overall requested, 968 sampled. Model runtime 8s.
+Elite sample: top 1000 overall requested, 986 sampled. Model runtime 11s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-11-04T13:02Z): none
- squad and plan: B.Fernandes -21.6%, Van Hecke* +13.4%, Calvert-Lewin -12.5%, Thomas -12.4%, Vuskovic +9.9%, Muharemović +8.3%, Diop -8.2%, M.Sangaré -7.0%, Groß +6.8%, Tavernier +6.4%, Kinsky +5.2%, Gabriel +4.3%, Verbruggen +2.5%, Mbeumo -2.3%, Barry +2.0%, Haaland +1.2%, Konsa* +0.5%, Rogers* +0.2% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Rudoni +72.2%, Tel +71.5%, Kroupi.Jr +63.4%, Hill +62.5%, Ayari +61.6%, Doku +54.5%
- strongest fall pressure (owned 0.5%+): Saka -65.4%, Janelt -50.2%, Semenyo -42.6%, Strand Larsen -41.2%, Shaw -32.7%, George -30.7%
- calibration from observed changes (pressure measured at the run before the change): rises n37, pressure at previous run: 25th pct 8.4%, median 17.3% | falls n86, pressure at previous run: 25th pct 4.6%, median 11.0%
+ changes since previous run (2026-11-04T20:27Z): 4 players; 
+ squad and plan: B.Fernandes -21.7%, Van Hecke* +13.8%, Calvert-Lewin -12.6%, Thomas -12.6%, Vuskovic +10.1%, Muharemović +8.3%, Diop -8.2%, M.Sangaré -7.1%, Groß +6.8%, Tavernier +6.6%, Kinsky +5.3%, Gabriel +4.4%, Verbruggen +2.6%, Mbeumo -2.3%, Barry +2.2%, Haaland +1.2%, Konsa* +0.6%, Rogers* +0.3% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Rudoni +73.1%, Tel +71.7%, Kroupi.Jr +64.0%, Ayari +62.8%, Hill +62.7%, Doku +54.5%
+ strongest fall pressure (owned 0.5%+): Saka -65.7%, Janelt -50.3%, Semenyo -42.8%, Strand Larsen -41.4%, Shaw -32.9%, George -30.6%
+ calibration from observed changes (pressure measured at the run before the change): rises n37, pressure at previous run: 25th pct 8.4%, median 17.3% | falls n90, pressure at previous run: 25th pct 4.6%, median 11.7%
 BACKTEST GW8,9 | players projected 0.5+: n637, mean proj 2.41 vs actual 2.63, MAE 1.96, slope 0.75 (above 1 means projections too compressed, below 1 too spread)
  calibration by projection band: 0.5-2: n271 proj 1.17 actual 1.65 | 2-4: n293 proj 2.98 actual 3.16 | 4-6: n70 proj 4.58 actual 4.09 | 6-+: n3 proj 6.91 actual 5.33
  recommended XI incl. armband: proj 123.7 vs actual 80 over 2 GW; armband proj 14.6 vs actual 10
