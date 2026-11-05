@@ -1,0 +1,22 @@
+{
+  "gw": 10,
+  "entry": 531300,
+  "apply": true,
+  "created": "2026-11-05T10:55:52Z",
+  "source": "GW10 plan from DRAFT brief 5 Nov: 2T with one hit, net 295.8 vs 292.6 best no-hit",
+  "max_hits": 1,
+  "chip": null,
+  "transfers": [
+    { "out": "B.Fernandes", "in": "Rogers|CHE" },
+    { "out": "Thomas", "in": "Van Hecke|TOT" }
+  ],
+  "starting_xi": [
+    "Verbruggen",
+    "Gabriel|ARS", "Van Hecke|TOT", "Vuskovic|BHA", "Muharemović",
+    "Tavernier|BOU", "Mbeumo|MUN", "Rogers|CHE", "Groß",
+    "Haaland", "Barry|EVE"
+  ],
+  "bench": ["Kinsky", "Calvert-Lewin", "M.Sangaré", "Diop"],
+  "captain": "Gabriel|ARS",
+  "vice": "Haaland"
+}
