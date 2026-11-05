@@ -1,4 +1,4 @@
-Generated 2026-11-05T03:44:43.829Z | Hold My Tzoli | overall rank 3185397 | 535 pts
+Generated 2026-11-05T13:16:17.989Z | Hold My Tzoli | overall rank 3185398 | 535 pts
 GW10 deadline 2026-11-06T18:30:00Z | FT 1 (reconstructed; pending transfers already made: 0) bank 0.3 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW10-15
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.8/15.6 a100 | 6.0 | 30.6 | 186% | NFOa FULH ARSa LEEH
@@ -7,7 +7,7 @@ MID Tavernier BOU 6.6/6.4 a | 6.0 | 25.2 | 68% | IPSa NFOH FULa BHAH
 MID Mbeumo MUN 7.9/7.9 a | 5.0 | 22.9 | 14% | AVLH LIVa BREH NEWa
 DEF Vuskovic BHA 5.2/5.1 a | 5.2 | 22.9 | 2% | BREH HULa NEWH BOUa
 FWD Barry EVE 5.6/5.6 a | 5.0 | 22.0 | 21% | COVH BREa LIVH AVLa
-MID Groß BHA 6.2/5.8 a | 4.6 | 21.6 | 35% | BREH HULa NEWH BOUa
+MID Groß BHA 6.2/5.8 a | 4.6 | 21.6 | 36% | BREH HULa NEWH BOUa
 DEF Muharemović LEE 5.1/5.0 a | 4.8 | 21.3 | 28% | TOTH CHEa COVH MCIa
 GK Verbruggen BHA 4.6/4.5 a | 4.8 | 20.5 | 10% | BREH HULa NEWH BOUa
 FWD Calvert-Lewin LEE 6.1/6.0 a100 | 3.8 | 18.9 | 18% | TOTH CHEa COVH MCIa
@@ -36,16 +36,16 @@ LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 28/29, 535 pts; leader B
  threats not owned (current squad): Rogers EO76% proj4.8, Palmer EO55% proj4.5, N.Jackson EO52% proj5.0, De Cuyper EO38% proj5.5, Raya EO34% proj5.5
  threats not owned (after best plan): Palmer EO55% proj4.5, N.Jackson EO52% proj5.0, De Cuyper EO38% proj5.5, Raya EO34% proj5.5, Cherki EO31% proj2.8 | plan sells: B.Fernandes EO10%, Thomas EO3%, Diop EO10% | plan buys: Rogers EO76%, Van Hecke EO17%, Konsa EO34%
  differentials after best plan (league EO under 15%): Vuskovic EO3%, Barry EO10%, Verbruggen EO7%, M.Sangaré EO7% | rival captains: Haaland 23, Rogers 2, Palmer 2
-ELITE threats not owned after best plan (overall-rank risk): N.Jackson AVL eEO88% proj5.0, Palmer CHE eEO85% proj4.5, Raya ARS eEO50% proj5.5, Manzambi AVL eEO38% proj3.3, Calafiori ARS eEO29% proj4.9, Silva BOU eEO27% proj4.9, Evanilson BOU eEO23% proj5.7, De Cuyper BHA eEO22% proj5.5
+ELITE threats not owned after best plan (overall-rank risk): N.Jackson AVL eEO88% proj5.0, Palmer CHE eEO85% proj4.5, Raya ARS eEO51% proj5.5, Manzambi AVL eEO37% proj3.3, Calafiori ARS eEO29% proj4.9, Silva BOU eEO28% proj4.9, Evanilson BOU eEO23% proj5.7, De Cuyper BHA eEO22% proj5.5
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, B.Fernandes pens+direct FKs+corners, Haaland pens, Barry pens, Calvert-Lewin pens
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS
 Learnt params v2: points calibration none, minutes mapping off, ep_next blend 0.2. Lessons: model/lessons.md
-Elite sample: top 1000 overall requested, 986 sampled. Model runtime 11s.
+Elite sample: top 1000 overall requested, 975 sampled. Model runtime 10s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-11-04T20:27Z): 4 players; 
- squad and plan: B.Fernandes -21.7%, Van Hecke* +13.8%, Calvert-Lewin -12.6%, Thomas -12.6%, Vuskovic +10.1%, Muharemović +8.3%, Diop -8.2%, M.Sangaré -7.1%, Groß +6.8%, Tavernier +6.6%, Kinsky +5.3%, Gabriel +4.4%, Verbruggen +2.6%, Mbeumo -2.3%, Barry +2.2%, Haaland +1.2%, Konsa* +0.6%, Rogers* +0.3% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Rudoni +73.1%, Tel +71.7%, Kroupi.Jr +64.0%, Ayari +62.8%, Hill +62.7%, Doku +54.5%
- strongest fall pressure (owned 0.5%+): Saka -65.7%, Janelt -50.3%, Semenyo -42.8%, Strand Larsen -41.4%, Shaw -32.9%, George -30.6%
+ changes since previous run (2026-11-05T03:44Z): none
+ squad and plan: B.Fernandes -21.9%, Van Hecke* +14.4%, Thomas -13.1%, Calvert-Lewin -12.9%, Vuskovic +10.3%, Muharemović +8.3%, Diop -8.3%, M.Sangaré -7.3%, Tavernier +7.1%, Groß +6.9%, Kinsky +5.3%, Gabriel +4.6%, Barry +2.7%, Verbruggen +2.7%, Mbeumo -2.5%, Haaland +1.2%, Konsa* +0.9%, Rogers* +0.4% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Rudoni +73.9%, Tel +72.1%, Kroupi.Jr +65.0%, Hill +63.0%, Ayari +60.7%, Doku +54.6%
+ strongest fall pressure (owned 0.5%+): Saka -66.1%, Janelt -50.4%, Semenyo -43.1%, Strand Larsen -41.7%, Shaw -33.2%, George -30.6%
  calibration from observed changes (pressure measured at the run before the change): rises n37, pressure at previous run: 25th pct 8.4%, median 17.3% | falls n90, pressure at previous run: 25th pct 4.6%, median 11.7%
 BACKTEST GW8,9 | players projected 0.5+: n637, mean proj 2.41 vs actual 2.63, MAE 1.96, slope 0.75 (above 1 means projections too compressed, below 1 too spread)
  calibration by projection band: 0.5-2: n271 proj 1.17 actual 1.65 | 2-4: n293 proj 2.98 actual 3.16 | 4-6: n70 proj 4.58 actual 4.09 | 6-+: n3 proj 6.91 actual 5.33
