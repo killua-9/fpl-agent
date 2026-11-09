@@ -38,6 +38,9 @@ jobs:
           FPL_LEAGUES: '54818,392003'
           FPL_ELITE: '1000'
         run: node fpl.mjs
+      - name: Agent wake schedule
+        continue-on-error: true
+        run: node tools/schedule.mjs
       - name: Commit report
         run: |
           git config user.name "fpl-agent-bot"
