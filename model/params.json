@@ -1,79 +1,134 @@
 {
- "version": 2,
- "updated": "2026-11-03T20:08:51.492Z",
+ "version": 3,
+ "updated": "2026-11-09T21:20:31.096Z",
  "validation": {
-  "gws": 2,
-  "ok": false,
-  "reason": "needs 3 finished gameweeks, has 2"
+  "gws": 3,
+  "mae_base": 1.92,
+  "mae_cal": 1.9,
+  "brier_base": 0.1932,
+  "brier_cal": 0.1504,
+  "points_ok": true,
+  "minutes_ok": true,
+  "ok": true
  },
  "evidence": {
   "points": {
    "1": {
     "a": 0.03,
-    "b": 0.99,
-    "n": 42,
-    "ols_a": 0.85,
-    "ols_b": 0.88
+    "b": 1,
+    "n": 64,
+    "ols_a": 0.26,
+    "ols_b": 1
    },
    "2": {
-    "a": 0.11,
-    "b": 0.97,
-    "n": 226,
-    "ols_a": 0.56,
-    "ols_b": 0.91
+    "a": 0.1,
+    "b": 0.99,
+    "n": 344,
+    "ols_a": 0.32,
+    "ols_b": 0.96
    },
    "3": {
-    "a": 0.14,
-    "b": 0.85,
-    "n": 299,
-    "ols_a": 1.11,
-    "ols_b": 0.54
+    "a": 0.22,
+    "b": 0.84,
+    "n": 456,
+    "ols_a": 0.99,
+    "ols_b": 0.63
    },
    "4": {
-    "a": 0.04,
-    "b": 0.98,
-    "n": 70,
-    "ols_a": 0.73,
-    "ols_b": 0.83
+    "a": 0.05,
+    "b": 1,
+    "n": 103,
+    "ols_a": 0.41,
+    "ols_b": 0.98
    }
   },
   "minutes": [
    {
     "band": "0-0.3",
-    "n": 225,
+    "n": 332,
     "pred": 0.18,
-    "obs": 0.49,
+    "obs": 0.48,
     "adj": 0.45
    },
    {
     "band": "0.3-0.6",
-    "n": 184,
+    "n": 274,
     "pred": 0.44,
     "obs": 0.72,
-    "adj": 0.67
+    "adj": 0.69
    },
    {
     "band": "0.6-0.85",
-    "n": 127,
-    "pred": 0.74,
-    "obs": 0.79,
-    "adj": 0.78
+    "n": 190,
+    "pred": 0.72,
+    "obs": 0.8,
+    "adj": 0.79
    },
    {
     "band": "0.85-1",
-    "n": 274,
+    "n": 416,
     "pred": 0.98,
     "obs": 0.96,
     "adj": 0.96
    }
   ],
   "blend": {
-   "alpha": 0.2,
-   "n": 0
+   "alpha": 0.16,
+   "n": 359,
+   "ols": 0.08
   }
  },
- "calib": null,
- "minutes": null,
- "ep_blend": 0.2,
- "changes": []
+ "calib": {
+  "1": {
+   "a": 0.03,
+   "b": 1
+  },
+  "2": {
+   "a": 0.1,
+   "b": 0.99
+  },
+  "3": {
+   "a": 0.2,
+   "b": 0.92
+  },
+  "4": {
+   "a": 0.05,
+   "b": 1
+  }
+ },
+ "minutes": [
+  [
+   0,
+   0
+  ],
+  [
+   0.18,
+   0.45
+  ],
+  [
+   0.44,
+   0.69
+  ],
+  [
+   0.72,
+   0.79
+  ],
+  [
+   0.98,
+   0.96
+  ],
+  [
+   1,
+   0.98
+  ]
+ ],
+ "ep_blend": 0.16,
+ "changes": [
+  "GK points calibration a 0->0.03, b 1->1 (n 64)",
+  "DEF points calibration a 0->0.1, b 1->0.99 (n 344)",
+  "MID points calibration a 0->0.2, b 1->0.92 (n 456)",
+  "FWD points calibration a 0->0.05, b 1->1 (n 103)",
+  "minutes calibration knots [[0,0],[0.18,0.45],[0.44,0.69],[0.72,0.79],[0.98,0.96],[1,0.98]]",
+  "ep_next blend weight 0.2->0.16 (least squares 0.08, n 359)"
+ ]
 }

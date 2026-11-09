@@ -6,10 +6,11 @@ Read before every deadline decision.
 
 Regenerated after every review from reports/reviews/.
 
-- Season to date over 2 reviewed gameweek(s): lineup regret 18, captain regret 9, bench points unused 29, transfers net +22.0, minutes-miss cost 0.0.
-- Departures from the model: 1, net +3.0 points. A persistent negative total means judgement overrides are costing points and the bar for overriding should rise; a positive total means the news layer is adding value.
-- 10+ points left on the bench in 2 of the last 2 gameweeks. Bench spend may be too high, or the XI selection is not trusting bench players who are starting.
-- Calibration in force: none (identity); minutes mapping none; ep_next blend 0.2. Learning starts once 3 gameweeks are reviewed.
+- Season to date over 3 reviewed gameweek(s): lineup regret 18, captain regret 17, bench points unused 35, transfers net +14.0, minutes-miss cost 0.0.
+- Departures from the model: 2, net -3.0 points. A persistent negative total means judgement overrides are costing points and the bar for overriding should rise; a positive total means the news layer is adding value.
+- 10+ points left on the bench in 2 of the last 3 gameweeks. Bench spend may be too high, or the XI selection is not trusting bench players who are starting.
+- Mbeumo blanked (60+ minutes, 2 or fewer points, projected 4.5+) in 3 of the last 3 gameweeks. The projection may be living on reputation; check underlying numbers before keeping or captaining.
+- Calibration in force: GK a 0.03 b 1, DEF a 0.1 b 0.99, MID a 0.2 b 0.92, FWD a 0.05 b 1; minutes mapping active; ep_next blend 0.16. 
 
 ## Reflections
 

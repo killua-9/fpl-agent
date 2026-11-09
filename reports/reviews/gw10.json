@@ -1,0 +1,370 @@
+{
+ "gw": 10,
+ "generated": "2026-11-09T21:20:31.073Z",
+ "chip": null,
+ "points": 83,
+ "hits": 4,
+ "net": 79,
+ "gw_rank": 199109,
+ "overall_rank": 2184887,
+ "prev_overall_rank": 3185415,
+ "average": 55,
+ "highest": 139,
+ "reconcile": "reconciles with FPL",
+ "proj_fielded": 65.4,
+ "z": 1.35,
+ "verdict": "a notable deviation, but plausibly variance",
+ "attribution": {
+  "lineup_regret": 0,
+  "captain_regret": 8,
+  "bench_points": 6,
+  "transfers_net": -8,
+  "minutes_miss_cost": 0
+ },
+ "captain": {
+  "used": 4,
+  "effective": 4,
+  "hindsight_best": 249
+ },
+ "transfers": [
+  {
+   "out": 173,
+   "in": 112,
+   "d": 4,
+   "pd": 4.040000000000001
+  },
+  {
+   "out": 426,
+   "in": 40,
+   "d": -8,
+   "pd": 1.33
+  }
+ ],
+ "overrides": {
+  "captain": null,
+  "transfers": {
+   "model": [
+    [
+     426,
+     183
+    ],
+    [
+     173,
+     112
+    ],
+    [
+     346,
+     379
+    ]
+   ],
+   "used": [
+    [
+     173,
+     112
+    ],
+    [
+     426,
+     40
+    ]
+   ],
+   "d": -6
+  }
+ },
+ "model_view": {
+  "recommended_actual": 89,
+  "recommended_proj": 65.93,
+  "current_actual": 89,
+  "current_proj": 61.49
+ },
+ "players": [
+  {
+   "id": 109,
+   "name": "Verbruggen",
+   "team": "BHA",
+   "pos": "GK",
+   "role": "XI",
+   "proj": 4.8,
+   "p_play": 100,
+   "pts": 6,
+   "mins": 90,
+   "resid": 1.2,
+   "flags": []
+  },
+  {
+   "id": 4,
+   "name": "Gabriel",
+   "team": "ARS",
+   "pos": "DEF",
+   "role": "C",
+   "proj": 6.8,
+   "p_play": 100,
+   "pts": 8,
+   "mins": 90,
+   "resid": 1.2,
+   "flags": []
+  },
+  {
+   "id": 112,
+   "name": "Van Hecke",
+   "team": "TOT",
+   "pos": "DEF",
+   "role": "XI",
+   "proj": 5.5,
+   "p_play": 100,
+   "pts": 4,
+   "mins": 90,
+   "resid": -1.5,
+   "flags": []
+  },
+  {
+   "id": 504,
+   "name": "Vuskovic",
+   "team": "BHA",
+   "pos": "DEF",
+   "role": "XI",
+   "proj": 5.2,
+   "p_play": 100,
+   "pts": 12,
+   "mins": 90,
+   "resid": 6.8,
+   "flags": [
+    "haul"
+   ]
+  },
+  {
+   "id": 334,
+   "name": "Muharemović",
+   "team": "LEE",
+   "pos": "DEF",
+   "role": "XI",
+   "proj": 4.8,
+   "p_play": 100,
+   "pts": 10,
+   "mins": 90,
+   "resid": 5.2,
+   "flags": []
+  },
+  {
+   "id": 68,
+   "name": "Tavernier",
+   "team": "BOU",
+   "pos": "MID",
+   "role": "XI",
+   "proj": 6,
+   "p_play": 100,
+   "pts": 3,
+   "mins": 90,
+   "resid": -3,
+   "flags": []
+  },
+  {
+   "id": 427,
+   "name": "Mbeumo",
+   "team": "MUN",
+   "pos": "MID",
+   "role": "XI",
+   "proj": 5,
+   "p_play": 100,
+   "pts": 2,
+   "mins": 82,
+   "resid": -3,
+   "flags": [
+    "blank"
+   ]
+  },
+  {
+   "id": 40,
+   "name": "Rogers",
+   "team": "CHE",
+   "pos": "MID",
+   "role": "XI",
+   "proj": 4.8,
+   "p_play": 100,
+   "pts": 2,
+   "mins": 90,
+   "resid": -2.8,
+   "flags": [
+    "blank"
+   ]
+  },
+  {
+   "id": 124,
+   "name": "Groß",
+   "team": "BHA",
+   "pos": "MID",
+   "role": "XI",
+   "proj": 4.6,
+   "p_play": 100,
+   "pts": 10,
+   "mins": 90,
+   "resid": 5.4,
+   "flags": []
+  },
+  {
+   "id": 411,
+   "name": "Haaland",
+   "team": "MCI",
+   "pos": "FWD",
+   "role": "XI",
+   "proj": 6,
+   "p_play": 100,
+   "pts": 2,
+   "mins": 90,
+   "resid": -4,
+   "flags": [
+    "blank"
+   ]
+  },
+  {
+   "id": 249,
+   "name": "Barry",
+   "team": "EVE",
+   "pos": "FWD",
+   "role": "XI",
+   "proj": 5,
+   "p_play": 100,
+   "pts": 16,
+   "mins": 90,
+   "resid": 11,
+   "flags": [
+    "haul"
+   ]
+  },
+  {
+   "id": 496,
+   "name": "Kinsky",
+   "team": "TOT",
+   "pos": "GK",
+   "role": "bench",
+   "proj": 4.1,
+   "p_play": 100,
+   "pts": 2,
+   "mins": 90,
+   "resid": -2.1,
+   "flags": []
+  },
+  {
+   "id": 346,
+   "name": "Calvert-Lewin",
+   "team": "LEE",
+   "pos": "FWD",
+   "role": "bench",
+   "proj": 2.9,
+   "p_play": 75,
+   "pts": 2,
+   "mins": 90,
+   "resid": -0.9,
+   "flags": []
+  },
+  {
+   "id": 565,
+   "name": "M.Sangaré",
+   "team": "BRE",
+   "pos": "MID",
+   "role": "bench",
+   "proj": 2.9,
+   "p_play": 79,
+   "pts": 1,
+   "mins": 58,
+   "resid": -1.9,
+   "flags": []
+  },
+  {
+   "id": 259,
+   "name": "Diop",
+   "team": "IPS",
+   "pos": "DEF",
+   "role": "bench",
+   "proj": 2.4,
+   "p_play": 100,
+   "pts": 1,
+   "mins": 90,
+   "resid": -1.4,
+   "flags": []
+  },
+  {
+   "id": 173,
+   "name": "Thomas",
+   "team": "COV",
+   "pos": "DEF",
+   "role": "sold",
+   "proj": 1.4,
+   "p_play": 43,
+   "pts": 0,
+   "mins": 0,
+   "resid": -1.4,
+   "flags": []
+  },
+  {
+   "id": 426,
+   "name": "B.Fernandes",
+   "team": "MUN",
+   "pos": "MID",
+   "role": "sold",
+   "proj": 3.5,
+   "p_play": 86,
+   "pts": 10,
+   "mins": 90,
+   "resid": 6.5,
+   "flags": [
+    "haul"
+   ]
+  },
+  {
+   "id": 183,
+   "name": "Rudoni",
+   "team": "COV",
+   "pos": "MID",
+   "role": "model buy",
+   "proj": 4.4,
+   "p_play": 100,
+   "pts": 2,
+   "mins": 85,
+   "resid": -2.4,
+   "flags": []
+  },
+  {
+   "id": 379,
+   "name": "Isak",
+   "team": "LIV",
+   "pos": "FWD",
+   "role": "model buy",
+   "proj": 5.4,
+   "p_play": 100,
+   "pts": 8,
+   "mins": 90,
+   "resid": 2.6,
+   "flags": []
+  }
+ ],
+ "leagues": [
+  {
+   "id": 54818,
+   "name": "The Mane 💰 League™",
+   "rank": 25,
+   "last": 32,
+   "gw": 83,
+   "leader": "Busby's Babes",
+   "gap": 78,
+   "best": "Hold My Tzoli",
+   "bestPts": 83
+  },
+  {
+   "id": 392003,
+   "name": "MANE LEAGUE🤑 🥊KNOCK OUT🥊",
+   "rank": 22,
+   "last": 28,
+   "gw": 83,
+   "leader": "Busby's Babes",
+   "gap": 78,
+   "best": "Hold My Tzoli",
+   "bestPts": 83
+  }
+ ],
+ "variance_model": {
+  "c0": 2,
+  "c1": 2.23,
+  "n": 967,
+  "fitted": true
+ }
+}
