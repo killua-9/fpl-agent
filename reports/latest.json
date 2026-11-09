@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T02:59:41.812Z",
+ "generated": "2026-11-09T13:58:20.758Z",
  "entry": 531300,
  "gws": [
   11,
@@ -60,7 +60,7 @@
    "name": "Gabriel",
    "sell": 8,
    "proj": [
-    6.53,
+    6.85,
     5.51,
     5.62,
     5.84,
@@ -123,7 +123,7 @@
    "name": "Muharemović",
    "sell": 5,
    "proj": [
-    4.89,
+    5.09,
     5.7,
     3.99,
     5.3,
@@ -291,7 +291,7 @@
    "name": "Calvert-Lewin",
    "sell": 6,
    "proj": [
-    3.77,
+    3.85,
     4.18,
     3.57,
     4.86,
@@ -352,7 +352,7 @@
  ],
  "best_plan": {
   "n_transfers": 1,
-  "net": 310.92,
+  "net": 311.89,
   "out": [
    "Diop"
   ],
@@ -360,8 +360,8 @@
    "Konsa"
   ],
   "bank": 1.9,
-  "captain": "Haaland",
-  "vice": "Gabriel",
-  "armband_value": 6.64
+  "captain": "Gabriel",
+  "vice": "Haaland",
+  "armband_value": 6.85
  }
 }
