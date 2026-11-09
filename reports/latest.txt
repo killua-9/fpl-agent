@@ -1,52 +1,52 @@
-Generated 2026-11-08T18:23:52.300Z | Hold My Tzoli | overall rank 2130765 | 614 pts
+Generated 2026-11-09T02:59:41.809Z | Hold My Tzoli | overall rank 2142877 | 614 pts
 GW11 deadline 2026-11-21T11:00:00Z | FT 1 (reconstructed; pending transfers already made: 0) bank 2.8 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW11-16
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
-FWD Haaland MCI 15.8/15.6 a100 | 6.7 | 29.7 | 160% | FULH ARSa LEEH BREa
-DEF Gabriel ARS 8.1/8.0 a | 6.5 | 27.4 | 36% | NEWa MCIH BREa TOTa
-DEF Vuskovic BHA 5.2/5.1 a | 5.9 | 25.0 | 22% | HULa NEWH BOUa NFOa
+FWD Haaland MCI 15.8/15.6 a100 | 6.6 | 29.6 | 160% | FULH ARSa LEEH BREa
+DEF Gabriel ARS 8.1/8.0 a | 6.5 | 27.5 | 36% | NEWa MCIH BREa TOTa
+DEF Vuskovic BHA 5.3/5.2 a | 6.0 | 25.2 | 22% | HULa NEWH BOUa NFOa
 MID Groß BHA 6.3/5.9 a | 4.9 | 24.6 | 83% | HULa NEWH BOUa NFOa
 MID Tavernier BOU 6.7/6.4 a | 5.2 | 24.5 | 68% | NFOH FULa BHAH HULH
-DEF Van Hecke TOT 5.0/5.0 a100 | 5.9 | 24.2 | 21% | IPSH SUNa FULH ARSH
-FWD Barry EVE 5.7/5.6 a | 5.4 | 23.8 | 53% | BREa LIVH AVLa FULH
-DEF Muharemović LEE 5.1/5.0 a | 4.9 | 22.9 | 24% | CHEa COVH MCIa IPSH
-MID Rogers CHE 8.2/8.2 a | 4.6 | 22.0 | 89% | LEEH NFOa CRYH LIVH
-MID Mbeumo MUN 7.9/7.9 a | 4.2 | 22.0 | 12% | LIVa BREH NEWa COVH
-GK Verbruggen BHA 4.6/4.5 a | 5.0 | 20.8 | 27% | HULa NEWH BOUa NFOa
-FWD Calvert-Lewin LEE 6.0/6.0 a100 | 3.8 | 18.7 | 5% | CHEa COVH MCIa IPSH
+DEF Van Hecke TOT 5.1/5.0 a100 | 5.9 | 24.4 | 21% | IPSH SUNa FULH ARSH
+FWD Barry EVE 5.7/5.6 a | 5.4 | 24.0 | 53% | BREa LIVH AVLa FULH
+DEF Muharemović LEE 5.1/5.0 a | 4.9 | 23.0 | 24% | CHEa COVH MCIa IPSH
+MID Mbeumo MUN 7.9/7.9 a | 4.2 | 21.9 | 12% | LIVa BREH NEWa COVH
+MID Rogers CHE 8.2/8.2 a | 4.5 | 21.8 | 89% | LEEH NFOa CRYH LIVH
+GK Verbruggen BHA 4.6/4.5 a | 5.0 | 20.9 | 27% | HULa NEWH BOUa NFOa
+FWD Calvert-Lewin LEE 6.0/6.0 a100 | 3.8 | 18.7 | 4% | CHEa COVH MCIa IPSH
 GK Kinsky TOT 4.4/4.4 a | 4.1 | 17.9 | 9% | IPSH SUNa FULH ARSH
 MID M.Sangaré BRE 5.4/5.4 a | 3.1 | 14.9 | 0% | EVEH MUNa ARSH MCIH
-DEF Diop IPS 3.9/3.9 a | 2.4 | 12.1 | 0% | TOTa AVLH COVa LEEa
+DEF Diop IPS 3.9/3.9 a | 2.4 | 12.3 | 0% | TOTa AVLH COVa LEEa
 PLANS by net value (squad 6GW wtd value, less hits, plus value of banked FT):
-2T net 310.5 (val 314.5) bank 0.8: Diop(3.9)->Konsa(4.8 eEO83%), Calvert-Lewin(6.0)->N.Jackson(7.1 eEO73%)
-1T net 310.5 (val 310.5) bank 1.9: Diop(3.9)->Konsa(4.8 eEO83%)
-3T net 309.2 (val 317.2) bank 0.5: Diop(3.9)->Konsa(4.8 eEO83%), Calvert-Lewin(6.0)->N.Jackson(7.1 eEO73%), M.Sangaré(5.4)->E.Le Fée(5.7 eEO1%)
-0T net 306.3 (val 304.8) bank 2.8: roll
-BEST PLAN XI GW11: Verbruggen 5.0, Gabriel 6.5, Konsa 6.1, Vuskovic 5.9, Tavernier 5.2, Groß 4.9, Haaland 6.7, Van Hecke 5.9, N.Jackson 5.9, Barry 5.4, Muharemović 4.9
-C Haaland armband 6.7 | VC Gabriel 6.5 | bench (autosub order) Kinsky 4.1 (if plays 4.1), Rogers 4.6 (if plays 4.6), Mbeumo 4.2 (if plays 4.2), M.Sangaré 3.1 (if plays 3.7)
-Current squad GW11 XI proj 65.8 (C Haaland, VC Gabriel) vs best plan 69.1
-Captain options by armband value (projection plus vice cover if he does not play): Haaland 6.7 (proj 6.7, plays 100%, vice Gabriel) eEO160%, Gabriel 6.5 (proj 6.5, plays 100%, vice Haaland) eEO36%, Konsa 6.1 (proj 6.1, plays 100%, vice Haaland) eEO83%, Vuskovic 5.9 (proj 5.9, plays 100%, vice Haaland) eEO22%
-Current-squad captain options (if no transfers): Haaland 6.7 (proj 6.7, plays 100%, vice Gabriel), Gabriel 6.5 (proj 6.5, plays 100%, vice Haaland), Vuskovic 5.9 (proj 5.9, plays 100%, vice Haaland)
-CHIPS: TC gain GW11 ~6.7; BB gain GW11 ~15.9; WC 6GW gain vs best plan 7.4; FH GW11 gain 1.8
+1T net 310.9 (val 310.9) bank 1.9: Diop(3.9)->Konsa(4.8 eEO83%)
+2T net 310.4 (val 314.4) bank 1.6: Diop(3.9)->Konsa(4.8 eEO83%), M.Sangaré(5.4)->E.Le Fée(5.7 eEO1%)
+3T net 309.1 (val 317.1) bank 0.5: Diop(3.9)->Konsa(4.8 eEO83%), M.Sangaré(5.4)->E.Le Fée(5.7 eEO1%), Calvert-Lewin(6.0)->N.Jackson(7.1 eEO72%)
+0T net 306.6 (val 305.1) bank 2.8: roll
+BEST PLAN XI GW11: Verbruggen 5.0, Gabriel 6.5, Konsa 6.1, Vuskovic 6.0, Tavernier 5.2, Groß 4.9, Haaland 6.6, Van Hecke 5.9, Barry 5.4, Muharemović 4.9, Rogers 4.5
+C Haaland armband 6.6 | VC Gabriel 6.5 | bench (autosub order) Kinsky 4.1 (if plays 4.1), Mbeumo 4.2 (if plays 4.2), Calvert-Lewin 3.8 (if plays 3.8), M.Sangaré 3.1 (if plays 3.7)
+Current squad GW11 XI proj 65.8 (C Haaland, VC Gabriel) vs best plan 67.7
+Captain options by armband value (projection plus vice cover if he does not play): Haaland 6.6 (proj 6.6, plays 100%, vice Gabriel) eEO160%, Gabriel 6.5 (proj 6.5, plays 100%, vice Haaland) eEO36%, Konsa 6.1 (proj 6.1, plays 100%, vice Haaland) eEO83%, Vuskovic 6.0 (proj 6.0, plays 100%, vice Haaland) eEO22%
+Current-squad captain options (if no transfers): Haaland 6.6 (proj 6.6, plays 100%, vice Gabriel), Gabriel 6.5 (proj 6.5, plays 100%, vice Haaland), Vuskovic 6.0 (proj 6.0, plays 100%, vice Haaland)
+CHIPS: TC gain GW11 ~6.6; BB gain GW11 ~15.1; WC 6GW gain vs best plan 10.1; FH GW11 gain 3.8
 Best TC GW in horizon: GW15 7.2; best BB GW: GW14 16.0; DGW/BGW: GW11 dbl0/blank0 GW12 dbl0/blank0 GW13 dbl0/blank0 GW14 dbl0/blank0 GW15 dbl0/blank0 GW16 dbl0/blank0
 LEAGUE The Mane 💰 League™ (54818): rank 25/37, 614 pts; leader Busby's Babes 692 (gap 78)
- threats not owned (current squad): De Cuyper EO57% proj5.8, Calafiori EO54% proj4.5, Konsa EO49% proj6.1, Palmer EO49% proj4.2, N.Jackson EO46% proj5.9
- threats not owned (after best plan): De Cuyper EO57% proj5.8, Calafiori EO54% proj4.5, Palmer EO49% proj4.2, Raya EO43% proj5.2, Isak EO32% proj6.1 | plan sells: Diop EO3%, Calvert-Lewin EO16% | plan buys: Konsa EO49%, N.Jackson EO46%
+ threats not owned (current squad): De Cuyper EO57% proj5.8, Calafiori EO54% proj4.5, Konsa EO49% proj6.1, Palmer EO49% proj4.2, N.Jackson EO46% proj5.8
+ threats not owned (after best plan): De Cuyper EO57% proj5.8, Calafiori EO54% proj4.5, Palmer EO49% proj4.2, N.Jackson EO46% proj5.8, Raya EO43% proj5.2 | plan sells: Diop EO3% | plan buys: Konsa EO49%
  differentials after best plan (league EO under 15%): Vuskovic EO8%, Barry EO14%, M.Sangaré EO5% | rival captains: Haaland 28, Groß 2, Isak 2
 LEAGUE MANE LEAGUE🤑 🥊KNOCK OUT🥊 (392003): rank 23/28, 614 pts; leader Busby's Babes 692 (gap 78)
  threats not owned (current squad): Calafiori EO61% proj4.5, De Cuyper EO61% proj5.8, Raya EO46% proj5.2, Konsa EO46% proj6.1, Palmer EO46% proj4.2
- threats not owned (after best plan): Calafiori EO61% proj4.5, De Cuyper EO61% proj5.8, Raya EO46% proj5.2, Palmer EO46% proj4.2, Isak EO36% proj6.1 | plan sells: Diop EO4%, Calvert-Lewin EO18% | plan buys: Konsa EO46%, N.Jackson EO46%
+ threats not owned (after best plan): Calafiori EO61% proj4.5, De Cuyper EO61% proj5.8, Raya EO46% proj5.2, Palmer EO46% proj4.2, N.Jackson EO46% proj5.8 | plan sells: Diop EO4% | plan buys: Konsa EO46%
  differentials after best plan (league EO under 15%): Van Hecke EO14%, Vuskovic EO7%, M.Sangaré EO7% | rival captains: Haaland 22, Isak 2, Gabriel 1
-ELITE threats not owned after best plan (overall-rank risk): Calafiori ARS eEO80% proj4.5, De Cuyper BHA eEO76% proj5.8, Palmer CHE eEO71% proj4.2, Raya ARS eEO69% proj5.2, Evanilson BOU eEO35% proj5.4, Isak LIV eEO29% proj6.1, Silva BOU eEO20% proj4.7, Dewsbury-Hall EVE eEO17% proj4.7
+ELITE threats not owned after best plan (overall-rank risk): Calafiori ARS eEO80% proj4.5, De Cuyper BHA eEO76% proj5.8, N.Jackson AVL eEO72% proj5.8, Palmer CHE eEO71% proj4.2, Raya ARS eEO68% proj5.2, Evanilson BOU eEO34% proj5.4, Isak LIV eEO29% proj6.1, Silva BOU eEO20% proj4.7
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, Haaland pens, Barry pens, Calvert-Lewin pens
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS, Schade BRE, E.Le Fée SUN
 Learnt params v2: points calibration none, minutes mapping off, ep_next blend 0.2. Lessons: model/lessons.md
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 9s.
+Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 30s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-11-08T11:58Z): none
- squad and plan: Van Hecke +28.0%, Vuskovic +19.2%, M.Sangaré -11.3%, Diop -10.6%, Muharemović +10.1%, Barry +9.6%, Kinsky +6.3%, Mbeumo -6.2%, Verbruggen +4.7%, Konsa* +3.7%, Rogers +2.8%, Calvert-Lewin -2.0%, N.Jackson* +2.0%, Haaland +1.3%, Gabriel +1.1%, Groß +0.6%, Tavernier +0.5% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Rudoni +79.7%, Tel +71.4%, Kroupi.Jr +68.9%, Madueke +57.3%, Doku +55.1%, Iwobi +38.8%
- strongest fall pressure (owned 0.5%+): Janelt -55.6%, Semenyo -52.8%, Shaw -44.3%, Stach -35.8%, Frimpong -33.0%, João Pedro -32.3%
- calibration from observed changes (pressure measured at the run before the change): rises n48, pressure at previous run: 25th pct 8.4%, median 17.3% | falls n115, pressure at previous run: 25th pct 5.1%, median 13.3%
+ changes since previous run (2026-11-08T18:23Z): 17 players; Vuskovic rise 5.2->5.3, Van Hecke rise 5.0->5.1
+ squad and plan: M.Sangaré -11.7%, Barry +11.1%, Diop -10.8%, Muharemović +10.7%, Mbeumo -7.1%, Kinsky +6.4%, Verbruggen +4.9%, Konsa* +4.4%, Calvert-Lewin -2.9%, Rogers +2.8%, Gabriel +1.5%, Haaland +1.2%, Groß +0.9%, Tavernier +0.8%, Van Hecke +0.0%, Vuskovic +0.0% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Rudoni +74.8%, Tel +69.8%, Kroupi.Jr +68.8%, Madueke +58.3%, Doku +54.6%, Acheampong +40.4%
+ strongest fall pressure (owned 0.5%+): Janelt -55.9%, Semenyo -53.3%, Shaw -44.8%, Stach -36.6%, Frimpong -33.3%, Walle Egeli -30.6%
+ calibration from observed changes (pressure measured at the run before the change): rises n52, pressure at previous run: 25th pct 8.4%, median 17.3% | falls n128, pressure at previous run: 25th pct 5.6%, median 13.8%
 BACKTEST GW8,9 | players projected 0.5+: n637, mean proj 2.41 vs actual 2.63, MAE 1.96, slope 0.75 (above 1 means projections too compressed, below 1 too spread)
  calibration by projection band: 0.5-2: n271 proj 1.17 actual 1.65 | 2-4: n293 proj 2.98 actual 3.16 | 4-6: n70 proj 4.58 actual 4.09 | 6-+: n3 proj 6.91 actual 5.33
  recommended XI incl. armband: proj 123.7 vs actual 80 over 2 GW; armband proj 14.6 vs actual 10
