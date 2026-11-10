@@ -16,6 +16,16 @@ Regenerated after every review from reports/reviews/.
 
 Written by the deadline agent after each review, newest first. Each entry names what went wrong in its own judgement, the evidence, and the rule it will apply from now on. Rules here are advisory to the judgement layer; they do not change model code.
 
+### GW10 reflection (10 November 2026)
+
+Result: 83 less a 4-point hit (79 net) against 65.4 projected for the side fielded (plus 1.4 standard deviations, plausibly variance); overall rank 3,185,415 to 2,184,887; Mane League 32nd to 25th, top score in the league this week.
+
+Judgement layer: the plan (B.Fernandes to Rogers, Thomas to Van Hecke, one -4) was the model's best plan within one hit, executed early from the DRAFT run on price pressure (Fernandes fall, Van Hecke rise). The hit cleared the threshold (295.8 against 292.6 best no-hit, confirmed at 295.7 against 292.1 in the FINAL report). The recorded departure (-6) is the one-hit cap, not a news override: the model's top plan needed two hits (adding Calvert-Lewin to Isak). Net of the second hit that plan would have scored about 81, two points more than the 79 achieved, which is within noise. Captaincy followed the armband arithmetic: Gabriel 6.8 against Haaland 6.0; Gabriel returned 8 with the armband, Haaland 2. Barry's 16 (projected 5.0) was not a foreseeable armband choice. Bench order was the model's and left 6 points, all from low-scoring reserves.
+
+Evidence: the transfer loss (-8) is Fernandes scoring 10 after his sale against Rogers' 2; Fernandes was projected 3.5 with an 86% start chance and nothing reported before the deadline pointed to a haul. Thomas (calf) did not play, so that sale was correct. Mbeumo has now blanked in three successive gameweeks; the new MID calibration (b 0.92) addresses part of that and it remains an automated watch item, not a rule.
+
+No rule change: decisions were sound and the swing was variance. Watch: the one-hit cap has now cost about 2 net points once; revisit only if two-hit plans keep beating the capped plan over several gameweeks. Check Mbeumo's underlying numbers before keeping or captaining him in GW11.
+
 ### GW9 reflection (4 November 2026)
 
 Result: 44 against 60.7 projected for the side fielded (minus 1.3 standard deviations, plausibly variance); overall rank 2,814,721 to 3,185,415.
