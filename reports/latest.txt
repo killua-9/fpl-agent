@@ -1,14 +1,14 @@
-Generated 2026-11-13T13:10:47.936Z | Hold My Tzoli | overall rank 2184849 | 614 pts
+Generated 2026-11-13T20:31:28.103Z | Hold My Tzoli | overall rank 2184849 | 614 pts
 GW11 deadline 2026-11-21T11:00:00Z | FT 1 (reconstructed; pending transfers already made: 0) bank 2.8 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW11-16
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.8/15.6 a100 | 6.7 | 29.9 | 160% | FULH ARSa LEEH BREa
 DEF Gabriel ARS 8.1/8.0 a | 6.7 | 27.9 | 36% | NEWa MCIH BREa TOTa
 DEF Vuskovic BHA 5.3/5.2 a | 5.9 | 25.3 | 22% | HULa NEWH BOUa NFOa
 DEF Van Hecke TOT 5.1/5.0 a100 | 6.1 | 24.7 | 21% | IPSH SUNa FULH ARSH
-FWD Barry EVE 5.7/5.6 a | 5.4 | 24.1 | 53% | BREa LIVH AVLa FULH
+FWD Barry EVE 5.7/5.6 a | 5.4 | 24.1 | 54% | BREa LIVH AVLa FULH
 MID Tavernier BOU 6.7/6.4 a | 5.1 | 23.6 | 68% | NFOH FULa BHAH HULH
 MID Groß BHA 6.3/5.9 a | 4.7 | 23.5 | 83% | HULa NEWH BOUa NFOa
-DEF Muharemović LEE 5.1/5.0 a | 5.1 | 23.4 | 25% | CHEa COVH MCIa IPSH
+DEF Muharemović LEE 5.1/5.0 a | 5.1 | 23.4 | 24% | CHEa COVH MCIa IPSH
 GK Verbruggen BHA 4.7/4.6 a | 4.9 | 20.9 | 27% | HULa NEWH BOUa NFOa
 MID Mbeumo MUN 7.9/7.9 a | 3.9 | 20.9 | 12% | LIVa BREH NEWa COVH
 MID Rogers CHE 8.2/8.2 a | 4.2 | 20.9 | 89% | LEEH NFOa CRYH LIVH
@@ -40,12 +40,12 @@ ELITE threats not owned after best plan (overall-rank risk): Calafiori ARS eEO80
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, Haaland pens, Barry pens, Calvert-Lewin pens
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS, Schade BRE, Nketiah CRY
 Learnt params v3: points calibration GK 0.03+1x DEF 0.1+0.99x MID 0.2+0.92x FWD 0.05+1x, minutes mapping on, ep_next blend 0.16. Lessons: model/lessons.md
-Elite sample: top 1000 overall requested, 981 sampled. Model runtime 10s.
+Elite sample: top 1000 overall requested, 999 sampled. Model runtime 13s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-11-13T03:36Z): none
- squad and plan: Barry +14.3%, M.Sangaré -12.8%, Muharemović +12.2%, Diop -11.4%, Mbeumo -8.7%, Vuskovic +6.7%, Kinsky +6.7%, Konsa* +5.9%, Calvert-Lewin -4.7%, Van Hecke +3.0%, Rogers +3.0%, Gabriel +2.4%, Tavernier +1.9%, Groß +1.7%, Haaland +1.1%, Verbruggen +0.1% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Rudoni +78.9%, Kroupi.Jr +69.5%, Tel +65.9%, Madueke +60.4%, Doku +53.4%, Lindelöf +40.8%
- strongest fall pressure (owned 0.5%+): Janelt -56.4%, Semenyo -55.8%, Shaw -46.2%, Stach -41.4%, Frimpong -34.2%, Walle Egeli -31.9%
+ changes since previous run (2026-11-13T13:10Z): none
+ squad and plan: Barry +14.3%, M.Sangaré -12.9%, Muharemović +12.2%, Diop -11.4%, Mbeumo -8.8%, Vuskovic +6.9%, Kinsky +6.7%, Konsa* +6.0%, Calvert-Lewin -4.8%, Van Hecke +3.2%, Rogers +3.0%, Gabriel +2.4%, Tavernier +2.0%, Groß +1.8%, Haaland +1.1%, Verbruggen +0.1% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Rudoni +79.1%, Kroupi.Jr +69.5%, Tel +65.8%, Madueke +60.5%, Doku +53.4%, Lindelöf +40.9%
+ strongest fall pressure (owned 0.5%+): Janelt -56.5%, Semenyo -55.9%, Shaw -46.3%, Stach -41.5%, Frimpong -34.3%, Walle Egeli -31.9%
  calibration from observed changes (pressure measured at the run before the change): rises n54, pressure at previous run: 25th pct 8.3%, median 16.2% | falls n135, pressure at previous run: 25th pct 5.6%, median 13.3%
 BACKTEST GW8,9,10 | players projected 0.5+: n967, mean proj 2.40 vs actual 2.61, MAE 1.92, slope 0.83 (above 1 means projections too compressed, below 1 too spread)
  calibration by projection band: 0.5-2: n415 proj 1.17 actual 1.58 | 2-4: n435 proj 2.95 actual 3.05 | 4-6: n111 proj 4.62 actual 4.61 | 6-+: n6 proj 6.60 actual 4.83
