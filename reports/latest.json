@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T18:45:40.503Z",
+ "generated": "2026-11-15T03:06:30.273Z",
  "entry": 531300,
  "gws": [
   11,
@@ -352,14 +352,14 @@
  ],
  "best_plan": {
   "n_transfers": 1,
-  "net": 310.38,
+  "net": 310.39,
   "out": [
    "Diop"
   ],
   "in": [
    "Konsa"
   ],
-  "bank": 1.9,
+  "bank": 1.8,
   "captain": "Gabriel",
   "vice": "Haaland",
   "armband_value": 6.87
