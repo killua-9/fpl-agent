@@ -1,4 +1,4 @@
-Generated 2026-11-16T22:55:17.920Z | Hold My Tzoli | overall rank 2184840 | 614 pts
+Generated 2026-11-17T05:15:10.171Z | Hold My Tzoli | overall rank 2184841 | 614 pts
 GW11 deadline 2026-11-21T11:00:00Z | FT 1 (reconstructed; pending transfers already made: 0) bank 2.8 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW11-16
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.8/15.6 a100 | 6.4 | 29.5 | 160% | FULH ARSa LEEH BREa
@@ -40,13 +40,13 @@ ELITE threats not owned after best plan (overall-rank risk): Calafiori ARS eEO80
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, Haaland pens, Barry pens, Calvert-Lewin pens
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS, Schade BRE, Nketiah CRY
 Learnt params v3: points calibration GK 0.03+1x DEF 0.1+0.99x MID 0.2+0.92x FWD 0.05+1x, minutes mapping on, ep_next blend 0.16. Lessons: model/lessons.md
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 6s.
+Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 7s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-11-16T13:44Z): none
- squad and plan: Barry +14.8%, M.Sangaré -13.1%, Muharemović +12.4%, Diop -11.5%, Mbeumo -9.2%, Vuskovic +8.4%, N.Jackson* +8.1%, Kinsky +6.8%, Calvert-Lewin -5.3%, Van Hecke +4.1%, Rogers +3.1%, Gabriel +2.7%, Tavernier +2.3%, Groß +2.0%, Haaland +1.1%, Konsa* +0.3%, Verbruggen +0.2% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Rudoni +74.4%, Kroupi.Jr +71.2%, Tel +64.3%, Madueke +61.0%, Doku +53.2%, Lindelöf +42.1%
- strongest fall pressure (owned 0.5%+): Semenyo -57.3%, Janelt -56.6%, Shaw -48.2%, Stach -42.2%, Walle Egeli -32.2%, George -31.0%
- calibration from observed changes (pressure measured at the run before the change): rises n55, pressure at previous run: 25th pct 8.2%, median 15.4% | falls n139, pressure at previous run: 25th pct 5.6%, median 13.2%
+ changes since previous run (2026-11-16T22:55Z): 3 players; 
+ squad and plan: Barry +14.9%, M.Sangaré -13.1%, Muharemović +12.5%, Diop -11.6%, Mbeumo -9.2%, Vuskovic +8.5%, N.Jackson* +8.2%, Kinsky +6.8%, Calvert-Lewin -5.3%, Van Hecke +4.2%, Rogers +3.1%, Gabriel +2.7%, Tavernier +2.3%, Groß +2.0%, Haaland +1.1%, Konsa* +0.3%, Verbruggen +0.2% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Rudoni +74.5%, Kroupi.Jr +71.3%, Tel +64.2%, Madueke +61.0%, Doku +53.2%, Lindelöf +42.2%
+ strongest fall pressure (owned 0.5%+): Semenyo -57.4%, Janelt -56.6%, Shaw -48.2%, Stach -42.2%, Walle Egeli -32.2%, George -31.0%
+ calibration from observed changes (pressure measured at the run before the change): rises n55, pressure at previous run: 25th pct 8.2%, median 15.4% | falls n142, pressure at previous run: 25th pct 6.1%, median 13.3%
 BACKTEST GW8,9,10 | players projected 0.5+: n967, mean proj 2.40 vs actual 2.61, MAE 1.92, slope 0.83 (above 1 means projections too compressed, below 1 too spread)
  calibration by projection band: 0.5-2: n415 proj 1.17 actual 1.58 | 2-4: n435 proj 2.95 actual 3.05 | 4-6: n111 proj 4.62 actual 4.61 | 6-+: n6 proj 6.60 actual 4.83
  recommended XI incl. armband: proj 189.6 vs actual 169 over 3 GW; armband proj 21.5 vs actual 18
