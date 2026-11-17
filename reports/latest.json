@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T14:32:17.255Z",
+ "generated": "2026-11-17T21:48:27.731Z",
  "entry": 531300,
  "gws": [
   11,
@@ -60,7 +60,7 @@
    "name": "Gabriel",
    "sell": 8,
    "proj": [
-    6.74,
+    6.82,
     5.56,
     5.66,
     5.88,
@@ -352,7 +352,7 @@
  ],
  "best_plan": {
   "n_transfers": 2,
-  "net": 310.21,
+  "net": 310.45,
   "out": [
    "Diop",
    "Calvert-Lewin"
@@ -364,6 +364,6 @@
   "bank": 0.7,
   "captain": "Gabriel",
   "vice": "Haaland",
-  "armband_value": 6.87
+  "armband_value": 6.94
  }
 }
