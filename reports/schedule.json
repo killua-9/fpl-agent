@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T04:20:05Z",
+ "generated": "2026-11-20T14:06:34Z",
  "current": {
   "gw": 10,
   "deadline": "2026-11-06T18:30:00Z",
@@ -15,12 +15,6 @@
   "last_kickoff": "2026-11-23T20:00:00Z"
  },
  "wakes": [
-  {
-   "at": "2026-11-20T09:00:00Z",
-   "windhoek": "2026-11-20 11:00 Windhoek",
-   "purpose": "draft",
-   "gw": 11
-  },
   {
    "at": "2026-11-21T07:00:00Z",
    "windhoek": "2026-11-21 09:00 Windhoek",
