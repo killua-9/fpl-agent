@@ -1,0 +1,21 @@
+{
+  "gw": 11,
+  "entry": 531300,
+  "apply": true,
+  "created": "2026-11-21T07:08:34Z",
+  "source": "GW11 FINAL: 1T Diop->Konsa free (310.5) vs 2T with hit 310.7, hit gain 0.2 below 2.0 threshold; C Gabriel armband 6.9 vs Haaland 6.5",
+  "max_hits": 0,
+  "chip": null,
+  "transfers": [
+    { "out": "Diop", "in": "Konsa|ARS" }
+  ],
+  "starting_xi": [
+    "Verbruggen",
+    "Gabriel|ARS", "Konsa|ARS", "Van Hecke|TOT", "Vuskovic|BHA", "Muharemović",
+    "Tavernier|BOU", "Groß", "Rogers|CHE",
+    "Haaland", "Barry|EVE"
+  ],
+  "bench": ["Kinsky", "Mbeumo|MUN", "Calvert-Lewin", "M.Sangaré"],
+  "captain": "Gabriel|ARS",
+  "vice": "Haaland"
+}
