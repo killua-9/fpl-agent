@@ -1,0 +1,15 @@
+{
+  "gw": 11,
+  "decision": "decisions/gw11.json",
+  "applied": true,
+  "at": "2026-11-21T08:59:31.148Z",
+  "log": [
+    "APPLY decisions/gw11.json: GW11, deadline 2026-11-21T11:00:00Z (120 min left)",
+    "Free transfers left 1, hits 0, bank after £1.8m",
+    "  OUT Diop £3.9m  ->  IN Konsa £4.9m",
+    "XI: Verbruggen, Gabriel (C), Konsa, Van Hecke, Vuskovic, Muharemović, Tavernier, Groß, Rogers, Haaland (V), Barry",
+    "Bench: Kinsky, Mbeumo, Calvert-Lewin, M.Sangaré",
+    "Transfers confirmed by FPL.",
+    "Verified on FPL: squad, XI, bench order and armband match. Bank £1.8m."
+  ]
+}
