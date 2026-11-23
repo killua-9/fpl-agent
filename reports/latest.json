@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T04:00:34.543Z",
+ "generated": "2026-11-23T16:04:36.027Z",
  "entry": 531300,
  "gws": [
   12,
@@ -60,7 +60,7 @@
    "name": "Gabriel",
    "sell": 8,
    "proj": [
-    5.69,
+    5.21,
     5.37,
     5.41,
     5.35,
@@ -81,9 +81,9 @@
    "name": "Konsa",
    "sell": 4.9,
    "proj": [
-    5.27,
+    4.97,
     4.83,
-    4.89,
+    4.9,
     4.81,
     5.18,
     5.09
@@ -228,7 +228,7 @@
    "name": "Haaland",
    "sell": 15.6,
    "proj": [
-    4.72,
+    4.48,
     6.21,
     6.13,
     7.41,
@@ -249,7 +249,7 @@
    "name": "Barry",
    "sell": 5.6,
    "proj": [
-    4.67,
+    4.91,
     4.16,
     4.49,
     4.03,
@@ -352,16 +352,16 @@
  ],
  "best_plan": {
   "n_transfers": 1,
-  "net": 299.61,
+  "net": 298.76,
   "out": [
-   "Barry"
+   "M.Sangaré"
   ],
   "in": [
-   "N.Jackson"
+   "Ødegaard"
   ],
-  "bank": 0.1,
-  "captain": "Gabriel",
-  "vice": "Muharemović",
-  "armband_value": 5.8
+  "bank": 0.4,
+  "captain": "Muharemović",
+  "vice": "Vuskovic",
+  "armband_value": 5.78
  }
 }
