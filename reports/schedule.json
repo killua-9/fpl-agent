@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-24T07:06:25Z",
+ "generated": "2026-11-24T15:57:00Z",
  "current": {
   "gw": 11,
   "deadline": "2026-11-21T11:00:00Z",
   "last_kickoff": "2026-11-23T20:00:00Z",
-  "finished": false,
-  "data_checked": false,
-  "review_exists": false
+  "finished": true,
+  "data_checked": true,
+  "review_exists": true
  },
  "next": {
   "gw": 12,
@@ -15,12 +15,6 @@
   "last_kickoff": "2026-11-29T16:30:00Z"
  },
  "wakes": [
-  {
-   "at": "2026-11-24T12:00:00Z",
-   "windhoek": "2026-11-24 14:00 Windhoek",
-   "purpose": "review",
-   "gw": 11
-  },
   {
    "at": "2026-11-26T16:30:00Z",
    "windhoek": "2026-11-26 18:30 Windhoek",

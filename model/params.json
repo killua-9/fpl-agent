@@ -1,12 +1,12 @@
 {
- "version": 3,
- "updated": "2026-11-09T21:20:31.096Z",
+ "version": 4,
+ "updated": "2026-11-24T15:56:30.331Z",
  "validation": {
-  "gws": 3,
-  "mae_base": 1.92,
-  "mae_cal": 1.9,
-  "brier_base": 0.1932,
-  "brier_cal": 0.1504,
+  "gws": 4,
+  "mae_base": 1.97,
+  "mae_cal": 1.95,
+  "brier_base": 0.1905,
+  "brier_cal": 0.1475,
   "points_ok": true,
   "minutes_ok": true,
   "ok": true
@@ -16,66 +16,66 @@
    "1": {
     "a": 0.03,
     "b": 1,
-    "n": 64,
-    "ols_a": 0.26,
-    "ols_b": 1
+    "n": 87,
+    "ols_a": 0.18,
+    "ols_b": 1.02
    },
    "2": {
-    "a": 0.1,
-    "b": 0.99,
-    "n": 344,
-    "ols_a": 0.32,
-    "ols_b": 0.96
+    "a": 0.14,
+    "b": 0.92,
+    "n": 460,
+    "ols_a": 0.56,
+    "ols_b": 0.82
    },
    "3": {
-    "a": 0.22,
+    "a": 0.31,
     "b": 0.84,
-    "n": 456,
-    "ols_a": 0.99,
-    "ols_b": 0.63
+    "n": 620,
+    "ols_a": 0.96,
+    "ols_b": 0.68
    },
    "4": {
-    "a": 0.05,
-    "b": 1,
-    "n": 103,
-    "ols_a": 0.41,
-    "ols_b": 0.98
+    "a": 0.1,
+    "b": 0.97,
+    "n": 135,
+    "ols_a": 0.86,
+    "ols_b": 0.83
    }
   },
   "minutes": [
    {
     "band": "0-0.3",
-    "n": 332,
+    "n": 447,
     "pred": 0.18,
-    "obs": 0.48,
+    "obs": 0.47,
     "adj": 0.45
    },
    {
     "band": "0.3-0.6",
-    "n": 274,
+    "n": 376,
     "pred": 0.44,
     "obs": 0.72,
     "adj": 0.69
    },
    {
     "band": "0.6-0.85",
-    "n": 190,
-    "pred": 0.72,
-    "obs": 0.8,
-    "adj": 0.79
+    "n": 251,
+    "pred": 0.73,
+    "obs": 0.84,
+    "adj": 0.82
    },
    {
     "band": "0.85-1",
-    "n": 416,
+    "n": 551,
     "pred": 0.98,
     "obs": 0.96,
     "adj": 0.96
    }
   ],
   "blend": {
-   "alpha": 0.16,
-   "n": 359,
-   "ols": 0.08
+   "alpha": 0.19,
+   "n": 711,
+   "ols": 0.18
   }
  },
  "calib": {
@@ -84,16 +84,16 @@
    "b": 1
   },
   "2": {
-   "a": 0.1,
-   "b": 0.99
-  },
-  "3": {
-   "a": 0.2,
+   "a": 0.14,
    "b": 0.92
   },
+  "3": {
+   "a": 0.31,
+   "b": 0.84
+  },
   "4": {
-   "a": 0.05,
-   "b": 1
+   "a": 0.1,
+   "b": 0.97
   }
  },
  "minutes": [
@@ -110,8 +110,8 @@
    0.69
   ],
   [
-   0.72,
-   0.79
+   0.73,
+   0.82
   ],
   [
    0.98,
@@ -122,13 +122,12 @@
    0.98
   ]
  ],
- "ep_blend": 0.16,
+ "ep_blend": 0.19,
  "changes": [
-  "GK points calibration a 0->0.03, b 1->1 (n 64)",
-  "DEF points calibration a 0->0.1, b 1->0.99 (n 344)",
-  "MID points calibration a 0->0.2, b 1->0.92 (n 456)",
-  "FWD points calibration a 0->0.05, b 1->1 (n 103)",
-  "minutes calibration knots [[0,0],[0.18,0.45],[0.44,0.69],[0.72,0.79],[0.98,0.96],[1,0.98]]",
-  "ep_next blend weight 0.2->0.16 (least squares 0.08, n 359)"
+  "DEF points calibration a 0.1->0.14, b 0.99->0.92 (n 460)",
+  "MID points calibration a 0.2->0.31, b 0.92->0.84 (n 620)",
+  "FWD points calibration a 0.05->0.1, b 1->0.97 (n 135)",
+  "minutes calibration knots [[0,0],[0.18,0.45],[0.44,0.69],[0.73,0.82],[0.98,0.96],[1,0.98]]",
+  "ep_next blend weight 0.16->0.19 (least squares 0.18, n 711)"
  ]
 }
