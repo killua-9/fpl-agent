@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T15:57:00.690Z",
+ "generated": "2026-11-24T23:05:25.365Z",
  "entry": 531300,
  "gws": [
   12,
@@ -144,7 +144,7 @@
    "name": "Muharemović",
    "sell": 5,
    "proj": [
-    5.33,
+    5.16,
     3.79,
     5.11,
     3.95,
@@ -312,7 +312,7 @@
    "name": "Calvert-Lewin",
    "sell": 6,
    "proj": [
-    4.36,
+    4.45,
     3.74,
     5.33,
     3.78,
@@ -351,17 +351,19 @@
   }
  ],
  "best_plan": {
-  "n_transfers": 1,
-  "net": 288.3,
+  "n_transfers": 2,
+  "net": 288.15,
   "out": [
+   "Mbeumo",
    "Calvert-Lewin"
   ],
   "in": [
-   "N.Jackson"
+   "E.Le Fée",
+   "Isak"
   ],
-  "bank": 0.5,
+  "bank": 0.6,
   "captain": "Barry",
-  "vice": "N.Jackson",
+  "vice": "Vuskovic",
   "armband_value": 5.61
  }
 }
