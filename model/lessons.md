@@ -18,6 +18,16 @@ Regenerated after every review from reports/reviews/.
 
 Written by the deadline agent after each review, newest first. Each entry names what went wrong in its own judgement, the evidence, and the rule it will apply from now on. Rules here are advisory to the judgement layer; they do not change model code.
 
+### GW11 reflection (24 November 2026)
+
+Result: 34 (no hit) against 67.9 projected for the side fielded (minus 2.5 standard deviations); overall rank 2,184,887 to 2,280,141; Mane League 25th to 27th, 86 behind the leader.
+
+Judgement layer: one transfer (Diop to Konsa) within the free transfer. The model's top plan added Calvert-Lewin to N.Jackson for a -4, but its gain was 0.2 points, far below the 2.0 hit threshold, so declining it followed the rule rather than a news override; the departure was worth +7 (Calvert-Lewin 9 on the bench, Jackson 2, plus the 4 saved). Captaincy followed the armband arithmetic (Gabriel 6.9 against Haaland 6.5); Gabriel scored 1, Haaland 2, so the template alternative would have gained only 2. Tavernier's 8 was not a foreseeable armband pick. Bench order was the model's; the 18 unused came from Calvert-Lewin (9, behind Barry projected 5.7 against 3.6) and Kinsky (7, behind Verbruggen 4.9 against 4.3).
+
+Evidence: every starter played 60+ minutes, so there was no minutes or news miss. The shortfall was correlated defensive failure: Arsenal drew 2-2 at Newcastle (Gabriel as captain and Konsa) and Brighton lost 0-2 at Hull (Verbruggen, Vuskovic, Gross), so five starters and the armband sat in two defences that both conceded. That is concentration risk, not a judgement error that pre-deadline information would have exposed. The reserve goalkeeper has now outscored the starter in three of four reviewed gameweeks, but each choice was a near coin-flip.
+
+No rule change: variance, amplified by correlated defensive stacks. Watch: when the armband goes to a defender, note in the brief how many other starters share his defence; revisit only if stacked-defence blanks recur. Departures from the model now total +11 over 4, so the news layer is adding value.
+
 ### GW10 reflection (10 November 2026)
 
 Result: 83 less a 4-point hit (79 net) against 65.4 projected for the side fielded (plus 1.4 standard deviations, plausibly variance); overall rank 3,185,415 to 2,184,887; Mane League 32nd to 25th, top score in the league this week.
