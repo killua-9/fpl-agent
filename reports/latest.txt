@@ -1,4 +1,4 @@
-Generated 2026-11-24T23:05:25.363Z | Hold My Tzoli | overall rank 2280134 | 648 pts
+Generated 2026-11-25T05:40:57.432Z | Hold My Tzoli | overall rank 2280133 | 648 pts
 GW12 deadline 2026-11-27T18:30:00Z | FT 1 (reconstructed; pending transfers already made: 0) bank 1.8 hit 4 | chips wildcard,freehit,bboost,3xc | horizon GW12-17
 SQUAD (GW pts proj next | 6GW wtd | eliteEO | fixtures):
 FWD Haaland MCI 15.8/15.6 a100 | 4.3 | 27.9 | 186% | ARSa LEEH BREa CHEH
@@ -20,7 +20,7 @@ PLANS by net value (squad 6GW wtd value, less hits, plus value of banked FT):
 2T net 288.1 (val 292.1) bank 0.6: Mbeumo(7.8)->E.Le Fée(5.7 eEO0%), Calvert-Lewin(6.0)->Isak(9.3 eEO27%)
 1T net 288.1 (val 288.1) bank 0.5: Calvert-Lewin(6.0)->N.Jackson(7.3 eEO84%)
 0T net 287.1 (val 285.6) bank 1.8: roll
-3T net 286.1 (val 294.1) bank 0.0: Mbeumo(7.8)->E.Le Fée(5.7 eEO0%), Calvert-Lewin(6.0)->Isak(9.3 eEO27%), Muharemović(5.0)->Hill(5.6 eEO9%)
+3T net 285.9 (val 293.9) bank 0.9: Mbeumo(7.8)->E.Le Fée(5.7 eEO0%), Calvert-Lewin(6.0)->Isak(9.3 eEO27%), M.Sangaré(5.3)->Rudoni(5.0 eEO6%)
 BEST PLAN XI GW12: Verbruggen 4.9, Vuskovic 5.3, Van Hecke 5.2, Muharemović 5.2, Groß 5.1, Tavernier 4.6, Barry 5.5, Isak 5.2, Gabriel 4.9, Konsa 4.7, E.Le Fée 4.5
 C Barry armband 5.6 | VC Vuskovic 5.3 | bench (autosub order) Kinsky 4.1 (if plays 4.1), Haaland 4.3 (if plays 4.4), Rogers 3.9 (if plays 3.9), M.Sangaré 2.2 (if plays 2.9)
 Current squad GW12 XI proj 59.8 (C Barry, VC Vuskovic) vs best plan 60.8
@@ -40,13 +40,13 @@ ELITE threats not owned after best plan (overall-rank risk): N.Jackson AVL eEO84
 SET PIECES (first available taker per FPL order) in squad or plan: Tavernier direct FKs+corners, Groß pens+direct FKs+corners, Haaland pens, Barry pens, Calvert-Lewin pens, E.Le Fée pens+corners
 Penalty role inherited because the listed taker is unavailable: Gyökeres ARS, Schade BRE, Nketiah CRY
 Learnt params v4: points calibration GK 0.03+1x DEF 0.14+0.92x MID 0.31+0.84x FWD 0.1+0.97x, minutes mapping on, ep_next blend 0.19. Lessons: model/lessons.md
-Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 8s.
+Elite sample: top 1000 overall requested, 1000 sampled. Model runtime 6s.
 PRICES (pressure = net transfers since last observed change / owners; heuristic, FPL's algorithm is not public)
- changes since previous run (2026-11-24T15:57Z): none
- squad and plan: Vuskovic +24.6%, Muharemović +21.2%, Barry +19.6%, Kinsky +10.3%, Isak* +8.3%, Calvert-Lewin -7.2%, Groß +4.8%, Gabriel +4.8%, Mbeumo -4.7%, Van Hecke +4.7%, Verbruggen +3.3%, Konsa +3.1%, M.Sangaré -1.4%, Tavernier +0.5%, Rogers +0.1%, E.Le Fée* +0.0%, Haaland +0.0% (* = plan buy)
- strongest rise pressure (owned 0.5%+): Alysson +78.4%, Kroupi.Jr +76.8%, Okafor +69.0%, Madueke +60.5%, Doku +50.4%, Lindelöf +46.1%
- strongest fall pressure (owned 0.5%+): Janelt -63.6%, Shaw -59.5%, Stach -49.2%, Affengruber -41.2%, Brobbey -39.8%, Maitland-Niles -37.1%
- calibration from observed changes (pressure measured at the run before the change): rises n69, pressure at previous run: 25th pct 8.3%, median 15.4% | falls n190, pressure at previous run: 25th pct 7.3%, median 13.7%
+ changes since previous run (2026-11-24T23:05Z): 6 players; 
+ squad and plan: Vuskovic +24.7%, Muharemović +21.4%, Barry +19.6%, Kinsky +10.3%, Isak* +8.3%, Calvert-Lewin -7.0%, Van Hecke +4.8%, Gabriel +4.8%, Groß +4.8%, Mbeumo -4.8%, Verbruggen +3.3%, Konsa +3.0%, M.Sangaré -1.4%, Tavernier +0.5%, Rogers +0.1%, Haaland -0.0%, E.Le Fée* +0.0% (* = plan buy)
+ strongest rise pressure (owned 0.5%+): Alysson +78.6%, Kroupi.Jr +76.8%, Okafor +70.1%, Madueke +61.4%, Doku +50.3%, Lindelöf +46.0%
+ strongest fall pressure (owned 0.5%+): Janelt -63.5%, Shaw -59.5%, Stach -49.2%, Affengruber -41.2%, Brobbey -39.9%, Maitland-Niles -37.1%
+ calibration from observed changes (pressure measured at the run before the change): rises n70, pressure at previous run: 25th pct 8.3%, median 15.7% | falls n195, pressure at previous run: 25th pct 7.5%, median 13.6%
 BACKTEST GW8,9,10,11 | players projected 0.5+: n1302, mean proj 2.39 vs actual 2.62, MAE 1.97, slope 0.78 (above 1 means projections too compressed, below 1 too spread)
  calibration by projection band: 0.5-2: n566 proj 1.17 actual 1.63 | 2-4: n581 proj 2.94 actual 3.07 | 4-6: n143 proj 4.63 actual 4.56 | 6-+: n12 proj 6.45 actual 3.83
  recommended XI incl. armband: proj 259.4 vs actual 200 over 4 GW; armband proj 28.4 vs actual 19
