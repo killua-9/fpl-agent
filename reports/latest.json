@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T22:36:38.393Z",
+ "generated": "2026-11-26T05:29:02.485Z",
  "entry": 531300,
  "gws": [
   12,
@@ -352,7 +352,7 @@
  ],
  "best_plan": {
   "n_transfers": 2,
-  "net": 288.15,
+  "net": 288.18,
   "out": [
    "Mbeumo",
    "Calvert-Lewin"
@@ -361,7 +361,7 @@
    "E.Le Fée",
    "Isak"
   ],
-  "bank": 0.6,
+  "bank": 0.5,
   "captain": "Barry",
   "vice": "Vuskovic",
   "armband_value": 5.61
