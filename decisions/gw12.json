@@ -1,0 +1,21 @@
+{
+  "gw": 12,
+  "entry": 531300,
+  "apply": true,
+  "created": "2026-11-27T16:10:39Z",
+  "source": "GW12 FINAL: 1T Calvert-Lewin->N.Jackson free (288.1) vs 2T with hit 288.1, hit gain 0.0 below 2.0 threshold; covers 84% eEO and 65% league threat; C Barry armband 5.6 vs Vuskovic 5.4, Jackson 5.5",
+  "max_hits": 0,
+  "chip": null,
+  "transfers": [
+    { "out": "Calvert-Lewin", "in": "N.Jackson|AVL" }
+  ],
+  "starting_xi": [
+    "Verbruggen",
+    "Vuskovic|BHA", "Van Hecke|TOT", "Muharemović", "Gabriel|ARS", "Konsa|ARS",
+    "Groß", "Tavernier|BOU",
+    "Barry|EVE", "N.Jackson|AVL", "Haaland"
+  ],
+  "bench": ["Kinsky", "Rogers|CHE", "Mbeumo|MUN", "M.Sangaré"],
+  "captain": "Barry|EVE",
+  "vice": "Vuskovic|BHA"
+}
