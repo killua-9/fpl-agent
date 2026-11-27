@@ -1,31 +1,49 @@
 {
- "generated": "2026-11-27T15:11:24Z",
+ "generated": "2026-11-27T22:03:36Z",
  "current": {
-  "gw": 11,
-  "deadline": "2026-11-21T11:00:00Z",
-  "last_kickoff": "2026-11-23T20:00:00Z",
-  "finished": true,
-  "data_checked": true,
-  "review_exists": true
- },
- "next": {
   "gw": 12,
   "deadline": "2026-11-27T18:30:00Z",
-  "deadline_windhoek": "2026-11-27 20:30 Windhoek",
-  "last_kickoff": "2026-11-29T16:30:00Z"
+  "last_kickoff": "2026-11-29T16:30:00Z",
+  "finished": false,
+  "data_checked": false,
+  "review_exists": false
+ },
+ "next": {
+  "gw": 13,
+  "deadline": "2026-12-01T18:30:00Z",
+  "deadline_windhoek": "2026-12-01 20:30 Windhoek",
+  "last_kickoff": "2026-12-03T20:00:00Z"
  },
  "wakes": [
-  {
-   "at": "2026-11-27T16:45:00Z",
-   "windhoek": "2026-11-27 18:45 Windhoek",
-   "purpose": "backup",
-   "gw": 12
-  },
   {
    "at": "2026-11-30T08:30:00Z",
    "windhoek": "2026-11-30 10:30 Windhoek",
    "purpose": "review",
    "gw": 12
+  },
+  {
+   "at": "2026-11-30T16:30:00Z",
+   "windhoek": "2026-11-30 18:30 Windhoek",
+   "purpose": "draft",
+   "gw": 13
+  },
+  {
+   "at": "2026-12-01T14:30:00Z",
+   "windhoek": "2026-12-01 16:30 Windhoek",
+   "purpose": "final",
+   "gw": 13
+  },
+  {
+   "at": "2026-12-01T16:45:00Z",
+   "windhoek": "2026-12-01 18:45 Windhoek",
+   "purpose": "backup",
+   "gw": 13
+  },
+  {
+   "at": "2026-12-04T12:00:00Z",
+   "windhoek": "2026-12-04 14:00 Windhoek",
+   "purpose": "review",
+   "gw": 13
   }
  ]
 }
