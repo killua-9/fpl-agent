@@ -1,0 +1,15 @@
+{
+  "gw": 12,
+  "decision": "decisions/gw12.json",
+  "applied": true,
+  "at": "2026-11-27T16:11:03.310Z",
+  "log": [
+    "APPLY decisions/gw12.json: GW12, deadline 2026-11-27T18:30:00Z (139 min left)",
+    "Free transfers left 1, hits 0, bank after £0.5m",
+    "  OUT Calvert-Lewin £6.0m  ->  IN N.Jackson £7.3m",
+    "XI: Verbruggen, Vuskovic (V), Van Hecke, Muharemović, Gabriel, Konsa, Groß, Tavernier, Barry (C), N.Jackson, Haaland",
+    "Bench: Kinsky, Rogers, Mbeumo, M.Sangaré",
+    "Transfers confirmed by FPL.",
+    "Verified on FPL: squad, XI, bench order and armband match. Bank £0.5m."
+  ]
+}
